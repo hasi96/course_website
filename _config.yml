@@ -9,7 +9,7 @@ title:              Docs
 description:        Documentation Jekyll theme.
 
 # Site subpath, e.g. /blog
-baseurl:            "/course_website_skeleton"
+baseurl:            "/course_website"
 
 # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 permalink:          /:title/
@@ -111,19 +111,19 @@ index:
 
 header:
 - title: Course Syllabus
-  url: /course_website_skeleton/syllabus/
+  url: /course_website/syllabus/
 
 - title: Textbook
-  url: /course_website_skeleton/syllabus/
+  url: /course_website/syllabus/
 
 - title: DataSets
-  url: /course_website_skeleton/news/
+  url: /course_website/news/
 
 - title: Resources
-  url: /course_website_skeleton/changelog/
+  url: /course_website/changelog/
 
 - title: Help
-  url: /course_website_skeleton/contact/
+  url: /course_website/contact/
 
 
 info: 

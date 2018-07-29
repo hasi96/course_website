@@ -116,7 +116,7 @@ var linktemp = sections[i].getElementsByTagName("asset");
 
                 var newCell = document.createElement("td");
                 var links = document.createElement("a");
-                links.setAttribute("href", linkk);
+                links.setAttribute("href", "/content/reading/"+linkk);
                 var icon = document.createElement("i");
                 icon.className = "fa fa-book fa-lg";    
                 links.appendChild(icon);
@@ -129,7 +129,7 @@ var linktemp = sections[i].getElementsByTagName("asset");
             if(type == "slides"){
                  var newCell = document.createElement("td");
                 var links = document.createElement("a");
-                links.setAttribute("href", linkk);
+                links.setAttribute("href","/content/slides/"+linkk);
                 var icon = document.createElement("i");
                 icon.className = "fa fa-file-image-o  fa-lg";    
                 links.appendChild(icon);
@@ -140,7 +140,7 @@ var linktemp = sections[i].getElementsByTagName("asset");
                 if(type == "assignment"){
                  var newCell = document.createElement("td");
                 var links = document.createElement("a");
-                links.setAttribute("href", linkk);
+                links.setAttribute("href","/content/assignment/"+ linkk);
                 var icon = document.createElement("i");
                 icon.className = "fa fa-keyboard-o fa-lg";    
                 links.appendChild(icon);
@@ -151,7 +151,7 @@ var linktemp = sections[i].getElementsByTagName("asset");
              if(type == "exam"){
                  var newCell = document.createElement("td");
                 var links = document.createElement("a");
-                links.setAttribute("href", linkk);
+                links.setAttribute("href","/content/exam/"+ linkk);
                 var icon = document.createElement("i");
                 icon.className = "fa fa-check-circle fa-lg";    
                 links.appendChild(icon);
