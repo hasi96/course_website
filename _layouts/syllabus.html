@@ -1,0 +1,223 @@
+---
+layout: default
+---
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" sizes="76x76" href="../img/favicon.png">
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <script src="../docs/js/my.js"></script>
+ 
+
+<style>
+        .collapsible {
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      background-color:white;
+    }
+    .child {
+      padding: 0 18px;
+    }
+    .table{
+      background-color: white;
+    }
+  </style>
+  
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/gaborcsardi/r-font/master/rlogo.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/wesbos/Font-Awesome-Docker-Icon/master/fontcustom/fontcustom.css">
+
+  
+    <link href="../css/material-kit.css" rel="stylesheet"/>
+</head>
+    <br>
+<br>
+<br>
+<div >
+          <div class="wrapper">
+    
+  <div class="main main-raised">
+<table class="table"  style="max-width:900px;margin-left:auto;margin-right:auto  ">
+  <tr>
+    <th style="width:58%;text-align:left">Lesson</th>
+    <th style ="width:10.5%;text-align:center">Reading</th>
+    <th style="width:10.5%;text-align:center">Assignment</th>
+    <th style="width:10.5%;text-align:center">Slides</th>
+    <th style="width:10.5%;text-align:center">Exam</th>
+  </tr> 
+  </table>
+
+                 
+      <script>
+
+                    // Table of contents scroll to
+                    UIkit.scroll('#markdown-toc a', {
+                        duration: 400,
+                        offset: 120
+                    });
+                </script>
+
+     <script>
+  $(function() {
+    $("td[colspan=3]").find("p").hide();
+    $("table").click(function(event) {
+        event.stopPropagation();
+        var $target = $(event.target);
+        if ( $target.closest("td").attr("colspan") > 1 ) {
+            $target.slideUp();
+        } else {
+            $target.closest("tr").next().find("p").slideToggle();
+        }                    
+    });
+});
+  </script>
+  <section>
+  <div id="divCheckbox" style="display: none;">{{ content | checked }}</div>
+
+
+
+<script>
+window.onload = function myFunction() {
+var tablee = document.getElementsByTagName("table");
+
+var ele = document.getElementById("divCheckbox");
+var sections = ele.getElementsByTagName("section");
+
+ for (var i=0;i<sections.length;i++) {
+var linktemp = sections[i].getElementsByTagName("asset");
+                    var ttr = document.createElement("tr");
+                         var ttd = document.createElement("td");
+                         var button = document.createElement("button");
+                         button.setAttribute("class","collapsible");
+                         button.setAttribute("onclick","expand("+i+");")
+                          var ttr2 = document.createElement("tr");
+                      var title = sections[i].getElementsByTagName("h1");
+                    var tex = document.createTextNode(title[0].innerHTML);
+
+                    button.appendChild(tex);
+                   ttd.appendChild(button);
+                    ttr.appendChild(ttd);
+                    
+            for(var j=0;j<linktemp.length;j++){
+                    var type = linktemp[j].getAttribute("type");
+                    var linkk = linktemp[j].getAttribute("href");
+                   
+                   if(type == "reading"){
+
+                var newCell = document.createElement("td");
+                var links = document.createElement("a");
+                links.setAttribute("href", linkk);
+                var icon = document.createElement("i");
+                icon.className = "fa fa-book fa-lg";    
+                links.appendChild(icon);
+                                newCell.appendChild(links);
+
+                             ttr.appendChild(newCell);
+
+            }
+           
+            if(type == "slides"){
+                 var newCell = document.createElement("td");
+                var links = document.createElement("a");
+                links.setAttribute("href", linkk);
+                var icon = document.createElement("i");
+                icon.className = "fa fa-file-image-o  fa-lg";    
+                links.appendChild(icon);
+                newCell.appendChild(links);
+                             ttr.appendChild(newCell);
+
+            }
+                if(type == "assignment"){
+                 var newCell = document.createElement("td");
+                var links = document.createElement("a");
+                links.setAttribute("href", linkk);
+                var icon = document.createElement("i");
+                icon.className = "fa fa-keyboard-o fa-lg";    
+                links.appendChild(icon);
+                newCell.appendChild(links);
+                             ttr.appendChild(newCell);
+
+            }
+             if(type == "exam"){
+                 var newCell = document.createElement("td");
+                var links = document.createElement("a");
+                links.setAttribute("href", linkk);
+                var icon = document.createElement("i");
+                icon.className = "fa fa-check-circle fa-lg";    
+                links.appendChild(icon);
+                newCell.appendChild(links);
+                             ttr.appendChild(newCell);
+
+            }
+
+
+
+        }
+        tablee[0].appendChild(ttr);
+       //var titleMatch = new RegExp("(?<=<hr>)(.*\n?)(?=<hr>)");
+         var divsec = document.createElement("div");
+                     divsec.setAttribute("class","child");
+                     var sec = sections[i].cloneNode(true);
+                     divsec.appendChild(sec);
+      
+                    ttr2.appendChild(divsec);
+                tablee[0].appendChild(ttr2);  
+           
+
+    }
+}
+   
+</script>
+<script>
+
+function expand(i){
+    var check = document.getElementsByClassName("child");
+    if (check[i].style.display === "block") {
+      check[i].style.display = "none";
+    } else {
+      check[i].style.display = "block";
+    }
+  }
+  function print(){
+            var divC = document.getElementById("divCheckbox").cloneNode(true);
+            divC.setAttribute("display","block");
+            var divContents = divC.innerHTML;
+            var printWindow = window.open('', '', 'height=400,width=800');
+
+            printWindow.document.write('<html><head><title>DIV Contents</title>');
+            printWindow.document.write('</head><body >');
+            printWindow.document.write(divContents);
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            printWindow.print();
+        }
+</script>
+<script type="text/javascript">
+var b = document.getElementById("divCheckbox");
+var str = b.innerHTML;
+var regex = /\<hr\>(.*)/ig ,   body = str,   result = body.replace(regex,"</section> <section>");
+var res = result.match(/\{\@asset(.*)\}/ig);
+for( var i=0;i<res.length;i++)
+{
+  var strarr = res[i].split(" ");
+result = result.replace(res[i],"<asset type = \""+strarr[1]+"\" href = \""+strarr[2]+"\"\/>");
+}
+document.getElementById("divCheckbox").innerHTML = result;
+
+</script>
+
+
+</div>
+</div>
+</div>
+

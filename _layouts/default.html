@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/gaborcsardi/r-font/master/rlogo.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/wesbos/Font-Awesome-Docker-Icon/master/fontcustom/fontcustom.css">
+<link rel="stylesheet" href= "{{ "/assets/css/5star.css" | relative_url }}">
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %} 
+  <meta property="og:image" content="{% if site.brand.image contains 'http' %}{{ site.brand.image }}{% else %}{{ site.post_assets | absolute_url }}{{ site.brand.image }}{% endif %}"/>
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <link rel="shortcut icon" type="image/png" href="{{ "assets/img/favicon.png" | relative_url }}" >
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
+
+<script>
+
+function myFunction(rating) {
+
+var val=0;
+var lis = document.getElementById("rate-area").getElementsByTagName("input");
+
+for (var i=0, len=lis.length; i<len; i++) {
+        if ( lis[i].checked ) { // radio checked?
+            val = lis[i].value; // if so, hold its value in val
+            break; // and break out of for loop
+        }
+    }
+var rat=rating + val;
+document.getElementById("ratingvalue").innerHTML = rat;
+
+}
+
+</script>
+
+</head>
+<body>
+
+<header class="uk-background-secondary">
+    <div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-sticky uk-sticky-fixed" style="position: fixed; top: 0px; width: 1904px;background-color:lightgrey;">
+        <nav class="uk-navbar-container">
+          <div class="uk-container">
+    <div data-uk-navbar>
+        <div class="uk-navbar-left">
+
+            <a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}">{% if site.brand.image %}<img src="{{ site.post_assets | absolute_url }}{{ site.brand.image }}" alt="{{ site.brand.text | escape }}">{% else %}{{ site.brand.text | escape }}{% endif %}</a>
+
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m">
+                {% for link in site.header %}
+                    {% if link.url contains 'http' %}
+                        {% assign domain = '' %}
+                    {% else %}
+                        {% assign domain = relative_url %}
+                    {% endif %}
+                    {% if link.url == page.url %}
+                        {% assign current = ' class="uk-active"' %}
+                    {% else %}
+                        {% assign current = null %}
+                    {% endif %}
+                    {% if link.title %}
+                        <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+
+            </ul>
+
+            {% unless page.hero%}
+            <div>
+                <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                        <input id="navbar-search" class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                    </form>
+                    <ul id="navbar-search-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                </div>
+            </div>
+            <script>
+            SimpleJekyllSearch({
+                searchInput: document.getElementById('navbar-search'),
+                resultsContainer: document.getElementById('navbar-search-results'),
+                noResultsText: '<li>No results found</li>',
+                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                json: '/search.json'
+            });
+            </script>
+            {% endunless %}
+
+            <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
+
+          </div>
+        </div>
+      </div>
+  
+        </nav>
+    </div>
+</header>
+
+{% if page.head %}
+<div class="uk-section section-hero"  data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+    <div class="uk-container uk-container-small">
+        {% if site.index.image %}
+        <p class="hero-image uk-text-center"><img src="{{ site.post_assets | absolute_url }}{{ site.index.image }}" alt="Hero"></p> 
+        {% endif %}
+        <h2 class="uk-heading-hero uk-text-center uk-margin-remove-top " >{{ site.index.title }}</h2>
+        {% if site.index.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ site.index.subtitle }}</p>{% endif %}
+
+   
+
+
+<br>
+<br>
+</div>
+
+    <div class="uk-section">
+    <div class="uk-container">
+        <div class="uk-grid-large" data-uk-grid>
+
+            <div class="uk-width-1-2 uk-visible@m">
+                <div>
+                    {{content}}
+                    </div>
+                    </div>
+                      <div class="uk-width-1-2 uk-width-expand@m ">
+
+                <article class="uk-article">
+              
+
+<div class="container uk-text-center section-landing">
+<div class="col-md-6 col-md-offset-3">
+<h2> Course Info </h2>
+<center>
+<table class="table table-condensed table-striped text-left">
+<thead>
+<tr>
+<th><span></span></th>
+<th><span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Timing</td>
+<td>{{site.info.timing}}</td>
+</tr>
+<tr>
+<td>Effort</td>
+<td>{{site.info.effort}}</td>
+</tr>
+<tr>
+<td>Institution</td>
+<td>{{site.info.institution}}</td>
+</tr>
+<tr>
+<td>Level</td>
+<td>{{site.info.level}}</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>{{site.info.language}}</td>
+</tr>
+
+</tbody>
+</table>
+</center>
+<h2> Course Instructors </h2>
+<center>
+<table class="table table-condensed table-striped text-left">
+<thead>
+<tr>
+<th><span></span></th>
+<th><span></span></th>
+</tr>
+</thead>
+<tbody>
+{% for item in site.faculty %}
+<tr>
+<td>{{item.type}}</td>
+<td>{{item.name}}</td>
+
+<td>
+<a href="mailto:{{item.email}}" title="email"><i class="fa fa-envelope"></i></a>
+</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+</center>
+<br>
+<br>
+
+<center>
+
+<h2> Textbooks </h2>
+<table class="table table-condensed table-striped text-left">
+<thead>
+<tr>
+<th><span></span></th>
+<th><span></span></th>
+</tr>
+</thead>
+<tbody>
+{% for item in site.textbooks %}
+<tr>
+{% assign link= {{item.link}} |"/content/textbooks/"  %}
+
+<td><a href={{link}} title="textbook">{{item.name}}</a></td>
+<td>{{item.authors}}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</center>
+
+
+<p id = "ratingvalue"></p>
+</div>
+</div>
+</div>
+
+
+</article>
+    
+  
+  </div>
+</div>
+
+{% if page.cta.button_url contains 'http' %}
+    {% assign domain = '' %}
+{% else %}
+    {% assign domain = relative_url %}
+{% endif %}
+
+
+{% if page.cta %}
+<div class="uk-section uk-text-center">
+    <div class="uk-container uk-container-small">
+        <div data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+            <h3 style="font-family:courier;">{{ page.cta.title }}</h3>
+            {% if page.cta.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ page.cta.subtitle | escape }}</p>{% endif %} 
+            <a class="uk-button uk-button-primary uk-button-large button-cta" href="{{ domain }}{{ page.cta.button_url }}">{{ page.cta.button_text }}</a>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endif %}
+{% unless page.head %}
+{% assign str = {{content}} %}
+{{content}}
+
+{% endunless %}
+    {% include offcanvas.html %}
+
+
+
+    <footer class="uk-section uk-text-center uk-text-muted uk-link-muted">
+    <div class="uk-container uk-container-small">
+
+   <input type="button" value="Export Syllabus as pdf" id="btnPrint" onclick="print();" />
+
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+               <ul id="rate-area" class = "rate-area">
+  <input type="radio" id="5-star" name="rating" value="5" onclick = "myFunction({{ page.rating }});" /><label for="5-star" title="Amazing">5 stars</label>
+  <input type="radio" id="4-star" name="rating" value="4" onclick = "myFunction({{ page.rating }});"/><label for="4-star" title="Good">4 stars</label>
+  <input type="radio" id="3-star" name="rating" value="3" onclick = "myFunction({{ page.rating }});"/><label for="3-star" title="Average">3 stars</label>
+  <input type="radio" id="2-star" name="rating" value="2" onclick = "myFunction({{ page.rating }});"/><label for="2-star" title="Not Good">2 stars</label>
+  <input type="radio" id="1-star" name="rating" value="1" onclick = "myFunction({{ page.rating }});"/><label for="1-star" title="Bad">1 star</label>
+</ul>
+                {% for link in site.footer %}
+                    {% if link.url contains 'http' %}
+                        {% assign domain = '' %}
+                    {% else %}
+                        {% assign domain = relative_url %}
+                    {% endif %}
+                    {% if link.url == page.url %}
+                        {% assign current = ' class="uk-active"' %}
+                    {% else %}
+                        {% assign current = null %}
+                    {% endif %}
+                    {% if link.title %}
+                        <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                {% include social-networks.html %}
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright">{{ site.footer.copyright }}</div>
+
+    </div>
+</footer>
+
+
+    </body>
+
+</html>
+<script type="text/javascript">
+ alert(str);
+  var myAnchor = document.getElementsByTagName("hr");
+  for(var i=0;i<myAnchor.length;i++){
+  if(i==0){
+  myAnchor[i].insertAdjacentHTML("beforebegin","  <section> ksjefsrliskfslrkf \n");
+    }
+    if(i!=0)
+    {
+    myAnchor[i].insertAdjacentHTML("beforebegin"," lrkgjdlrk  </section> <section>");
+    }
+alert("hiref");
+alert(myAnchor[i]);
+}
+</script>
