@@ -87,6 +87,14 @@ layout: default
 
 
 <script>
+               function ValidURL(str) {
+                                    var a = document.createElement("a");
+                                    a.setAttribute("href",str);
+                                    
+  var pattern = new RegExp('^(http?:\/\/)?'); // fragment locater
+ if(window.location.hostname != a.hostname){return true;}
+ else{return false;}
+}
 window.onload = function myFunction() {
 var tablee = document.getElementsByTagName("table");
 
@@ -125,14 +133,16 @@ var linktemp = sections[i].getElementsByTagName("asset");
                                         flag[3] = j;
                                        }
                   }
+
             for(var j=0;j<4;j++){
               var k = flag[j];
                     
                    if(j==0 && k!=-1){
-                    var linkk = linktemp[k].getAttribute("href");
+                   var linkk = linktemp[k].getAttribute("href");
+                  
                 var newCell = document.createElement("td");
                 var links = document.createElement("a");
-                links.setAttribute("href", "/content/reading/"+linkk);
+                 links.setAttribute("href",linkk);
                 var icon = document.createElement("i");
                 icon.className = "fa fa-book fa-lg";    
                 links.appendChild(icon);
@@ -156,10 +166,11 @@ var linktemp = sections[i].getElementsByTagName("asset");
             }
            
             if(j==2 && k!= -1){
+
               var linkk = linktemp[k].getAttribute("href");
                  var newCell = document.createElement("td");
                 var links = document.createElement("a");
-                links.setAttribute("href","/content/slides/"+linkk);
+                links.setAttribute("href",linkk);
                 var icon = document.createElement("i");
                 icon.className = "fa fa-file-image-o  fa-lg";    
                 links.appendChild(icon);
@@ -185,7 +196,7 @@ var linktemp = sections[i].getElementsByTagName("asset");
                 var linkk = linktemp[k].getAttribute("href");
                  var newCell = document.createElement("td");
                 var links = document.createElement("a");
-                links.setAttribute("href","/content/assignment/"+ linkk);
+                links.setAttribute("href",linkk);
                 var icon = document.createElement("i");
                 icon.className = "fa fa-keyboard-o fa-lg";    
                 links.appendChild(icon);
@@ -209,9 +220,9 @@ var linktemp = sections[i].getElementsByTagName("asset");
             }
              if(j==3 && k!=-1){
               var linkk = linktemp[k].getAttribute("href");
-                 var newCell = document.createElement("td");
+              var newCell = document.createElement("td");
                 var links = document.createElement("a");
-                links.setAttribute("href","/content/exam/"+ linkk);
+                links.setAttribute("href", linkk);
                 var icon = document.createElement("i");
                 icon.className = "fa fa-check-circle fa-lg";    
                 links.appendChild(icon);
@@ -264,6 +275,9 @@ function expand(i){
     }
   }
   function print(){
+            var div = document.getElementById("divCheckbox");
+            var t = document.getElementsByTagName('')
+            div.appendChild()
             var divC = document.getElementById("divCheckbox").cloneNode(true);
             divC.setAttribute("display","block");
             var divContents = divC.innerHTML;
@@ -290,11 +304,15 @@ for( var i=0;i<res.length;i++)
     res[i].indexOf("\[") + 2, 
     res[i].indexOf("\]") -1
 );
-  var sub  = res[i].substring( res[i].indexOf("\}") + 1, 
-    res[i].indexOf("\{") 
+  var sub  = res[i].substring( res[i].indexOf("\{") + 1, 
+    res[i].indexOf("\}")
 );
   var strarr = sub.split(" ");
-result = result.replace(res[i],"\<a href= \""+ strarr[2] +"\"\>" +mySubString + "\</a\>" +"\<asset type = \""+strarr[1]+"\" href = \""+strarr[2]+"\"\/\>");
+  var link = strarr[2];
+   if(!ValidURL(link)){
+                    var sr = "../content/"+strarr[1]+"\/"+link;
+                    link = sr; }
+result = result.replace(res[i],"\<a href= \""+ link+"\"\>" +mySubString + "\</a\>" +"\<asset type = \""+strarr[1]+"\" href = \""+link+"\"\/\>");
 }
 document.getElementById("divCheckbox").innerHTML = result;
 

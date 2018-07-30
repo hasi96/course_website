@@ -25,7 +25,7 @@
 <script>
 
 function myFunction(rating) {
-
+ 
 var val=0;
 var lis = document.getElementById("rate-area").getElementsByTagName("input");
 
@@ -37,6 +37,9 @@ for (var i=0, len=lis.length; i<len; i++) {
     }
 var rat=rating + val;
 document.getElementById("ratingvalue").innerHTML = rat;
+page["rating"] = rat;
+var file = new Blob([rat], {type: file});
+  saveAs(file, "rating.txt");
 
 }
 

@@ -58,7 +58,7 @@ I'm also interested in your development of basic professional skills, such as us
 * Frumkin, On Being Nonprofit, Chapter 1
 * Arizona Nonprofit Incorporation:
   + Instructions: http://www.azcc.gov/Divisions/Corporations/forms/starpas/instructionsSTPS/C011i-Instructions-Articles-of-Inc-Nonprofit-STPS.pdf
-  ["Read At"]{@asset reading 03-reading.html}
+  ["Read At"]{@asset reading http://www.azcc.gov/Divisions/Corporations/forms/starpas/instructionsSTPS/C011i-Instructions-Articles-of-Inc-Nonprofit-STPS.pdf}
 
   + Form:  http://www. azcc.gov/Divisions/Corporations/forms/starpas/formsSTPS/C011-Articles-of-Incorporation-Nonprofit.pdf
 
