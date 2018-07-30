@@ -21,11 +21,16 @@ By the end of the unit, you will be able to classify the range of organizations 
 ## Assigned Readings 
 
 Chapter 1 from Bruce Hopkins' book Starting and Managing a Nonprofit Organization.  The chapter is titled "What is a Nonprofit Organization?"  (on Blackboard)
-US Internal Revenue Code Title 26, Sub A, Chapter 1F, Part 1, Section 501.  [Access at :]{{https://www.law.cornell.edu/uscode/text/26/501}}
+US Internal Revenue Code Title 26, Sub A, Chapter 1F, Part 1, Section 501.  
+["Read At"]{@asset reading 01-reading.html}
+
 ## Exercises   
 Exercise 1: What Do You Know about the Scope of the Sector?
 
 Exercise 2: Coding Public Charities by NTEE
+
+["Assignment"]{@asset assignment 02-mini-hw.html} 
+
 
 ## Discussion Questions 2.1 – Scope of the Sector  
 Use this forum to discuss any questions or reflections you have related to the Exercise 1. As an orientation to the forums, I would like you to post a thread related to the introduction and exercise, OR respond to at least one of your classmates' posts.
@@ -36,9 +41,7 @@ Use this forum to discuss any questions or reflections you have related to the E
 This forum is also UNGRADED, although I would again like everyone to either post a reflection/question related to the public charities discussion and NTEE exercise, OR respond to at least one of your classmates' posts.
 
 
-{@asset reading 01-reading.html}
-{@asset slides 01-deck.html}
-{@asset assignment 02-mini-hw.html} 
+["slides"]{@asset slides 01-deck.html}
 
 ***
 
@@ -55,6 +58,8 @@ I'm also interested in your development of basic professional skills, such as us
 * Frumkin, On Being Nonprofit, Chapter 1
 * Arizona Nonprofit Incorporation:
   + Instructions: http://www.azcc.gov/Divisions/Corporations/forms/starpas/instructionsSTPS/C011i-Instructions-Articles-of-Inc-Nonprofit-STPS.pdf
+  ["Read At"]{@asset reading 03-reading.html}
+
   + Form:  http://www. azcc.gov/Divisions/Corporations/forms/starpas/formsSTPS/C011-Articles-of-Incorporation-Nonprofit.pdf
 
 
@@ -69,8 +74,7 @@ Download the Exempt Organization Business Master File Extract Excel file for y
 2. Save the file. (Note above the U.S. map that the IRS tells you the DATE at which it last uploaded data.  As I write this I'm seeing 06/13/2016, but you may very well be seeing a more current date.  Whenever I save this file, I put that DATE in the filename, so I always know what exactly my datafile represents.)
 
 
-{@asset reading 03-reading.html}
-{@asset slides 03-deck.html}
+["slides"]{@asset slides 03-deck.html}
 
 
 ***
@@ -85,7 +89,8 @@ Download the Exempt Organization Business Master File Extract Excel file for y
   + Interpret the change in civic engagement in the United States over time
   + Estimate the trajectory of current and future changes in civic engagement 
   
-{@asset slides STA112FS_VisDayOneSlides_Fall2017.pdf}
+
+["slides"]{@asset slides STA112FS_VisDayOneSlides_Fall2017.pdf}
 
 ***
 

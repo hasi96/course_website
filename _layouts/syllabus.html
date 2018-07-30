@@ -281,11 +281,20 @@ function expand(i){
 var b = document.getElementById("divCheckbox");
 var str = b.innerHTML;
 var regex = /\<hr\>(.*)/ig ,   body = str,   result = body.replace(regex,"</section> <section>");
-var res = result.match(/\{\@asset(.*)\}/ig);
+var res = result.match(/\[(.*)\]\{\@asset(.*)\}/ig);
 for( var i=0;i<res.length;i++)
 {
-  var strarr = res[i].split(" ");
-result = result.replace(res[i],"<asset type = \""+strarr[1]+"\" href = \""+strarr[2]+"\"\/>");
+
+
+  var mySubString = res[i].substring(
+    res[i].indexOf("\[") + 2, 
+    res[i].indexOf("\]") -1
+);
+  var sub  = res[i].substring( res[i].indexOf("\}") + 1, 
+    res[i].indexOf("\{") 
+);
+  var strarr = sub.split(" ");
+result = result.replace(res[i],"\<a href= \""+ strarr[2] +"\"\>" +mySubString + "\</a\>" +"\<asset type = \""+strarr[1]+"\" href = \""+strarr[2]+"\"\/\>");
 }
 document.getElementById("divCheckbox").innerHTML = result;
 
@@ -295,4 +304,3 @@ document.getElementById("divCheckbox").innerHTML = result;
 </div>
 </div>
 </div>
-
