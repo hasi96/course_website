@@ -114,17 +114,22 @@ header:
   url: /course_website/syllabus/
 
 - title: Textbook
-  url: /course_website/syllabus/
+  url: https://bookdown.org/yihui/bookdown-demo/ 
 
 - title: DataSets
   url: /course_website/news/
 
 - title: Resources
-  url: /course_website/changelog/
+  url: /course_website/resources/
 
 - title: Help
   url: /course_website/contact/
 
+textbook:
+ - title: Book1
+   url: https://bookdown.org/yihui/bookdown-demo/  
+ - title: Book2
+   url: https://bookdown.org/yihui/bookdown-demo/  
 
 info: 
   timing: 4 weeks
