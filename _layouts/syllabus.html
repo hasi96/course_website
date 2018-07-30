@@ -107,13 +107,29 @@ var linktemp = sections[i].getElementsByTagName("asset");
                     button.appendChild(tex);
                    ttd.appendChild(button);
                     ttr.appendChild(ttd);
-                    
-            for(var j=0;j<linktemp.length;j++){
-                    var type = linktemp[j].getAttribute("type");
-                    var linkk = linktemp[j].getAttribute("href");
-                   
-                   if(type == "reading"){
+                                                           var flag = [-1,-1,-1,-1];
 
+                    for(var j=0;j<linktemp.length;j++){
+                    var type = linktemp[j].getAttribute("type");
+                                       if(type == "reading"){
+                                        flag[0] = j;
+                                       }
+                                       else if(type == "assignment"){
+                                        flag[1] = j;
+                                       }
+                                       else if (type == "slides"){
+                                        flag[2] = j;
+                                       }
+                                       else if(type == "exam")
+                                       {
+                                        flag[3] = j;
+                                       }
+                  }
+            for(var j=0;j<4;j++){
+              var k = flag[j];
+                    
+                   if(j==0 && k!=-1){
+                    var linkk = linktemp[k].getAttribute("href");
                 var newCell = document.createElement("td");
                 var links = document.createElement("a");
                 links.setAttribute("href", "/content/reading/"+linkk);
@@ -123,10 +139,24 @@ var linktemp = sections[i].getElementsByTagName("asset");
                                 newCell.appendChild(links);
 
                              ttr.appendChild(newCell);
+            }
+            if(flag[0] == -1 && j==0){
 
+                var newCell = document.createElement("td");
+                var links = document.createElement("a");
+                var iconf = document.createElement("font");
+                var icon = document.createElement("i");
+                icon.className = "fa fa-book fa-lg";   
+                iconf.setAttribute("color","f1f1f1");
+                iconf.appendChild(icon); 
+                links.appendChild(iconf);
+                                newCell.appendChild(links);
+
+                             ttr.appendChild(newCell);
             }
            
-            if(type == "slides"){
+            if(j==2 && k!= -1){
+              var linkk = linktemp[k].getAttribute("href");
                  var newCell = document.createElement("td");
                 var links = document.createElement("a");
                 links.setAttribute("href","/content/slides/"+linkk);
@@ -137,7 +167,22 @@ var linktemp = sections[i].getElementsByTagName("asset");
                              ttr.appendChild(newCell);
 
             }
-                if(type == "assignment"){
+               if(flag[2] == -1 && j==2){
+
+                var newCell = document.createElement("td");
+                var links = document.createElement("a");
+                var iconf = document.createElement("font");
+                var icon = document.createElement("i");
+                icon.className = "fa fa-file-image-o";   
+                iconf.setAttribute("color","f1f1f1");
+                iconf.appendChild(icon); 
+                links.appendChild(iconf);
+                                newCell.appendChild(links);
+
+                             ttr.appendChild(newCell);
+            }
+               if(j==1 && k!=-1){
+                var linkk = linktemp[k].getAttribute("href");
                  var newCell = document.createElement("td");
                 var links = document.createElement("a");
                 links.setAttribute("href","/content/assignment/"+ linkk);
@@ -148,7 +193,22 @@ var linktemp = sections[i].getElementsByTagName("asset");
                              ttr.appendChild(newCell);
 
             }
-             if(type == "exam"){
+             if(flag[1] == -1 && j==1){
+
+                var newCell = document.createElement("td");
+                var links = document.createElement("a");
+                var iconf = document.createElement("font");
+                var icon = document.createElement("i");
+                icon.className = "fa fa-keyboard-o fa-lg";   
+                iconf.setAttribute("color","f1f1f1");
+                iconf.appendChild(icon); 
+                links.appendChild(iconf);
+                                newCell.appendChild(links);
+
+                             ttr.appendChild(newCell);
+            }
+             if(j==3 && k!=-1){
+              var linkk = linktemp[k].getAttribute("href");
                  var newCell = document.createElement("td");
                 var links = document.createElement("a");
                 links.setAttribute("href","/content/exam/"+ linkk);
@@ -159,6 +219,21 @@ var linktemp = sections[i].getElementsByTagName("asset");
                              ttr.appendChild(newCell);
 
             }
+           if(flag[3] == -1 && j==3){
+
+                var newCell = document.createElement("td");
+                var links = document.createElement("a");
+                var iconf = document.createElement("font");
+                var icon = document.createElement("i");
+                icon.className = "fa fa-check-circle fa-lg";   
+                iconf.setAttribute("color","f1f1f1");
+                iconf.appendChild(icon); 
+                links.appendChild(iconf);
+                                newCell.appendChild(links);
+
+                             ttr.appendChild(newCell);
+            }
+
 
 
 
