@@ -22,6 +22,7 @@ layout: default
     }
     .child {
       padding: 0 18px;
+      display:none;
     }
     .table{
       background-color: white;
@@ -46,7 +47,7 @@ layout: default
 <div >
           <div class="wrapper">
     
-  <div class="main main-raised">
+  <div class="main main-raised" id = "pp">
 <table class="table"  style="max-width:900px;margin-left:auto;margin-right:auto  ">
   <tr>
     <th style="width:58%;text-align:left">Lesson</th>
@@ -274,10 +275,11 @@ function expand(i){
       check[i].style.display = "block";
     }
   }
+
   function print(){
             var div = document.getElementById("divCheckbox");
-            var t = document.getElementsByTagName('')
-            div.appendChild()
+            var t = document.getElementsByTagName('');
+            div.appendChild();
             var divC = document.getElementById("divCheckbox").cloneNode(true);
             divC.setAttribute("display","block");
             var divContents = divC.innerHTML;
