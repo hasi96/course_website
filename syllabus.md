@@ -9,7 +9,7 @@ tags: featured,othertag
 *** 
 
 # Scope of the Sector  
-["slides"]{@lecture 01-deck.html}
+["slides"]{@lecture module_2_slides.html}
 ["Tue 02,2018"]{@date}
 
 Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.   
