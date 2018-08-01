@@ -84,7 +84,7 @@ disqus: true
 });
   </script>
   <section>
-  <div id="divCheckbox" style="display: none;">{{ content | checked }}</div>
+  <div id="divCheckbox" class = {{site.course_url}} style="display: none;">{{ content | checked }}</div>
 
 
 
@@ -348,7 +348,7 @@ var b = document.getElementById("divCheckbox");
 var str = b.innerHTML;
 var regex = /\<hr\>(.*)/ig ,   body = str,   result = body.replace(regex,"</section> <section>");
 var res = result.match(/\[(.*)\]\{\@lecture(.*)\}/ig);
-
+var baseurl = b.getAttribute("class");
 for( var i=0;i<res.length;i++)
 {
   var mySubString = res[i].substring(
@@ -360,7 +360,7 @@ for( var i=0;i<res.length;i++)
 );
   var link = sub.split(" ")[1];
    if(!ValidURL(link)){
-                    var sr = "../content/lectures/"+link;
+                    var sr = baseurl+"/LECTURES/"+link;
                     link = sr; }
 result = result.replace(res[i],"\<a href= \""+ link+"\"\>" +mySubString + "\</a\>" +"\<asset type =\"lecture\" href = \""+link+"\"\/\>");
 }
@@ -377,7 +377,7 @@ for( var i=0;i<res.length;i++)
 );
   var link = sub.split(" ")[1];
    if(!ValidURL(link)){
-                    var sr = "../content/labs/"+link;
+                    var sr = baseurl + "/LABS/"+link;
                     link = sr; }
 result = result.replace(res[i],"\<a href= \""+ link+"\"\>" +mySubString + "\</a\>" +"\<asset type =\"lab\" href = \""+link+"\"\/\>");
 }
@@ -395,7 +395,7 @@ for( var i=0;i<res.length;i++)
 );
   var link = sub.split(" ")[1];
    if(!ValidURL(link)){
-                    var sr = "../content/exam/"+link;
+                    var sr = baseurl + "/EXAMS/"+link;
                     link = sr; }
 result = result.replace(res[i],"\<a href= \""+ link+"\"\>" +mySubString + "\</a\>" +"\<asset type =\"exam\" href = \""+link+"\"\/\>");
 }
@@ -412,7 +412,7 @@ for( var i=0;i<res.length;i++)
 );
   var link = sub.split(" ")[1];
    if(!ValidURL(link)){
-                    var sr = "../content/handout/"+link;
+                    var sr =baseurl+ "/HANDOUT/"+link;
                     link = sr; }
 result = result.replace(res[i],"\<a href= \""+ link+"\"\>" +mySubString + "\</a\>" +"\<asset type =\"handout\" href = \""+link+"\"\/\>");
 }
@@ -430,7 +430,7 @@ for( var i=0;i<res.length;i++)
   var link = sub.split(" ")[1];
 
    if(!ValidURL(link)){
-                    var sr = "../content/reading/"+link;
+                    var sr = baseurl + "/READINGS/"+link;
                     link = sr; }
 result = result.replace(res[i],"\<a href= \""+ link+"\"\>" +mySubString + "\</a\>" +"\<asset type =\"reading\" href = \""+link+"\"\/\>");
 }
