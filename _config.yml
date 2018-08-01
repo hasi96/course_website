@@ -27,6 +27,7 @@ author:
     name:       Hasitha
     github:     hasi96   # Github username for avatar
 
+
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
 authors:
     peter:
