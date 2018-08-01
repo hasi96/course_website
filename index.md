@@ -1,6 +1,5 @@
 ---
-layout: default
-head: true
+layout: index
 rating: 0
 --- 
 

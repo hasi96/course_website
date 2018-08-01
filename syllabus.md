@@ -9,6 +9,8 @@ tags: featured,othertag
 *** 
 
 # Scope of the Sector  
+["slides"]{@lecture 01-deck.html}
+["Tue 02,2018"]{@date}
 
 Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.   
 
@@ -22,14 +24,14 @@ By the end of the unit, you will be able to classify the range of organizations 
 
 Chapter 1 from Bruce Hopkins' book Starting and Managing a Nonprofit Organization.  The chapter is titled "What is a Nonprofit Organization?"  (on Blackboard)
 US Internal Revenue Code Title 26, Sub A, Chapter 1F, Part 1, Section 501.  
-["Read At"]{@asset reading 01-reading.html}
+["Read At"]{@reading 01-reading.html}
 
 ## Exercises   
 Exercise 1: What Do You Know about the Scope of the Sector?
 
 Exercise 2: Coding Public Charities by NTEE
 
-["Assignment"]{@asset assignment 02-mini-hw.html} 
+["Lab"]{@lab 02-mini-hw.html} 
 
 
 ## Discussion Questions 2.1 – Scope of the Sector  
@@ -41,11 +43,11 @@ Use this forum to discuss any questions or reflections you have related to the E
 This forum is also UNGRADED, although I would again like everyone to either post a reflection/question related to the public charities discussion and NTEE exercise, OR respond to at least one of your classmates' posts.
 
 
-["slides"]{@asset slides 01-deck.html}
 
 ***
 
 # On Being Nonprofit   
+["slides"]{@lecture 03-deck.html}
 
 * By the end of this unit, you will:
   + Develop critical observations about the founding of new public charities
@@ -74,12 +76,13 @@ Download the Exempt Organization Business Master File Extract Excel file for y
 2. Save the file. (Note above the U.S. map that the IRS tells you the DATE at which it last uploaded data.  As I write this I'm seeing 06/13/2016, but you may very well be seeing a more current date.  Whenever I save this file, I put that DATE in the filename, so I always know what exactly my datafile represents.)
 
 
-["slides"]{@asset slides 03-deck.html}
+["Tue 02,2018"]{@date}
 
 
 ***
 
 # Civic and Political Engagement   
+["slides"]{@handout STA112FS_VisDayOneSlides_Fall2017.pdf}
 
 ## Toward Community and Trust   
 
@@ -89,20 +92,9 @@ Download the Exempt Organization Business Master File Extract Excel file for y
   + Interpret the change in civic engagement in the United States over time
   + Estimate the trajectory of current and future changes in civic engagement 
   
+["Tue 02,2018"]{@date}
+["slides"]{@exam STA112FS_VisDayOneSlides_Fall2017.pdf}
+["slides"]{@lecture STA112FS_VisDayOneSlides_Fall2017.pdf}
 
-["slides"]{@asset slides STA112FS_VisDayOneSlides_Fall2017.pdf}
 
 ***
-
-{% include image.html img="image1.png" style="wide" lightbox="true" alt="Alt for image" caption="Image in lightbox" %}
-
-```html
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  <link rel="shortcut icon" type="image/png" href="{{ "assets/img/favicon.png" | relative_url }}" >
-  <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
-</head>
-```

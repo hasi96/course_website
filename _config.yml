@@ -58,7 +58,7 @@ footer:
 
 # Disqus comments shortname, requires Disqus account https://disqus.com/
 disqus:
-    shortname:      # 1234
+    shortname:      1234
 
 # Google analytics code, get your code here https://www.google.com/analytics/
 google_analytics:
@@ -125,36 +125,51 @@ header:
 - title: Help
   url: /course_website/contact/
 
-textbook:
- - title: Book1
-   url: https://bookdown.org/yihui/bookdown-demo/  
- - title: Book2
-   url: https://bookdown.org/yihui/bookdown-demo/  
-
 info: 
-  timing: 4 weeks
-  effort: 20 hours per week 
-  institution: Arizona State University 
-  level: Introductory
-  language: English
+ program_title: Data Science
+ program_website: 
+ course_title:
+ course_number:
+ course_level:
+ course_website:
+ course_start_end_dates:
+ course_prerequisites:
+ class_meets_when:
+ class_meets_where:
 
-
-faculty:
-- name: Jesse Lecy
-  email: jlecy@asu.edu
-  type: Instructor
-- name: Hasitha Chikkala
-  email: hchikkal@asu.edu
-  type: TA
+instructor:
+-  name: Jesse 
+   title: Professor
+   email:
+   phone:
+   website_url:
+   office_hours_times:
+   office_hours_location:
+   office_hours_app_url:
+   github_url: 
+   twitter_url:
+   scholar_url:
+   linked_in_url:
+-  name: Hasitha
+   title:
+   email:
+   phone: 
+   website_url:
+   office_hours_times:
+   office_hours_location:
+   office_hours_app_url:
+   github_url:
+   twitter_url:
+   scholar_url:
+   linked_in_url:
 
 
 textbooks:
-- name: OpenIntro Data Science
-  authors: Cetinkaya-Rundel
-  link:
-- name: Data Science
-  authors: Cetinkaya-Rundel-jlecy
-  link: 
+- title: Intro to Data Science
+  authors:
+  edition:
+  link: https://www.w3schools.com/tags/att_body_link.asp
+  required (y/n):
 
 
 footer:

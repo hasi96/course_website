@@ -21,8 +21,13 @@
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
   {% endif %}
-
+<style>
+header {
+  background-color: "#f1f1f1";
+}
+</style>
 <script>
+
 
 function myFunction(rating) {
  
@@ -46,7 +51,7 @@ var file = new Blob([rat], {type: file});
 </script>
 
 </head>
-<body>
+<body link="#ffc425">
 
 <header class="uk-background-secondary">
     <div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-sticky uk-sticky-fixed" style="position: fixed; top: 0px; width: 1904px;background-color:lightgrey;">
@@ -109,143 +114,21 @@ var file = new Blob([rat], {type: file});
     </div>
 </header>
 
-{% if page.head %}
-<div class="uk-section section-hero"  data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
-    <div class="uk-container uk-container-small">
-        {% if site.index.image %}
-        <p class="hero-image uk-text-center"><img src="{{ site.post_assets | absolute_url }}{{ site.index.image }}" alt="Hero"></p> 
-        {% endif %}
-        <h2 class="uk-heading-hero uk-text-center uk-margin-remove-top " >{{ site.index.title }}</h2>
-        {% if site.index.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ site.index.subtitle }}</p>{% endif %}
-
-   
+{{content}}
 
 
-<br>
-<br>
-</div>
+{% if page.disqus == true %} 
+    {% include disqus_comments.html %}
+    {%  endif %}
 
-    <div class="uk-section">
-    <div class="uk-container">
-        <div class="uk-grid-large" data-uk-grid>
-
-            <div class="uk-width-1-2 uk-visible@m">
-                <div>
-                    {{content}}
-                    </div>
-                    </div>
-                      <div class="uk-width-1-2 uk-width-expand@m ">
-
-                <article class="uk-article">
-              
-
-<div class="container uk-text-center section-landing">
-<div class="col-md-6 col-md-offset-3">
-<h2> Course Info </h2>
-<center>
-<table class="table table-condensed table-striped text-left">
-<thead>
-<tr>
-<th><span></span></th>
-<th><span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Timing</td>
-<td>{{site.info.timing}}</td>
-</tr>
-<tr>
-<td>Effort</td>
-<td>{{site.info.effort}}</td>
-</tr>
-<tr>
-<td>Institution</td>
-<td>{{site.info.institution}}</td>
-</tr>
-<tr>
-<td>Level</td>
-<td>{{site.info.level}}</td>
-</tr>
-<tr>
-<td>Language</td>
-<td>{{site.info.language}}</td>
-</tr>
-
-</tbody>
-</table>
-</center>
-<h2> Course Instructors </h2>
-<center>
-<table class="table table-condensed table-striped text-left">
-<thead>
-<tr>
-<th><span></span></th>
-<th><span></span></th>
-</tr>
-</thead>
-<tbody>
-{% for item in site.faculty %}
-<tr>
-<td>{{item.type}}</td>
-<td>{{item.name}}</td>
-
-<td>
-<a href="mailto:{{item.email}}" title="email"><i class="fa fa-envelope"></i></a>
-</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-
-</center>
-<br>
-<br>
-
-<center>
-
-<h2> Textbooks </h2>
-<table class="table table-condensed table-striped text-left">
-<thead>
-<tr>
-<th><span></span></th>
-<th><span></span></th>
-</tr>
-</thead>
-<tbody>
-{% for item in site.textbooks %}
-<tr>
-{% assign link= {{item.link}} |"/content/textbooks/"  %}
-
-<td><a href={{link}} title="textbook">{{item.name}}</a></td>
-<td>{{item.authors}}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-</center>
-
-
-<p id = "ratingvalue"></p>
-</div>
-</div>
-</div>
-
-
-</article>
-    
-  
-  </div>
-</div>
-
-{% if page.cta.button_url contains 'http' %}
+    {% if page.cta.button_url contains 'http' %}
     {% assign domain = '' %}
 {% else %}
     {% assign domain = relative_url %}
 {% endif %}
 
 
-{% if page.cta %}
+    {% if page.cta %}
 <div class="uk-section uk-text-center">
     <div class="uk-container uk-container-small">
         <div data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
@@ -256,12 +139,6 @@ var file = new Blob([rat], {type: file});
     </div>
 </div>
 {% endif %}
-{% endif %}
-{% unless page.head %}
-{% assign str = {{content}} %}
-{{content}}
-
-{% endunless %}
     {% include offcanvas.html %}
 
 
