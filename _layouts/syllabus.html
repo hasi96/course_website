@@ -11,6 +11,8 @@ disqus: true
  
 
 <style>
+
+
         .collapsible {
       cursor: pointer;
       padding: 18px;
@@ -28,6 +30,9 @@ disqus: true
     .table{
       background-color: white;
     }
+    .link{
+  color:  "#ffc425";
+}
   </style>
    
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -107,6 +112,7 @@ var sections = ele.getElementsByTagName("section");
     var ttr = document.createElement("tr");
 
 var linktemp = sections[i].getElementsByTagName("asset");
+
 if((sections[i]).getElementsByClassName("dates").length>0){
           var ps = (sections[i]).getElementsByClassName("dates");
           var ttd = document.createElement("td");
@@ -290,6 +296,11 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                      divsec.setAttribute("class","child");
                      var sec = sections[i].cloneNode(true);
                       sec.setAttribute("style","width:800px;");
+                      var alinks= sec.getElementsByTagName("a");
+                  for(var l=0;l<alinks.length;l++)
+                  {
+                    alinks[l].setAttribute("style","color: #ffc425;");
+                  }
                      divsec.appendChild(sec);
                               divsec.innerHTML = divsec.innerHTML+ t;
 
@@ -303,7 +314,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
 
     }
 }
-   
+  
 </script>
 <script>
 
@@ -320,8 +331,12 @@ function expand(i){
             var div = document.getElementById("divCheckbox");
             var t = document.getElementsByTagName('');
             var divC = document.getElementById("divCheckbox").cloneNode(true);
+            var alinks = divC.getElementsByTagName("a");
+            for(var m=0;m<alinks.length;m++){
+              alinks[m].setAttribute("style","color:#ffc425;");
+            }
             var secs = divC.getElementsByTagName("section");
-
+           
             for(var j=0;j<secs.length-1;j++){
 
               var hr = document.createElement("hr");
@@ -332,10 +347,10 @@ function expand(i){
               h1[0].appendChild(hr);
             }
             divC.setAttribute("display","block");
-            var divContents = divC.innerHTML;
+            var divContents = "<br>"+divC.innerHTML;
             var printWindow = window.open('', '', 'height=400,width=800');
 
-            printWindow.document.write('<html><head><title>DIV Contents</title>');
+            printWindow.document.write('<html><head><title>Course Syllabus</title>');
             printWindow.document.write('</head><body >');
             printWindow.document.write(divContents);
             printWindow.document.write('</body></html>');
@@ -448,6 +463,7 @@ result = result.replace(res[i],"\<div class=\"dates\" style=\"display: none;\"\>
 }
 
 document.getElementById("divCheckbox").innerHTML = result;
+
 </script>
 
 
