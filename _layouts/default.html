@@ -85,14 +85,9 @@ var file = new Blob([rat], {type: file});
 
             {% unless page.hero%}
             <div>
-                <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
-                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
-                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
-                        <input id="navbar-search" class="uk-search-input" type="search" placeholder="Search..." autofocus>
-                    </form>
-                    <ul id="navbar-search-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
-                </div>
-            </div>
+            <a href="{{site.github.repository_url}}/blob/gh-pages/{{page.path}}">'<font class = "fa fa-github"></font> Edit this page</a>
+          </div>
+          
             <script>
             SimpleJekyllSearch({
                 searchInput: document.getElementById('navbar-search'),
