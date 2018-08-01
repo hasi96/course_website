@@ -56,7 +56,7 @@ var file = new Blob([rat], {type: file});
 <header class="uk-background-secondary">
     <div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-sticky uk-sticky-fixed" style="position: fixed; top: 0px; width: 1904px;background-color:lightgrey;">
         <nav class="uk-navbar-container">
-          <div class="uk-container">
+    <div class="uk-container">
     <div data-uk-navbar>
         <div class="uk-navbar-left">
 
@@ -82,7 +82,7 @@ var file = new Blob([rat], {type: file});
                 {% endfor %}
 
             </ul>
-
+           
             <div>
              <a href="https://github.com/hasi96/course_website/edit/master/{{page.path}}"><font class = "fa fa-github"></font></a>
           </div>
@@ -108,6 +108,7 @@ var file = new Blob([rat], {type: file});
 </header>
 
 {{content}}
+    {% include offcanvas.html %}
 
 
 {% if page.disqus == true %} 
@@ -139,18 +140,11 @@ var file = new Blob([rat], {type: file});
     <footer class="uk-section uk-text-center uk-text-muted uk-link-muted">
     <div class="uk-container uk-container-small">
 
-   <input type="button" value="Export Syllabus as pdf" id="btnPrint" onclick="print();" />
 
 
         <div>
             <ul class="uk-subnav uk-flex-center">
-               <ul id="rate-area" class = "rate-area">
-  <input type="radio" id="5-star" name="rating" value="5" onclick = "myFunction({{ page.rating }});" /><label for="5-star" title="Amazing">5 stars</label>
-  <input type="radio" id="4-star" name="rating" value="4" onclick = "myFunction({{ page.rating }});"/><label for="4-star" title="Good">4 stars</label>
-  <input type="radio" id="3-star" name="rating" value="3" onclick = "myFunction({{ page.rating }});"/><label for="3-star" title="Average">3 stars</label>
-  <input type="radio" id="2-star" name="rating" value="2" onclick = "myFunction({{ page.rating }});"/><label for="2-star" title="Not Good">2 stars</label>
-  <input type="radio" id="1-star" name="rating" value="1" onclick = "myFunction({{ page.rating }});"/><label for="1-star" title="Bad">1 star</label>
-</ul>
+             
                 {% for link in site.footer %}
                     {% if link.url contains 'http' %}
                         {% assign domain = '' %}

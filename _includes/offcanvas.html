@@ -5,12 +5,12 @@
 
         <ul class="uk-nav uk-nav-default">
             <li><a class="uk-logo uk-margin-small-bottom" href="{{ "/" | relative_url }}">{% if site.brand.image %}<img src="{{ site.post_assets | absolute_url }}{{ site.brand.image }}" alt="{{ site.brand.text }}">{% else %}{{ site.brand.text }}{% endif %}</a></li>
-            {% for link in site.data.navigation_header %}
-                {% if link.url contains 'http' %}
-                    {% assign domain = '' %}
-                {% else %}
-                    {% assign domain = site.url %}
-                {% endif %}
+             {% for link in site.header %}
+                    {% if link.url contains 'http' %}
+                        {% assign domain = '' %}
+                    {% else %}
+                        {% assign domain = relative_url %}
+                    {% endif %}
             <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
             {% endfor %}
         </ul>
