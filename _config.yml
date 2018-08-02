@@ -15,7 +15,7 @@ baseurl:            "/course_website"
 permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
-url :               "https://hasi96.github.io"
+url :               "https://shachikshah.github.io"
 
 # Site logo, image or text
 brand:
@@ -24,8 +24,8 @@ brand:
 
 # Default author settings
 author:
-    name:       Hasitha
-    github:     hasi96   # Github username for avatar
+    name:       shachi
+    github:     shachikshah   # Github username for avatar
 
 
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
@@ -71,7 +71,7 @@ google_maps_api_key:
 paginate: 10
 
 # Blog path
-paginate_path:      "/news/:num/"
+paginate_path:      "/datasets/:num/"
 
 # Path to post content assets directory i.e post images, pdfs etc
 post_assets:        /assets/posts/
@@ -117,8 +117,8 @@ header:
 - title: Textbook
   url: https://bookdown.org/yihui/bookdown-demo/ 
 
-- title: DataSets
-  url: /course_website/news/
+- title: Datasets
+  url: /course_website/datasets/
 
 - title: Resources
   url: /course_website/resources/
@@ -179,8 +179,8 @@ footer:
 - title: Help
   url: /
 
-- title: News
-  url: /news/
+- title: Datasets
+  url: /datasets/
 
 - title: Contact
   url: /contact/

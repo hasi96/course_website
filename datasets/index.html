@@ -1,0 +1,52 @@
+---
+layout: default
+title: Datasets
+---
+
+    <div class="uk-section">
+    <div class="uk-container uk-container-xsmall">
+        <h2>Datasets</h2>
+        {% for post in site.posts %}
+        <div class="uk-card card-post uk-inline uk-border-rounded uk-width-1-1 uk-margin">
+            <a class="uk-position-cover" href="{{ post.url | relative_url }}"></a>
+            <div class="uk-card-header">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <!-- {% if page.type_of_data %}
+                      {% assign author = site.type_of_data %}
+                    {% else %}
+                      {% assign author = " " %}
+                    {% endif %} -->
+
+                   <!--  <div class="uk-width-auto">
+                        {% if author.github %}
+                            {% avatar {{ author.github }} size=40 %}
+                        {% endif %}
+                    </div> -->
+                    <div class="uk-width-expand">
+                        <h3 class="uk-card-title uk-margin-remove-bottom">{{ post.name_of_dataset }}</h3>
+            
+                    </div>
+                </div>
+            </div>
+            <div class="uk-card-body">
+              <table>
+                <tr>
+                  <td> Topic : {{post.short_description}} </td>
+                </tr>
+                <tr>
+                  <td> Type of Data : {{post.topic_keywords}} </td>
+                </tr>
+                
+              </table>
+              {{ post.excerpt }}
+            </div>
+            <div class="uk-card-footer">
+                <span class="uk-button uk-button-text">Read more &rarr;</span>
+            </div>
+
+        </div>
+        {% endfor %}
+
+        {% include paginate-blog.html %}
+
+    </div>
