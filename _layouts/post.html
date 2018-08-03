@@ -44,9 +44,8 @@ h4 {
 </head>
 <body>
 <div class="uk-section">
+    <article class="uk-article">
     <div class="uk-container uk-container-xsmall">
-        <article class="uk-article">
-
             {% if page.title %}
             <h1 class="uk-article-title">{{ page.title }}</h1>
             {% else %}
@@ -63,14 +62,17 @@ h4 {
             <h4>  {{page.topic_keywords}} </h4>
             {% else %}
             {% endif %}
-
+            <br>
+        </div>
+ <div  style=" background-color: rgb(220,220,220)">
+    <div class="uk-container uk-container-xsmall">
             <div class="uk-article-content">
-                <div  style=" background-color: rgb(220,220,220)">
+               
                 <table id="t02" >
                     <!-- <tr>
                         <th> <i class="fas fa-info-circle fa-lg" style="color: rgb(255, 198, 39)"></i> Data Information</th>
                     </tr>
-<!--                     <tr>
+                    <tr>
                         <th>Name And Description </th>
                     </tr> -->
                    <!--  {% if page.name_of_dataset %}
@@ -97,8 +99,7 @@ h4 {
                     {% else %}
                     {% endif %} 
  -->
-                    <br>
-
+                    
                     <tr>
                         <th>  <i class="fas fa-table fa-lg" style="color: rgb(255, 198, 39)"></i> Type Of Data </th>
                     </tr>
@@ -121,7 +122,7 @@ h4 {
 
                     {% if page.panel %}
                     <tr>
-                        <td>Panel (Y/N) </td>
+                        <td>Panel</td>
                          <td>{{ page.panel }}</td>
                     </tr>
                     {% else %}
@@ -185,64 +186,98 @@ h4 {
 
                     <br>
                     <tr>
-                        <th> <i data-uk-icon="icon: database ; ratio: 2" style="color: rgb(255, 198, 39)"></i> Data Availability</th>
+                        <th> <i data-uk-icon="icon: database ; ratio: 2" style="color: rgb(255, 198, 39)"></i> Data Availability </th>
                     </tr>
-
                     {% if page.open_data %}
                     <tr>
                         <td>Open Data </td>
-                        <td>{{ page.open_data }}</td>
+                        {% if page.open_data contains 'Y' %}
+                        <td>YES</td>
+                        {% else %}
+                            {% if page.open_data contains 'N' %}
+                            <td>NO</td>
+                            {% else %}
+                            {% endif %}
+                        {% endif %}
+                        {% if page.open_data_license %}
+                        <td> <button onclick="location.href='{{ page.open_data_lincense }}'" type="button"> <i class="fas fa-external-link-alt"></i>  Open Data  lincense </button></td>
+                        {% else %}
+                        {% endif %}
                     </tr>
                     {% else %}
                     {% endif %}
 
                     {% if page.available_for_download %}
                     <tr>
-                        <td>Available For Download (Y/N) </td>
-                        <td>{{ page.available_for_download }}</td>
+                        <td> Data Download </td>
+                        {% if page.available_for_download contains 'Y' %}
+                        <td>YES</td>
+                        {% else %}
+                            {% if page.available_for_download contains 'N' %}
+                            <td>NO</td>
+                            {% else %}
+                            {% endif %}
+                        {% endif %}
+                        {% if page.available_for_download %}
+                        <td> <button onclick="location.href='{{ page.link_to_dataset }}'" type="button"> <i class="fas fa-external-link-alt"></i> Dataset </button></td>
+                        {% else %}
+                        {% endif %}
                     </tr>
                     {% else %}
                     {% endif %}
 
-                    {% if page.link_to_dataset %}
+                    <!-- {% if page.link_to_dataset %}
                     <tr>
                         <td>Link To Dataset </td>
                         <td> <button onclick="location.href='{{ page.link_to_dataset }}'" type="button"> <i class="fas fa-external-link-alt"></i>  Dataset!!</button></td>
                         <td><a href = "{{ page.link_to_dataset }}"><i class="fas fa-external-link-alt" style="color: rgb(255, 198, 39)" >Link to the dataset</i></a></td></td>
                     </tr>
                     {% else %}
-                    {% endif %}
+                    {% endif %} -->
 
                     {% if page.data_dictionary %}
-                     <tr>
-                        <td>Data Dictionary (Y/N) </td>
-                        <td>{{ page.data_dictionary }}</td>
+                    <tr>
+                        <td> Data Download </td>
+                        {% if page.data_dictionary contains 'Y' %}
+                        <td>YES</td>
+                        {% else %}
+                            {% if page.data_dictionary contains 'N' %}
+                            <td>NO</td>
+                            {% else %}
+                            {% endif %}
+                        {% endif %}
+                        {% if page.data_dictionary %}
+                        <td> <button onclick="location.href='{{ page.link_to_data_dictionary }}'" type="button"> <i class="fas fa-external-link-alt"></i> Data Dictionary </button></td>
+                        {% else %}
+                        {% endif %}
                     </tr>
                     {% else %}
                     {% endif %}
 
-                    {% if page.link_to_data_dictionary %}
+                   <!--  {% if page.link_to_data_dictionary %}
                     <tr>
                         <td>Link to Data Dictionary</td>
                         <td> <button onclick="location.href='{{ page.link_to_data_dictionary }}'" type="button"> <i class="fas fa-external-link-alt"></i>  Data Dictionary !</button></td>
                         <td><a href = "{{ page.link_to_data_dictionary }}"><i class="fas fa-external-link-alt" style="color: rgb(255, 198, 39)" >Link To The Data Dictionary</i></a></td>
                     </tr>
                     {% else %}
-                    {% endif %}
+                    {% endif %} -->
 
-                    {% if page.production_code_availability %}
+                     {% if page.production_code_availability %}
                     <tr>
-                        <td>Production Code Availability (Y/N)</td>
-                        <td>{{ page.production_code_availability }}</td>
-                    </tr>
-                    {% else %}
-                    {% endif %}
-
-                    {% if page.link_to_github %}
-                    <tr>
-                        <td>Link To Github</td>
-                        <td> <button onclick="location.href='{{ page.link_to_github }}'" type="button"> <i class="fas fa-external-link-alt"></i> Link to Github !</button></td>
-                        <td><a href = "{{ page.link_to_github }}" style="color: rgb(255, 198, 39) ><i class="fas fa-external-link-alt" >Link To Github</i></a></td>
+                        <td> Data Download </td>
+                        {% if page.production_code_availability contains'Y' %}
+                        <td>YES</td>
+                        {% else %}
+                            {% if page.production_code_availability contains 'N' %}
+                            <td>NO</td>
+                            {% else %}
+                            {% endif %}
+                        {% endif %}
+                        {% if page.production_code_availability %}
+                        <td> <button onclick="location.href='{{ page.link_to_github }}'" type="button"> <i class="fas fa-external-link-alt"></i> Production Code </button></td>
+                        {% else %}
+                        {% endif %}
                     </tr>
                     {% else %}
                     {% endif %}
@@ -250,42 +285,50 @@ h4 {
                     <br>
                     <tr>
                         <th><i class="fas fa-address-card " style="color: rgb(140,29,64)"></i> Contact Information </th>
+                    </tr>
                     {% if page.name_of_contributor %}
                      <tr>
                         <td> Name Of Contributor </td>
                         <td>{{ page.name_of_contributor }}</td>
+                        <td><a href = "mailto:{{ page.email_of_contributor }}"><i class="fas fa-external-link-alt" style="color: rgb(140,29,64)" >Link to the dataset</i></a></td></td>
                     </tr>
                     {% else %}
                     {% endif %}
-
+<!-- 
                     {% if page.email_of_contributor %}
                     <tr>
                         <td> Email Of Contributor </td>
                         <td><a href = "mailto:{{ page.email_of_contributor }}"><i class="fas fa-external-link-alt" style="color: rgb(140,29,64)" >Link to the dataset</i></a></td></td>
                     </tr>
                     {% else %}
-                    {% endif %}
+                    {% endif %} -->
 
                     {% if page.name_of_contact %}
                      <tr>
                         <td> Name Of Contact </td>
                         <td>{{ page.name_of_contact }}</td>
-                    </tr>
-                    {% else %}
-                    {% endif %}
-
-                    {% if page.email_of_contact %}
-                    <tr>
-                        <td> Email Of Contact </td>
                         <td><a href = mailto:"{{page.email_of_contact }}"><i class="fas fa-external-link-alt" style="color: rgb(140,29,64)" >Link to the dataset</i></a></td></td>
                     </tr>
                     {% else %}
                     {% endif %}
 
+                   <!--  {% if page.email_of_contact %}
+                    <tr>
+                        <td> Email Of Contact </td>
+                        <td><a href = mailto:"{{page.email_of_contact }}"><i class="fas fa-external-link-alt" style="color: rgb(140,29,64)" >Link to the dataset</i></a></td></td>
+                    </tr>
+                    {% else %}
+                    {% endif %} -->
+
                  </table>
                  <br>
              </div>
-                 <br>
+         </div>
+</div>
+<div class="uk-container uk-container-xsmall">
+            <div class="uk-article-content">
+             
+                 
                  {{ content }}
                 
 <!--                 <h2><i class="fas fa-table fa-lg" style="color: rgb(252,109,38)"></i> Information regarding the type of data. </h2>
@@ -311,7 +354,8 @@ h4 {
             {% include paginate-post.html %}
 
             {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
-        </article>
+        
+   </article>
 
         <script>
             // Table of contents scroll to
@@ -321,7 +365,11 @@ h4 {
             });
         </script>
 
-    </div>
+   </div>
+   </div> 
+
 </div>
+
+
 </body>
-</html>
+</html> 
