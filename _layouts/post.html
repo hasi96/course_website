@@ -5,9 +5,9 @@ layout: default
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<style>
-
-button {
+    <link rel ="stylesheet" href="{{ "/assets/css/posts.css" | prepend:site.baseurl }}">
+   <!--  <style>
+        button {
     border-radius: 5px;
     border-color: rgb(140,29,64);
     background-color: transparent;
@@ -45,8 +45,8 @@ h4 {
     font-size: 1em;
     margin: 1em 0 1rem;
 }
-</style>
-</head>
+    </style>
+ --></head>
 <body>
 <div class="uk-section">
     <article class="uk-article">
@@ -268,7 +268,7 @@ h4 {
                      <tr>
                         <td> Name Of Contributor </td>
                         <td>{{ page.name_of_contributor }}</td>
-                        <td> <button onclick="location.href='mailto:{{ page.email_of_contributor }}'" type="button"> <i class="fas fa-external-link-alt"></i> Email Contributor </button></td>
+                        <td> <button onclick="location.href='mailto:{{ page.email_of_contributor }}'" type="button"> <i class="fa fa-envelope"></i> Email Contributor </button></td>
                     </tr>
                     {% else %}
                     {% endif %}
@@ -277,10 +277,11 @@ h4 {
                      <tr>
                         <td> Name Of Contact </td>
                         <td>{{ page.name_of_contact }}</td>
-                        <td> <button onclick="location.href='mailto:{{ page.email_of_contact }}'" type="button"> <i class="fas fa-external-link-alt"></i> Email Contact </button></td>
+                        <td> <button onclick="location.href='mailto:{{ page.email_of_contact }}'" type="button"> <i class="fa fa-envelope"></i> Email Contact </button></td>
                     </tr>
                     {% else %}
                     {% endif %}
+
 
                  </table>
                  <br>

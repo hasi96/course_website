@@ -7,12 +7,10 @@ title: Datasets
     <style>
     button {
     border-radius: 5px;
-    border-color: rgb(140,29,64);
     background-color: transparent;
 }
 
 button:hover {
-
     background-color: rgb(255, 198, 39);
 }
 </style>
@@ -35,29 +33,28 @@ button:hover {
             <div class="uk-card-body">
               <table>
                 <tr>
-                  <td> Type of Data : {{post.topic_keywords}} </td>
+                  <td> Type of Data : {{ post.topic_keywords }} </td>
                 </tr>
                 <tr>
-                  <td> Geography : {{post.geography}} </td>
+                  <td> Geography : {{ post.geography }} </td>
                 </tr>
                 <tr>
-                  <td> Number Of Rows : {{post.number_of_rows}} </td>
+                  <td> Number Of Rows : {{ post.number_of_rows }} </td>
                 </tr>
                 <tr>
-                  <td> Number Of Coloumns : {{post.number_of_coloumns}} </td>
+                  <td> Number Of Coloumns : {{ post.number_of_coloumns }} </td>
                 </tr>
                 <tr>
-                  <td> Panel : {{post.panel}} </td>
+                  <td> Panel : {{ post.panel }} </td>
                 </tr>
                 <tr>
-                  <td> Time Periods : {{post.time_periods}} </td>
-                </tr>
-                <tr>
-                   <td> <button onclick="location.href='{{ post.link_to_dataset }}'" type="button"> <i class="fas fa-external-link-alt"></i> Dataset </button></td> 
+                  <td> Time Periods : {{ post.time_periods }} </td>
                 </tr>
               </table>
             </div>
             <div class="uk-card-footer">
+                <button onclick="location.href='{{ post.link_to_dataset }}'" type="button"> <i class="fas fa-external-link-alt"></i>Download Dataset </button>
+                <br>
                 <span class="uk-button uk-button-text">Read more &rarr;</span>
             </div>
         </div>
