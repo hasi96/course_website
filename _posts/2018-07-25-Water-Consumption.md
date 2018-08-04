@@ -5,7 +5,7 @@ short_description: Water Consumption dataset
 topic_keywords: Water Consumption keywords
 type_of_data: Water Consumption data type
 relational_database: available
-panel: not available
+panel: Not available  <!-- please enter Y for yes and N for no.  --> 
 unit_of_analysis: city
 time_periods: daily
 geography: mountains
