@@ -2,12 +2,13 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 <head>
  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://cdn.rawgit.com/gaborcsardi/r-font/master/rlogo.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/wesbos/Font-Awesome-Docker-Icon/master/fontcustom/fontcustom.css">
 <link rel="stylesheet" href= "{{ "/assets/css/5star.css" | relative_url }}">
-
+<link rel ="stylesheet" href="{{ "/assets/css/posts.css" | prepend:site.baseurl }}">
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,7 +41,7 @@ for (var i=0, len=lis.length; i<len; i++) {
             break; // and break out of for loop
         }
     }
-var rat=rating + val;
+var rat=rating + val;p
 document.getElementById("ratingvalue").innerHTML = rat;
 page["rating"] = rat;
 var file = new Blob([rat], {type: file});
@@ -84,7 +85,7 @@ var file = new Blob([rat], {type: file});
             </ul>
            
             <div>
-             <a href="https://github.com/hasi96/course_website/edit/master/{{page.path}}"><font class = "fa fa-github"></font></a>
+             <a href="https://github.com/hasi96/course_website/edit/master/{{page.path}}"> <i class="fab fa-github"></i></a>
           </div>
             <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
 
