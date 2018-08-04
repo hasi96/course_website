@@ -1,8 +1,8 @@
 ---
 layout: post
 name_of_dataset: Water Consumption Data
-short_description: Water Consumption dataset
-topic_keywords: Water Consumption keywords
+short_description: Water Consumption dataset description
+topic_keywords: Water Consumption dataset abc
 type_of_data: Water Consumption data type
 relational_database: available
 panel: Not available  <!-- please enter Y for yes and N for no.  --> 

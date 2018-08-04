@@ -32,28 +32,41 @@ button:hover {
             </div>
             <div class="uk-card-body">
               <table>
+                {% if post.topic_keywords %}
                 <tr>
                   <td> Type of Data : {{ post.topic_keywords }} </td>
                 </tr>
+                {% endif %}
+                {% if post.geography %}
                 <tr>
                   <td> Geography : {{ post.geography }} </td>
                 </tr>
+                {% endif %}
+                {% if post.number_of_rows %}
                 <tr>
                   <td> Number Of Rows : {{ post.number_of_rows }} </td>
                 </tr>
+                {% endif %}
+                {% if post.number_of_columns %}
                 <tr>
-                  <td> Number Of Coloumns : {{ post.number_of_coloumns }} </td>
+                  <td> Number Of Coloumns : {{ post.number_of_columns }} </td>
                 </tr>
+                {% endif %}
+                {% if post.panel %}
                 <tr>
                   <td> Panel : {{ post.panel }} </td>
                 </tr>
+                {% endif %}
+                {% if post.time_periods %}
                 <tr>
                   <td> Time Periods : {{ post.time_periods }} </td>
                 </tr>
+                {% endif %} 
               </table>
             </div>
             <div class="uk-card-footer">
                 <button onclick="location.href='{{ post.link_to_dataset }}'" type="button"> <i class="fas fa-external-link-alt"></i>Download Dataset </button>
+                <br>
                 <br>
                 <span class="uk-button uk-button-text">Read more &rarr;</span>
             </div>
