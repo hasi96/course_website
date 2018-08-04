@@ -28,13 +28,10 @@ header {
 }
 </style>
 <script>
-
-
 function myFunction(rating) {
  
 var val=0;
 var lis = document.getElementById("rate-area").getElementsByTagName("input");
-
 for (var i=0, len=lis.length; i<len; i++) {
         if ( lis[i].checked ) { // radio checked?
             val = lis[i].value; // if so, hold its value in val
@@ -46,9 +43,7 @@ document.getElementById("ratingvalue").innerHTML = rat;
 page["rating"] = rat;
 var file = new Blob([rat], {type: file});
   saveAs(file, "rating.txt");
-
 }
-
 </script>
 
 </head>
@@ -56,7 +51,7 @@ var file = new Blob([rat], {type: file});
 
 <header class="uk-background-secondary">
     <div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-sticky uk-sticky-fixed" style="position: fixed; top: 0px; width: 1904px;background-color:lightgrey;">
-        <nav class="uk-navbar-container">
+        <nav class="uk-navbar-container" style="background-color:rgba(0,163,224,0.7); font-size: 1.7em;" >
     <div class="uk-container">
     <div data-uk-navbar>
         <div class="uk-navbar-left">
@@ -78,14 +73,14 @@ var file = new Blob([rat], {type: file});
                         {% assign current = null %}
                     {% endif %}
                     {% if link.title %}
-                        <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                        <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %} style="color: rgb(255,255,255);">{{ link.title }}</a></li>
                     {% endif %}
                 {% endfor %}
 
             </ul>
            
             <div>
-             <a href="https://github.com/hasi96/course_website/edit/master/{{page.path}}"> <i class="fab fa-github"></i></a>
+             <a href="https://github.com/hasi96/course_website/edit/master/{{page.path}}"> <i class="fab fa-github" style="color: rgb(255,255,255);"></i></a>
           </div>
             <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
 
