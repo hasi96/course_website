@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-<div class="uk-section section-hero"  data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+<div class="uk-section section-hero .uk-width-1-1"  data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
     <div class="uk-container uk-container-small">
         {% if site.index.image %}
         <p class="hero-image uk-text-center"><img src="{{ site.post_assets | absolute_url }}{{ site.index.image }}" alt="Hero"></p> 
@@ -11,29 +11,21 @@ layout: default
         <h2 class="uk-heading-hero uk-text-center uk-margin-remove-top " >{{ site.index.title }}</h2>
         {% if site.index.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ site.index.subtitle }}</p>
             {% endif %}
-<br>
-<br>
+
 </div>
+  <br>
+   <br>
+   </div>
+ 
 
-    <div class="uk-section">
-    <div class="uk-container">
-        <div class="uk-grid-large" data-uk-grid>
-
-            <div class="uk-width-1-2 uk-visible@m">
-                <div>
-                    {{content}}
-                    </div>
-                    </div>
-                      <div class="uk-width-1-2 uk-width-expand@m ">
-
-                <article class="uk-article">
-              
-
-<div class="container uk-text-center section-landing">
-<div class="col-md-6 col-md-offset-3">
+            <div class="uk-container container-fluid  uk-responsive-width uk-text-center bg-1">
+                    <br>
+   <br>
+            <div class="uk-grid uk-responsive-width  uk-text-center uk-container-center">
+<div class="col-sm-6 uk-width-1-2 " >
 <h2> Course Info </h2>
 <center>
-<table class="table table-condensed table-striped text-left">
+<table class="table table-condensed">
 <thead>
 <tr>
 <th><span></span></th>
@@ -108,7 +100,7 @@ layout: default
 </center>
 <h2> Course Instructors </h2>
 <center>
-<table class="table table-condensed table-striped text-left">
+<table class="table table-condensed">
 <thead>
 <tr>
 <th><span></span></th>
@@ -148,10 +140,12 @@ layout: default
 {% endfor %}
 </tbody>
 </table>
-
+</div>
+<div class="col-sm-6  uk-width-1-2">
+<center>
 <h2> Office Hours </h2>
 
-<table class="table table-condensed table-striped text-left">
+<table class="table table-condensed">
 <thead>
 <tr>
 <th><span></span></th>
@@ -180,7 +174,7 @@ layout: default
 <center>
 
 <h2> Textbooks </h2>
-<table class="table table-condensed table-striped text-left">
+<table class="table table-condensed">
 <thead>
 <tr>
 <th><span></span></th>
@@ -206,19 +200,28 @@ layout: default
 </tbody>
 </table>
 </center>
-
-
-<p id = "ratingvalue"></p>
-</div>
-</div>
 </div>
 
-
-</article>
-    
-  
-  </div>
+</div>
+ <br>
+<br>
 </div>
 
+</center>
+
+</div>
+
+ <div class="uk-container container-fluid uk-responsive-width uk-text-center bg-2">
+       <!-- <div class="uk-grid-large" data-uk-grid> -->
+<br><br>
+            <div class="uk-width-1 uk-responsive-width col-md-6 ">
+                <div class = "  uk-container-center">
+                    {{content}}
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
 
 
+ 
