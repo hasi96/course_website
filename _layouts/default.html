@@ -147,7 +147,7 @@ var file = new Blob([rat], {type: file});
           <td></td>
           <td>
              <ul class="uk-navbar-nav uk-visible@m" >
-                {% for link in site.footer%}
+                {% for link in site.footer %}
                     {% if link.url contains 'http' %}
                         {% assign domain = '' %}
                     {% else %}
