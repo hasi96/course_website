@@ -167,7 +167,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                                        }
                                        
                   }
-            for(var j=0;j<5;j++){
+                       for(var j=0;j<5;j++){
               var k = flag[j];
                     
                    if(j==3 && k!=-1){
@@ -176,7 +176,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                 var newCell = document.createElement("td");
            
                 var icon = document.createElement("i");
-                icon.className = "fa fa-book fa-lg";    
+                icon.className = "fa fa-check-circle";    
                                 newCell.appendChild(icon);
 
                              ttr.appendChild(newCell);
@@ -186,7 +186,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                 var newCell = document.createElement("td");
                 var iconf = document.createElement("font");
                 var icon = document.createElement("i");
-                icon.className = "fa fa-book fa-lg";   
+                icon.className = "fa fa-check-circle";   
                 iconf.setAttribute("color","f1f1f1");
                 iconf.appendChild(icon); 
                                 newCell.appendChild(iconf);
@@ -200,7 +200,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                  var newCell = document.createElement("td");
                 
                 var icon = document.createElement("i");
-                icon.className = "fa fa-toggle-right  fa-lg";    
+                icon.className = "fa fa-check-circle";    
                 newCell.appendChild(icon);
                              ttr.appendChild(newCell);
 
@@ -210,7 +210,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                 var newCell = document.createElement("td");
                 var iconf = document.createElement("font");
                 var icon = document.createElement("i");
-                icon.className = "fa fa-toggle-right";   
+                icon.className = "fa fa-check-circle";   
                 iconf.setAttribute("color","f1f1f1");
                 iconf.appendChild(icon); 
                                 newCell.appendChild(iconf);
@@ -222,7 +222,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                  var newCell = document.createElement("td");
                 
                 var icon = document.createElement("i");
-                icon.className = "fa fa-desktop fa-lg";    
+                icon.className = "fa fa-check-circle";    
                 newCell.appendChild(icon);
                              ttr.appendChild(newCell);
 
@@ -232,7 +232,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                 var newCell = document.createElement("td");
                 var iconf = document.createElement("font");
                 var icon = document.createElement("i");
-                icon.className = "fa fa-desktop fa-lg";   
+                icon.className = "fa fa-check-circle";   
                 iconf.setAttribute("color","f1f1f1");
                 iconf.appendChild(icon); 
                                 newCell.appendChild(iconf);
@@ -243,7 +243,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
               var linkk = linktemp[k].getAttribute("href");
               var newCell = document.createElement("td");
                 var icon = document.createElement("i");
-                icon.className = "fa fa-location-arrow fa-lg";    
+                icon.className = "fa fa-check-circle";    
                 newCell.appendChild(icon);
                              ttr.appendChild(newCell);
 
@@ -253,7 +253,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                 var newCell = document.createElement("td");
                 var iconf = document.createElement("font");
                 var icon = document.createElement("i");
-                icon.className = "fa fa-location-arrow fa-lg";   
+                icon.className = "fa fa-check-circle";   
                 iconf.setAttribute("color","f1f1f1");
                 iconf.appendChild(icon); 
                                 newCell.appendChild(iconf);
@@ -265,7 +265,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
               var newCell = document.createElement("td");
               
                 var icon = document.createElement("i");
-                icon.className = "fa fa-paperclip fa-lg";    
+                icon.className = "fa fa-check-circle";    
                 newCell.appendChild(icon);
                              ttr.appendChild(newCell);
 
@@ -275,7 +275,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                 var newCell = document.createElement("td");
                 var iconf = document.createElement("font");
                 var icon = document.createElement("i");
-                icon.className = "fa fa-paperclip fa-lg";   
+                icon.className = "fa fa-check-circle";   
                 iconf.setAttribute("color","f1f1f1");
                 iconf.appendChild(icon); 
                                 newCell.appendChild(iconf);
@@ -290,7 +290,127 @@ if((sections[i]).getElementsByClassName("dates").length>0){
         }
         tablee[0].appendChild(ttr);
         var t = "<br>";
-                        var newCell = document.createElement("td");
+                       for(var j=0;j<5;j++){
+              var k = flag[j];
+                    
+                   if(j==3 && k!=-1){
+                   var linkk = linktemp[k].getAttribute("href");
+                  
+                var newCell = document.createElement("td");
+           
+                var icon = document.createElement("i");
+                icon.className = "fa fa-check-circle";    
+                                newCell.appendChild(icon);
+
+                             ttr.appendChild(newCell);
+            }
+            if(flag[3] == -1 && j==3){
+
+                var newCell = document.createElement("td");
+                var iconf = document.createElement("font");
+                var icon = document.createElement("i");
+                icon.className = "fa fa-check-circle";   
+                iconf.setAttribute("color","f1f1f1");
+                iconf.appendChild(icon); 
+                                newCell.appendChild(iconf);
+
+                             ttr.appendChild(newCell);
+            }
+           
+            if(j==0 && k!= -1){
+
+              var linkk = linktemp[k].getAttribute("href");
+                 var newCell = document.createElement("td");
+                
+                var icon = document.createElement("i");
+                icon.className = "fa fa-check-circle";    
+                newCell.appendChild(icon);
+                             ttr.appendChild(newCell);
+
+            }
+               if(flag[0] == -1 && j==2){
+
+                var newCell = document.createElement("td");
+                var iconf = document.createElement("font");
+                var icon = document.createElement("i");
+                icon.className = "fa fa-check-circle";   
+                iconf.setAttribute("color","f1f1f1");
+                iconf.appendChild(icon); 
+                                newCell.appendChild(iconf);
+
+                             ttr.appendChild(newCell);
+            }
+               if(j==1 && k!=-1){
+                var linkk = linktemp[k].getAttribute("href");
+                 var newCell = document.createElement("td");
+                
+                var icon = document.createElement("i");
+                icon.className = "fa fa-check-circle";    
+                newCell.appendChild(icon);
+                             ttr.appendChild(newCell);
+
+            }
+             if(flag[1] == -1 && j==1){
+
+                var newCell = document.createElement("td");
+                var iconf = document.createElement("font");
+                var icon = document.createElement("i");
+                icon.className = "fa fa-check-circle";   
+                iconf.setAttribute("color","f1f1f1");
+                iconf.appendChild(icon); 
+                                newCell.appendChild(iconf);
+
+                             ttr.appendChild(newCell);
+            }
+             if(j==4 && k!=-1){
+              var linkk = linktemp[k].getAttribute("href");
+              var newCell = document.createElement("td");
+                var icon = document.createElement("i");
+                icon.className = "fa fa-check-circle";    
+                newCell.appendChild(icon);
+                             ttr.appendChild(newCell);
+
+            }
+           if(flag[4] == -1 && j==4){
+
+                var newCell = document.createElement("td");
+                var iconf = document.createElement("font");
+                var icon = document.createElement("i");
+                icon.className = "fa fa-check-circle";   
+                iconf.setAttribute("color","f1f1f1");
+                iconf.appendChild(icon); 
+                                newCell.appendChild(iconf);
+
+                             ttr.appendChild(newCell);
+            }
+            if(j==2 && k!=-1){
+              var linkk = linktemp[k].getAttribute("href");
+              var newCell = document.createElement("td");
+              
+                var icon = document.createElement("i");
+                icon.className = "fa fa-check-circle";    
+                newCell.appendChild(icon);
+                             ttr.appendChild(newCell);
+
+            }
+           if(flag[2] == -1 && j==2){
+
+                var newCell = document.createElement("td");
+                var iconf = document.createElement("font");
+                var icon = document.createElement("i");
+                icon.className = "fa fa-check-circle";   
+                iconf.setAttribute("color","f1f1f1");
+                iconf.appendChild(icon); 
+                                newCell.appendChild(iconf);
+
+                             ttr.appendChild(newCell);
+            }
+                         
+        }
+        tablee[0].appendChild(ttr);
+        var t = "<br>";
+
+             var newCell = document.createElement("td");
                         newCell.setAttribute("colspan","7");
 
        //var titleMatch = new RegExp("(?<=<hr>)(.*\n?)(?=<hr>)");
