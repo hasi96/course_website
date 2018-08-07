@@ -42,19 +42,19 @@ index:
 
 header:
 - title: Course Syllabus
-  url: /course_website/syllabus/
+  url: syllabus/
 
 - title: Textbook
   url: https://bookdown.org/yihui/bookdown-demo/ 
 
 - title: Datasets
-  url: /course_website/datasets/
+  url: datasets/
 
 - title: Resources
-  url: /course_website/resources/
+  url: resources/
 
 - title: GetHelp
-  url: /course_website/discussions/
+  url: discussions/
 
 
 info: 
