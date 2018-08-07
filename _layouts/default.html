@@ -146,12 +146,12 @@ var file = new Blob([rat], {type: file});
         <tr>
           <td></td>
           <td>
-            <ul style="list-style-type: none; ">
-              {% for link in site.footer %} 
-                   {% if link.url contains 'http' %}
+             <ul class="uk-navbar-nav uk-visible@m" >
+                {% for link in site.footer%}
+                    {% if link.url contains 'http' %}
                         {% assign domain = '' %}
                     {% else %}
-                        {% assign domain = site.baseurl %}
+                        {% assign domain = site.url %}
                     {% endif %}
                     {% if link.url == page.url %}
                         {% assign current = ' class="uk-active"' %}
@@ -159,10 +159,19 @@ var file = new Blob([rat], {type: file});
                         {% assign current = null %}
                     {% endif %}
                     {% if link.title %}
-                        <li {{ current }}> <b> <a href="{{ domain }}{{ link.url }}" style="color: black; " {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</b></li>
+                        
+                   {% if link.url contains 'http' %} 
+                    <li{{ current }}><a href="{{ link.url }}" style="color: black;" target="_blank"; >{{ link.title }}</a> 
+                 </li>
+                   {% else %} 
+                    <li{{ current }}><a href="{{ domain }}/{{ site.github_info.website-repo }}/{{ link.url }}" style="color: black; ">{{ link.title }}</a> 
+                 </li>
+                 {% endif %}
                     {% endif %}
                 {% endfor %}
+
             </ul>
+           
           </td>
           <td>
           </td>
