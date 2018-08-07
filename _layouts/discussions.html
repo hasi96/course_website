@@ -45,7 +45,34 @@ layout: default
 
 <br>
 <br>
+<div class = "officehours" style="width:900px;margin-left:auto;margin-right:auto">
+<h2> Office Hours </h2>
 
+<table class="table table-condensed">
+<thead>
+<tr>
+<th><span></span></th>
+<th><span></span></th>
+</tr>
+</thead>
+<tbody>
+{% for item in site.instructor %}
+<tr>
+<td>{{item.name}}</td>
+<td>{{item.office_hours_times}}</td>
+<td>{{item.office_hours_location}}</td>
+<td><a href={{item.office_hours_app_url}}> Make an Appointment </a> </td>
+<td>
+</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+
+<br>
+<br>
+</div>
 <div class = "container uk-width-1-1 ">
 	
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for issues.." title="Type in a name" style="width:900px;margin-left:100px;margin-right:auto;padding: 12px;"> 
@@ -90,8 +117,6 @@ function myFunction() {
 
 </body>
 
-{% assign username = {{ site.github_info.username }} %}
-{% assign repo =  {{ site.github_info.repo }} %}
 <div id="gitdata" class = {{ site.github_info.repo }} style="display: none;">{{ site.github_info.username }}</div>
 <div id = "results"></div>
 <script>
@@ -99,8 +124,11 @@ var username = document.getElementById("gitdata").innerHTML;
 var repo = document.getElementById("gitdata").getAttribute("class");
 var url = "https://api.github.com/repos/"+username+"/"+repo+"/issues";
 window.onload = httpGetAsync(url);
+
 function httpGetAsync(theUrl, resp)
-{
+{ 
+  var d = document.getElementById("officehours");
+
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() { 
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
