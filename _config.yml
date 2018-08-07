@@ -194,4 +194,6 @@ kramdown:
   parse_block_html: true
 
 
+
 course_url: "https://hasi96.github.io/Data-Science-Class/"
+
