@@ -71,7 +71,7 @@ var file = new Blob([rat], {type: file});
                     {% if link.url contains 'http' %}
                         {% assign domain = '' %}
                     {% else %}
-                        {% assign domain = site.url %}
+                        {% assign domain = site.url+site.baseurl %}
                     {% endif %}
                     {% if link.url == page.url %}
                         {% assign current = ' class="uk-active"' %}
@@ -79,7 +79,7 @@ var file = new Blob([rat], {type: file});
                         {% assign current = null %}
                     {% endif %}
                     {% if link.title %}
-                        <li{{ current }}><a href="{{ domain }}{{site.baseurl}}/{{ link.url }}" style="color: black; " {% if link.url contains 'http' %}target="_blank" {% endif %}">{{ link.title }}</a> </li>
+                        <li{{ current }}><a href="{{ domain }}/{{ link.url }}" style="color: black; " {% if link.url contains 'http' %}target="_blank" {% endif %}">{{ link.title }}</a> </li>
                     {% endif %}
                 {% endfor %}
 
