@@ -57,6 +57,20 @@ header:
   url: discussions/
 
 
+footer:
+- title: Home
+  url: /
+
+- title: Datasets
+  url: /datasets/
+
+- title: Textbook
+  url:  https://bookdown.org/yihui/bookdown-demo/
+
+- title: Course Timeline
+  url: /syllabus/
+
+
 info: 
  program_title: Data Science for Public Sector
  program_website: 
@@ -101,21 +115,9 @@ textbooks:
   authors:
   edition:
   link: https://www.w3schools.com/tags/att_body_link.asp
-  required (y/n):
+  required (y/n): 
 
 
-footer:
-- title: Home
-  url: /
-
-- title: Datasets
-  url: /datasets/
-
-- title: Textbook
-  url:  https://bookdown.org/yihui/bookdown-demo/
-
-- title: Course Timeline
-  url: /syllabus/
 
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
 authors:
