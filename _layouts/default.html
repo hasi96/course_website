@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <link rel="shortcut icon" type="image/png" href="{{ "assets/img/favicon.png" | relative_url }}" >
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/main.js" | prepend:site.baseurl }}"></script>
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
   {% endif %}
@@ -51,7 +51,11 @@ var file = new Blob([rat], {type: file});
 
 <header class="uk-background-secondary">
     <div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-sticky uk-sticky-fixed" style="position: fixed; top: 0px; width: 1904px;background-color:lightgrey;">
-        <nav class="uk-navbar-container" style="background-color:rgba(0,163,224,0.7); font-size: 1.7em;" >
+
+
+        <nav class="uk-navbar-container" style="background-color:rgba(0,163,224,0.3); font-size: 1.7em;" >
+
+
     <div class="uk-container">
     <div data-uk-navbar>
         <div class="uk-navbar-left">
@@ -122,19 +126,23 @@ var file = new Blob([rat], {type: file});
 
 
 
-    <footer class="uk-section uk-text-center uk-text-muted uk-link-muted">
-    <div class="uk-container uk-container-small">
-
-
-
-        <div>
-            <ul class="uk-subnav uk-flex-center">
-             
-                {% for link in site.footer %}
+    <footer class="uk-section uk-text-center uk-link-muted" style="background-color:rgba(0,163,224,0.3);">
+    <!-- <div class="uk-container uk-container-small uk-text-left" > -->
+      <table>
+        <tr>
+          <td><a href="https://www.asu.edu/" style="align-items: left"><img src="{{ "/assets/img/asu.png" | prepend:site.baseurl }}" ></a></td>
+          <td></td>
+          <td><img src="{{ "/assets/img/asu.png" | prepend:site.baseurl }}" ></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <ul style="list-style-type: none;">
+              {% for link in site.footer %}
                     {% if link.url contains 'http' %}
                         {% assign domain = '' %}
                     {% else %}
-                        {% assign domain = relative_url %}
+                        {% assign domain = site.baseurl %}
                     {% endif %}
                     {% if link.url == page.url %}
                         {% assign current = ' class="uk-active"' %}
@@ -146,18 +154,10 @@ var file = new Blob([rat], {type: file});
                     {% endif %}
                 {% endfor %}
             </ul>
-        </div>
-        <div class="uk-margin-medium">
-            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
-                {% include social-networks.html %}
-            </div>
-        </div>
-        <div class="uk-margin-medium uk-text-small copyright">{{ site.footer.copyright }}</div>
-
-    </div>
+          </td>
+        </tr>
+      </table>
 </footer>
-
-
     </body>
 
 </html>

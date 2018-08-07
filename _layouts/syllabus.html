@@ -7,11 +7,10 @@ disqus: true
   <link rel="icon" sizes="76x76" href="../img/favicon.png">
   <link rel="icon" type="image/png" href="../img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <script src="../docs/js/my.js"></script>
- 
-
+   <script src="../assets/js/my_js.js"></script>
 <style>
 
+button {}
 
         .collapsible {
       cursor: pointer;
@@ -45,13 +44,15 @@ disqus: true
   <link rel="stylesheet" href="https://cdn.rawgit.com/wesbos/Font-Awesome-Docker-Icon/master/fontcustom/fontcustom.css">
 
   
-    <link href="../css/material-kit.css" rel="stylesheet"/>
+  <link rel ="stylesheet" href="{{ "/assets/css/material-kit.css" | prepend:site.baseurl }}">
 </head>
-    <br>
+
+<br>
+<br>
 <br>
 <br>
 <div >
-          <div class="wrapper">
+<div class="wrapper">
 
   <div class="main main-raised" id = "pp">
 
@@ -68,6 +69,9 @@ disqus: true
     <th style="width:10%;text-align:left">Reading</th>
     <th style="width:10%;text-align:left">Exam</th>
   </tr> 
+  <tr>
+    <td><br></td>
+  </tr>
   </table>
       <script>
 
@@ -471,6 +475,10 @@ document.getElementById("divCheckbox").innerHTML = result;
 </script>
 
 
+
 </div>
 </div>
 </div>
+
+<br>
+<br>
