@@ -26,6 +26,15 @@
 header {
   background-color: "#f1f1f1";
 }
+ .bg-1 { 
+      background-color: #f5f5f5; /* Green */
+  }
+  .bg-2 { 
+  }
+  footer {
+  background-color: #08688b;
+  color: #f5f5f5;
+}
 </style>
 <script>
 function myFunction(rating) {
@@ -47,7 +56,7 @@ var file = new Blob([rat], {type: file});
 </script>
 
 </head>
-<body link="#ffc425">
+<body class="page-responsive">
 
 <header class="uk-background-secondary">
     <div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-sticky uk-sticky-fixed" style="position: fixed; top: 0px; width: 1904px;background-color:lightgrey;">
@@ -126,6 +135,7 @@ var file = new Blob([rat], {type: file});
 
 
 
+<<<<<<< HEAD
     <footer class="uk-section uk-text-center uk-link-muted" style="background-color:rgba(0,163,224,0.3);">
     <!-- <div class="uk-container uk-container-small uk-text-left" > -->
       <table>
@@ -139,6 +149,17 @@ var file = new Blob([rat], {type: file});
           <td>
             <ul style="list-style-type: none;">
               {% for link in site.footer %}
+=======
+    <footer class="uk-section uk-text-center uk-text-muted uk-link-muted">
+    <div class="uk-container uk-container-small" >
+
+
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+             
+                {% for link in site.footer %}
+>>>>>>> 1a9de13b640a3f8df206a3936e5f75a412f1db1e
                     {% if link.url contains 'http' %}
                         {% assign domain = '' %}
                     {% else %}
