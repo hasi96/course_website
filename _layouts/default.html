@@ -30,24 +30,6 @@ header {
   color: rgb(255,255,255);
 }
 </style>
-<script>
-function myFunction(rating) {
- 
-var val=0;
-var lis = document.getElementById("rate-area").getElementsByTagName("input");
-for (var i=0, len=lis.length; i<len; i++) {
-        if ( lis[i].checked ) { // radio checked?
-            val = lis[i].value; // if so, hold its value in val
-            break; // and break out of for loop
-        }
-    }
-var rat=rating + val;p
-document.getElementById("ratingvalue").innerHTML = rat;
-page["rating"] = rat;
-var file = new Blob([rat], {type: file});
-  saveAs(file, "rating.txt");
-}
-</script>
 
 </head>
 <body class="page-responsive">
@@ -148,6 +130,7 @@ var file = new Blob([rat], {type: file});
           <td>
              <ul class="uk-navbar-nav uk-visible@m" >
                 {% for link in site.footer %}
+                <h1>{{ link.title }}</h1>
                     {% if link.url contains 'http' %}
                         {% assign domain = '' %}
                     {% else %}
