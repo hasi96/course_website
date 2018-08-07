@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://cdn.rawgit.com/gaborcsardi/r-font/master/rlogo.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/wesbos/Font-Awesome-Docker-Icon/master/fontcustom/fontcustom.css">
-  <link rel ="stylesheet" href="{{ "../assets/css/posts.css"  }}">
+  <link rel ="stylesheet" href="{{ "assets/css/posts.css" | relative_url  }}">
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <link rel="shortcut icon" type="image/png" href="{{ "assets/img/favicon.png" | relative_url }}" >
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  <script src="{{ "../assets/js/main.js" }}"></script>
+  <script src="{{ "assets/js/main.js" | relative_url }}"></script>
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
   {% endif %}
@@ -139,9 +139,9 @@ var file = new Blob([rat], {type: file});
    <footer class="uk-section uk-text-center uk-link-muted" style="background-color:rgba(0,163,224,0.5);">
       <table>
         <tr>
-          <td><a href="https://www.asu.edu/" style="align-items: left"><img src="{{ "/assets/img/asu.png" | prepend:/site.github_info.website-repo }}" ></a></td>
+          <td><a href="https://www.asu.edu/" style="align-items: left"><img src="{{ "assets/img/asu.png" | relative_url }}" ></a></td>
           <td></td>
-          <td><img src="{{ "/assets/img/asu.png" | prepend:/site.github_info.website-repo }}" ></td>
+          <td><img src="{{ "assets/img/asu.png" | relative_url  }}" ></td>
         </tr>
         <tr>
           <td></td>
