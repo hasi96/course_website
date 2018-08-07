@@ -28,6 +28,13 @@ author:
     github:     shachikshah   # Github username for avatar
 
 
+github_info:
+    username:       hasi96 # Github username for avatar
+    branch:       master
+    repo:      course_website
+
+
+
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
 authors:
     peter:
@@ -123,8 +130,8 @@ header:
 - title: Resources
   url: /course_website/resources/
 
-- title: Help
-  url: /course_website/contact/
+- title: GetHelp
+  url: /course_website/discussions/
 
 course_url: "https://hasi96.github.io/Data-Science-Class/"
 
