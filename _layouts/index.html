@@ -158,7 +158,7 @@ layout: default
 <td>{{item.name}}</td>
 <td>{{item.office_hours_times}}</td>
 <td>{{item.office_hours_location}}</td>
-<td><a href={{item.office_hours_app_url}}> Make an Appointment </a> </td>
+<td><button onclick="location.href='{{ item.office_hours_app_url }}'" type="button"> <i class="fas fa-calendar-check" style="color: rgb(140,29,64);"></i> Make an Appointment</button> </td>
 <td>
 </td>
 </tr>
@@ -184,7 +184,7 @@ layout: default
 <tbody>
 {% for item in site.textbooks %}
 <tr>
-<td><a href={{item.link}} title="textbook">{{item.title}}</a></td>
+<td><button  onclick="location.href='{{ item.link }}'" type="button"> <i class="fas fa-book" style="color: rgb(140,29,64);"></i> {{ item.title }}</button></td>
 {% if item.authors %}
 <td>{{item.authors}}</td>
 {% endif %}

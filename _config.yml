@@ -78,7 +78,7 @@ google_maps_api_key:
 paginate: 10
 
 # Blog path
-paginate_path:      "/datasets/:num/"
+paginate_path:      "layouts/datasets/:num/"
 
 # Path to post content assets directory i.e post images, pdfs etc
 post_assets:        /assets/posts/

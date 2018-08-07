@@ -9,38 +9,38 @@ disqus: true
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
    <script src="../assets/js/my_js.js"></script>
 <style>
-
-button {}
-
-        .collapsible {
+    .collapsible {
       cursor: pointer;
       padding: 18px;
       width: 100%;
       border: none;
-      text-align: left;
+      text-align: center;
       outline: none;
       font-size: 15px;
-      background-color:white;
+      background-color: white;
+    } 
+    .collapsible:hover {
+      background-color:rgb(220,220,220);
+    }
+
+    td {
+      text-align: center;
     }
     .child {
       padding: 0 18px;
       display:none;
     }
+
+
     .table{
       background-color: white;
-    }
+      margin-left: 15px;
+    } 
+
     .link{
   color:  "#ffc425";
 }
   </style>
-   
-<!--   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' /> -->
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://cdn.rawgit.com/gaborcsardi/r-font/master/rlogo.css">
-  <link rel ="stylesheet" href="{{ "/assets/css/material-kit.css" | prepend:site.baseurl }}">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/wesbos/Font-Awesome-Docker-Icon/master/fontcustom/fontcustom.css"> -->
 </head>
 <br>
 <br>
@@ -50,15 +50,10 @@ button {}
 <!-- <div class="wrapper"> -->
 
   <div class="main main-raised" id = "pp">
-
-<table class="table"  style="width:900px;margin-left:auto;margin-right:auto; padding-left: 5px;">
-  <tr>
-    <th>SyllabusOverview </th>
-  </tr>
-  <tr>
-    <td><input type="button" value="PRINT" id="btnPrint" class="" onclick="print();" /></td>
-  </tr>
-  <tr>
+<h1 style="text-align: left; margin-left: 15px ">Syllabus Overview</h1>
+<button onclick="print();" type="button" style="margin-left: 15px"> <i class="fas fa-external-link-alt" style="color: rgb(140,29,64);"></i>Print </button>
+<table class="table"  style="width:900px; margin-right:auto; padding-left:5px;">
+ <tr>
   <td> <br> </td>
   </tr>
   <tr>
@@ -98,7 +93,7 @@ button {}
 });
   </script>
   <section>
-  <div id="divCheckbox" class = {{site.course_url}} style="display: none;">{{ content | checked }}</div>
+  <div id="divCheckbox" class = {{site.course_url}} style="display: none; align-items: center;">{{ content | checked }}</div>
 
 
 
