@@ -11,6 +11,9 @@ description:        Website for the MS in Program Eval and Data Analytics Progra
 # Site subpath, e.g. /blog
 baseurl:            "/course_website"
 
+# Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
+permalink:          /:title/
+
 # Site base hostname & protocol, e.g. http://example.com
 url :               "https://hasi96.github.io"
 
@@ -19,54 +22,17 @@ brand:
     image:          # logo.svg  # e.g. logo.png, upload logo image file to /assets/img/ folder
     text:           Foundations of Data Science      # if the above "logo:" image variable  is not set, this text logo is displayed instead
 
+# Default author settings
+author:
+    name:       Hasitha
+    github:     hasi96   # Github username for avatar
 
-# Github details to repos with code to build the site 
+
 github_info:
-    username:          hasi96 # Github username for avatar
-    branch:            master
+    username:       hasi96 # Github username for avatar
+    branch:       master
     website-repo:      course_website
-    course-repo:       Data-Science-Class
-
-# Google maps API key, get your key here: https://developers.google.com/maps/documentation/javascript/get-api-key
-google_maps_api_key:
-
-# Number of posts displayed on blog page
-paginate: 10
-
-# Blog path
-paginate_path:      "layouts/datasets/:num/"
-
-# Path to post content assets directory i.e post images, pdfs etc
-post_assets:        /assets/posts/
-
-post_css: /assets/css/posts
-
-# Build settings
-markdown:           kramdown
-highlighter:        rouge
-
-gems:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-gist
-  - jekyll-avatar
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-
-sass:
-  style:            compressed
-
-collections:
-  docs:
-    output: true
-
-
-markdown: kramdown
-kramdown:
-  parse_block_html: true
-
+    course-repo:        Data-Science-Class
 
 index:
     title: Data Science
@@ -76,19 +42,19 @@ index:
 
 header:
 - title: Course Syllabus
-  url: syllabus/
+  url: /course_website/syllabus/
 
 - title: Textbook
   url: https://bookdown.org/yihui/bookdown-demo/ 
 
 - title: Datasets
-  url: datasets/
+  url: /course_website/datasets/
 
 - title: Resources
-  url: resources/
+  url: /course_website/resources/
 
 - title: GetHelp
-  url: discussions/
+  url: /course_website/discussions/
 
 
 info: 
@@ -151,6 +117,11 @@ footer:
 - title: Course Timeline
   url: /syllabus/
 
+# Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
+authors:
+    peter:
+        name:       Peter Brown
+        github:     PressApps    # Github username for avatar
 
 # Social icons displayed in footer
 social:
@@ -177,7 +148,7 @@ footer:
 
 # Disqus comments shortname, requires Disqus account https://disqus.com/
 disqus:
-    shortname:      #1234
+    shortname:      1234
 
 # Google analytics code, get your code here https://www.google.com/analytics/
 google_analytics:
@@ -189,7 +160,7 @@ google_maps_api_key:
 paginate: 10
 
 # Blog path
-paginate_path:      "/datasets/:num/"
+paginate_path:      "layouts/datasets/:num/"
 
 # Path to post content assets directory i.e post images, pdfs etc
 post_assets:        /assets/posts/
@@ -213,9 +184,14 @@ exclude:
 sass:
   style:            compressed
 
+collections:
+  docs:
+    output: true
+
 
 markdown: kramdown
 kramdown:
   parse_block_html: true
 
 
+course_url: "https://hasi96.github.io/Data-Science-Class/"
