@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://cdn.rawgit.com/gaborcsardi/r-font/master/rlogo.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/wesbos/Font-Awesome-Docker-Icon/master/fontcustom/fontcustom.css">
-<link rel="stylesheet" href= "{{ "/assets/css/5star.css" | relative_url }}">
-<link rel ="stylesheet" href="{{ "/assets/css/posts.css" | prepend:site.baseurl }}">
+  <link rel ="stylesheet" href="{{ "/assets/css/posts.css" | prepend:site.baseurl }}">
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +17,7 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <link rel="shortcut icon" type="image/png" href="{{ "assets/img/favicon.png" | relative_url }}" >
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/main.js" | prepend:site.baseurl }}"></script>
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
   {% endif %}
@@ -26,14 +25,9 @@
 header {
   background-color: "#f1f1f1";
 }
- .bg-1 { 
-      background-color: #f5f5f5; /* Green */
-  }
-  .bg-2 { 
-  }
   footer {
   background-color: #08688b;
-  color: #f5f5f5;
+  color: rgb(255,255,255);
 }
 </style>
 <script>
@@ -60,16 +54,20 @@ var file = new Blob([rat], {type: file});
 
 <header class="uk-background-secondary">
     <div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-sticky uk-sticky-fixed" style="position: fixed; top: 0px; width: 1904px;background-color:lightgrey;">
-        <nav class="uk-navbar-container" style="background-color:rgba(0,163,224,0.7); font-size: 1.7em;" >
+
+
+        <nav class="uk-navbar-container" style="background-color:rgba(0,163,224,0.5); font-size: 1.7em; " >
+
+
     <div class="uk-container">
     <div data-uk-navbar>
         <div class="uk-navbar-left">
 
-            <a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}">{% if site.brand.image %}<img src="{{ site.post_assets | absolute_url }}{{ site.brand.image }}" alt="{{ site.brand.text | escape }}">{% else %}{{ site.brand.text | escape }}{% endif %}</a>
+            <b><a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}" style="color: black;">{% if site.brand.image %}<img src="{{ site.post_assets | absolute_url }}{{ site.brand.image }}" alt="{{ site.brand.text | escape }}">{% else %}{{ site.brand.text | escape }}{% endif %}</a></b>
 
         </div>
         <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav uk-visible@m">
+            <ul class="uk-navbar-nav uk-visible@m" >
                 {% for link in site.header %}
                     {% if link.url contains 'http' %}
                         {% assign domain = '' %}
@@ -82,14 +80,14 @@ var file = new Blob([rat], {type: file});
                         {% assign current = null %}
                     {% endif %}
                     {% if link.title %}
-                        <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %} style="color: rgb(255,255,255);">{{ link.title }}</a></li>
+                        <li{{ current }}><a href="{{ domain }}{{ link.url }}" style="color: black; " {% if link.url contains 'http' %}target="_blank" {% endif %}">{{ link.title }}</a> </li>
                     {% endif %}
                 {% endfor %}
 
             </ul>
            
             <div>
-             <a href="https://github.com/hasi96/course_website/edit/master/{{page.path}}"> <i class="fab fa-github" style="color: rgb(255,255,255);"></i></a>
+             <a href="https://github.com/hasi96/course_website/edit/master/{{page.path}}"> <i class="fab fa-github" style="color: black"></i></a>
           </div>
             <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
 
@@ -131,68 +129,23 @@ var file = new Blob([rat], {type: file});
 
 
 
-<footer role="contentinfo">
-  <div class="container-fluid">
 
-  <div class="row-fluid">
-    <div class="left-edge">
-      <div class="column-width-12 footer-rule"></div>
-    </div>
-  </div>
-
-  <div class="row-fluid footer logos">
-      <div class="left-edge uk-grid">
-        <div class="column-width-9 uk-width-1-2">
-            <div class="shield">
-              <a href="http://www.uchicago.edu" title="The University of Chicago">The University of Chicago</a>
-            </div>
-        </div>
-        <div class="column-width-3 uk-width-1-2">
-            <div class="ssd-logo">
-              <a href="http://socialsciences.uchicago.edu" title="Division of the Social Sciences">Division of the Social Sciences</a>
-            </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row-fluid footer">
-      <div class="left-edge">
-<div id="block-views-footer-socialmedia" class="block block-views module clearfix">
-                {% include social-networks.html %}
-</div>
-  
-  
-  
-  
-  
-  
-</div>  </div>
-
-</div><!-- /.block -->
-  </div>
-         </div>
-        <div class="column-width-3 right hidden-phone">
-      <!-- <p><a href="/" title="Home" rel="home">Masters in Computational Social Science</a></p> -->
-                  </div>
-        <div class="column-width-3 right hidden-phone">
-             <div class="region region-footer-column3">
-    <div id="block-views-footer-links1" class="block block-views module clearfix">
-
-      
-  <div class="block-content">
-    <div class="view view-footer view-id-footer view-display-id-links1 view-dom-id-2414d9c825a2d52c10e1a003a862439d">
-        
-  
-  
-      <div class="view-content">
-       <div>
-            <ul class="uk-subnav uk-flex-center">
-             
-                {% for link in site.footer %}
-                    {% if link.url contains 'http' %}
+   <footer class="uk-section uk-text-center uk-link-muted" style="background-color:rgba(0,163,224,0.5);">
+      <table>
+        <tr>
+          <td><a href="https://www.asu.edu/" style="align-items: left"><img src="{{ "/assets/img/asu.png" | prepend:site.baseurl }}" ></a></td>
+          <td></td>
+          <td><img src="{{ "/assets/img/asu.png" | prepend:site.baseurl }}" ></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <ul style="list-style-type: none; ">
+              {% for link in site.footer %} 
+                   {% if link.url contains 'http' %}
                         {% assign domain = '' %}
                     {% else %}
-                        {% assign domain = relative_url %}
+                        {% assign domain = site.baseurl %}
                     {% endif %}
                     {% if link.url == page.url %}
                         {% assign current = ' class="uk-active"' %}
@@ -200,37 +153,15 @@ var file = new Blob([rat], {type: file});
                         {% assign current = null %}
                     {% endif %}
                     {% if link.title %}
-                        <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                        <li {{ current }}> <b> <a href="{{ domain }}{{ link.url }}" style="color: black; " {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</b></li>
                     {% endif %}
                 {% endfor %}
             </ul>
-        </div>
-  
-  
-  
-  
-  
-  
-</div>  </div>
-
-</div><!-- /.block -->
-  </div>
-        </div>
-        <div class="column-width-3 right hidden-phone">
-            <div class="region region-footer-column4">
-    <div id="block-views-footer-links2" class="block block-views module clearfix">
-
-  
-  
-  
-</div>  </div>
-
-</div><!-- /.block -->
-  </div>
-        </div>
-      </div>
-    </div>
-
+          </td>
+          <td>
+          </td>
+        </tr>
+      </table>
 </footer>
     </body>
 
