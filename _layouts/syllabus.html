@@ -98,7 +98,8 @@ button {}
 });
   </script>
   <section>
-  <div id="divCheckbox" class = {{site.course_url}} style="display: none;">{{ content | checked }}</div>
+    <h1>{{ site.url }}/{{site.github_info.course-repo}}</h1>
+  <div id="divCheckbox" class = "{{ site.url }}/{{site.github_info.course-repo}}" style="display: none;">{{ content | checked }}</div>
 
 
 
@@ -181,7 +182,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                 var newCell = document.createElement("td");
            
                 var icon = document.createElement("i");
-                icon.className = "fa fa-book fa-lg";    
+                icon.className = "fa fa-check-circle";    
                                 newCell.appendChild(icon);
 
                              ttr.appendChild(newCell);
@@ -191,7 +192,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                 var newCell = document.createElement("td");
                 var iconf = document.createElement("font");
                 var icon = document.createElement("i");
-                icon.className = "fa fa-book fa-lg";   
+                icon.className = "fa fa-check-circle";   
                 iconf.setAttribute("color","f1f1f1");
                 iconf.appendChild(icon); 
                                 newCell.appendChild(iconf);
@@ -205,7 +206,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                  var newCell = document.createElement("td");
                 
                 var icon = document.createElement("i");
-                icon.className = "fa fa-toggle-right  fa-lg";    
+                icon.className = "fa fa-check-circle";    
                 newCell.appendChild(icon);
                              ttr.appendChild(newCell);
 
@@ -215,7 +216,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                 var newCell = document.createElement("td");
                 var iconf = document.createElement("font");
                 var icon = document.createElement("i");
-                icon.className = "fa fa-toggle-right";   
+                icon.className = "fa fa-check-circle";   
                 iconf.setAttribute("color","f1f1f1");
                 iconf.appendChild(icon); 
                                 newCell.appendChild(iconf);
@@ -227,7 +228,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                  var newCell = document.createElement("td");
                 
                 var icon = document.createElement("i");
-                icon.className = "fa fa-desktop fa-lg";    
+                icon.className = "fa fa-check-circle";    
                 newCell.appendChild(icon);
                              ttr.appendChild(newCell);
 
@@ -237,7 +238,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                 var newCell = document.createElement("td");
                 var iconf = document.createElement("font");
                 var icon = document.createElement("i");
-                icon.className = "fa fa-desktop fa-lg";   
+                icon.className = "fa fa-check-circle";   
                 iconf.setAttribute("color","f1f1f1");
                 iconf.appendChild(icon); 
                                 newCell.appendChild(iconf);
@@ -248,7 +249,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
               var linkk = linktemp[k].getAttribute("href");
               var newCell = document.createElement("td");
                 var icon = document.createElement("i");
-                icon.className = "fa fa-location-arrow fa-lg";    
+                icon.className = "fa fa-check-circle";    
                 newCell.appendChild(icon);
                              ttr.appendChild(newCell);
 
@@ -258,7 +259,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                 var newCell = document.createElement("td");
                 var iconf = document.createElement("font");
                 var icon = document.createElement("i");
-                icon.className = "fa fa-location-arrow fa-lg";   
+                icon.className = "fa fa-check-circle";   
                 iconf.setAttribute("color","f1f1f1");
                 iconf.appendChild(icon); 
                                 newCell.appendChild(iconf);
@@ -270,7 +271,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
               var newCell = document.createElement("td");
               
                 var icon = document.createElement("i");
-                icon.className = "fa fa-paperclip fa-lg";    
+                icon.className = "fa fa-check-circle";    
                 newCell.appendChild(icon);
                              ttr.appendChild(newCell);
 
@@ -280,7 +281,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                 var newCell = document.createElement("td");
                 var iconf = document.createElement("font");
                 var icon = document.createElement("i");
-                icon.className = "fa fa-paperclip fa-lg";   
+                icon.className = "fa fa-check-circle";   
                 iconf.setAttribute("color","f1f1f1");
                 iconf.appendChild(icon); 
                                 newCell.appendChild(iconf);

@@ -72,7 +72,7 @@ var file = new Blob([rat], {type: file});
                     {% if link.url contains 'http' %}
                         {% assign domain = '' %}
                     {% else %}
-                        {% assign domain = relative_url %}
+                        {% assign domain = site.url %}
                     {% endif %}
                     {% if link.url == page.url %}
                         {% assign current = ' class="uk-active"' %}
@@ -80,14 +80,14 @@ var file = new Blob([rat], {type: file});
                         {% assign current = null %}
                     {% endif %}
                     {% if link.title %}
-                        <li{{ current }}><a href="{{ domain }}{{ link.url }}" style="color: black; " {% if link.url contains 'http' %}target="_blank" {% endif %}">{{ link.title }}</a> </li>
+                        <li{{ current }}><a href="{{ domain }}{{site.baseurl}}/{{ link.url }}" style="color: black; " {% if link.url contains 'http' %}target="_blank" {% endif %}">{{ link.title }}</a> </li>
                     {% endif %}
                 {% endfor %}
 
             </ul>
            
             <div>
-             <a href="https://github.com/hasi96/course_website/edit/master/{{page.path}}"> <i class="fab fa-github" style="color: black"></i></a>
+             <a href="https://github.com/{{ site.githib_info.username }}/{{ site.github_info.website-repo }}/edit/master/{{page.path}}" target = "_blank;"> <i class="fab fa-github" style="color: black"></i></a>
           </div>
             <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
 
