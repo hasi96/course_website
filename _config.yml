@@ -19,53 +19,12 @@ brand:
     image:          # logo.svg  # e.g. logo.png, upload logo image file to /assets/img/ folder
     text:           Foundations of Data Science      # if the above "logo:" image variable  is not set, this text logo is displayed instead
 
-
-# Github details to repos with code to build the site 
+# G
 github_info:
     username:          hasi96 # Github username for avatar
     branch:            master
     website-repo:      course_website
     course-repo:       Data-Science-Class
-
-# Google maps API key, get your key here: https://developers.google.com/maps/documentation/javascript/get-api-key
-google_maps_api_key:
-
-# Number of posts displayed on blog page
-paginate: 10
-
-# Blog path
-paginate_path:      "layouts/datasets/:num/"
-
-# Path to post content assets directory i.e post images, pdfs etc
-post_assets:        /assets/posts/
-
-post_css: /assets/css/posts
-
-# Build settings
-markdown:           kramdown
-highlighter:        rouge
-
-gems:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-gist
-  - jekyll-avatar
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-
-sass:
-  style:            compressed
-
-collections:
-  docs:
-    output: true
-
-
-markdown: kramdown
-kramdown:
-  parse_block_html: true
 
 
 index:
@@ -90,6 +49,7 @@ header:
 - title: GetHelp
   url: discussions/
 
+course_url: "https://hasi96.github.io/Data-Science-Class/"
 
 info: 
  program_title: Data Science for Public Sector
@@ -217,5 +177,3 @@ sass:
 markdown: kramdown
 kramdown:
   parse_block_html: true
-
-
