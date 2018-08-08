@@ -10,9 +10,7 @@ disqus: true
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
    <script src="../assets/js/my_js.js"></script>
 <style>
-@media screen and (width: 320px) {
-    .hide { display: none; }
-}
+
  .collapsible {
       cursor: pointer;
       padding: 18px;
@@ -305,8 +303,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
 
        //var titleMatch = new RegExp("(?<=<hr>)(.*\n?)(?=<hr>)");
          var divsec = document.createElement("div");
-         divsec.setAttribute("style","background-color: #f1f1f1;");
-         divsec.setAttribute("style","width:100%;");
+         divsec.setAttribute("style","background-color: #f1f1f1;width:100%;");
          divsec.innerHTML = t;
                      divsec.setAttribute("class","child");
                      var sec = sections[i].cloneNode(true);
