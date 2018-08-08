@@ -11,8 +11,23 @@
                     {% else %}
                         {% assign domain = site.url %}
                     {% endif %}
-            <li><a href="{{ domain }}/{{ site.github_info.website-repo }}/{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
-            {% endfor %}
+                    {% if link.url == page.url %}
+                        {% assign current = ' class="uk-active"' %}
+                    {% else %}
+                        {% assign current = null %}
+                    {% endif %}
+                    {% if link.title %}
+                        
+                   {% if link.url contains 'http' %} 
+                    <li{{ current }}><a href="{{ link.url }}" style="color: black;" target="_blank"; >{{ link.title }}</a> 
+                 </li>
+                   {% else %} 
+                    <li{{ current }}><a href="{{ domain }}/{{ site.github_info.website-repo }}/{{ link.url }}" style="color: black; ">{{ link.title }}</a> 
+                 </li>
+                 {% endif %}
+                    {% endif %}
+                {% endfor %}
+
         </ul>
 
         <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
