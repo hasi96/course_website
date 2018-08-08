@@ -348,5 +348,7 @@ Customer support is provided through our Envato profile page [contact form](http
 # Page-wise Customisation
 
 ## Home Page
-![](/assets/img/Capture1.PNG)
+![](/assets/img/Capture.PNG)
+![](/assets/img/Capture2.PNG)
+
 
