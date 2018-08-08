@@ -260,9 +260,9 @@ To display Google map on contact page, add the following in your page content, r
 {% include map.html latitude="40.6700" longitude="-73.9400" zoom="16" %}
 ```
 
-## Posts
+## Dataset
 
-To create a new post, you can create a new markdown file inside the `_posts` directory by following the recommended file naming format:
+To create a new dataset card, you can create a new markdown file inside the `_posts` directory by following the recommended file naming format:
 ```
 YEAR-MONTH-DAY-title.MARKUP
 ```
@@ -273,7 +273,7 @@ Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit number
 2012-09-12-how-to-write-a-blog.md
 ```
 
-Post requires front matter, everything in between the first and second --- are part of the YAML Front Matter, and everything after the second --- will be rendered with Markdown and show up as “Content”.
+Dataset requires front matter, everything in between the first and second --- are part of the YAML Front Matter, and everything after the second --- will be rendered with Markdown and show up as “Content”.
 The following is a post file with different configurations you can add as example:
 
 ```yaml
