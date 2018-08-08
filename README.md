@@ -319,39 +319,6 @@ Embed YouTube videos:
 
 To create a draft post, create the post file under the `_drafts` directory, and you can find more information in [Working with Drafts](https://jekyllrb.com/docs/drafts/).
 
-## Home Page
-
-To create a home page, just create a `index.md` file inside the root directory. The following is a YAML Front Matter example for a page:
-
-```yaml
----
-layout: home
-hero:
-    title: How Can We Help?     # hero section settings
-    subtitle: Search or browse in depth articles and videos on everything Jekyll, from basic theme setup and hosting to customisation and development
-    image: imac.svg             # display small image above title
-    search: true                # enable search
-categories:
-    columns: 3                  # number of category columns; 1, 2, 3, 4
-    title: Browse Topics
-    subtitle: Get your answers fast, jump to most popular documentation content
-featured:                       # featured docs section settings
-    title: Popular Articles
-tag: featured                   # tag used to populate featured section on home page
-section:                        # display page content
-    title: Need More?
-    subtitle: This section displays optional page content lorem ipsum
-cta:                            # call to action section
-    title: Didn't find an answer to your question?
-    subtitle: Get in touch with us for details on additional services and custom work pricing
-    button_text: Contact Us   
-    button_url: /contact/  
----
-```
-
-All available icons can be found [here](https://getuikit.com/docs/icon#library).
-
-
 ## Customization
 
 To modify the primary color, open `/_sass/theme/variables.scss` and replace the color values e.g.:
@@ -377,3 +344,9 @@ Further style customisation can be done in the following files:
 
 ## Support
 Customer support is provided through our Envato profile page [contact form](https://themeforest.net/user/pressapps) for up to six months from the purchase date and is provided Monday to Friday during the business week. We aim to answer all support requests daily, most are handled within 48h.
+
+# Page-wise Customisation
+
+## Home Page
+![](/assets/img/Capture1.png)
+
