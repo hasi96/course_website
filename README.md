@@ -221,11 +221,9 @@ collections:
   docs:
     output: true
 
-
 markdown: kramdown
 kramdown:
   parse_block_html: true
-
 
 ```
 
@@ -342,13 +340,40 @@ Further style customisation can be done in the following files:
 - UIkit front end framework https://getuikit.com/
 - Jekyll CML https://jekyllrb.com/
 
-## Support
-Customer support is provided through our Envato profile page [contact form](https://themeforest.net/user/pressapps) for up to six months from the purchase date and is provided Monday to Friday during the business week. We aim to answer all support requests daily, most are handled within 48h.
-
 # Page-wise Customisation
 
-## Home Page
+## Home Page (index)
+
 ![](/assets/img/Capture.PNG)
+
 ![](/assets/img/Capture2.PNG)
 
+As explained in the screenshots below, the config.yml and index.md are to be updated in order to build a course homepage
+
+## Syllabus Overview Page
+
+This is a view of the course syllabus divided into sections giving an overview of each section in terms of Lectures, Labs, Handout, Reading, Exam. This view is built on the syllabus.md file which builds both the icons and also populates the content displayed on clicking each section. 
+
+```
+***  <- this is added to mark the beginning of a new section
+
+# Scope of the Sector  
+Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.   
+```
+After beginning a section, one can start writing all the course details for that section in simple markdown. In order to switch on the checkbox overview for every section, assets in the following format have to be added inside that section. 
+
+```
+["Tue 02,2018"]{@date}  
+
+["slides"]{@lecture module_2_slides.html}
+["Work by the weekend"]{@lab 02-mini-hw.html} 
+[""]{@handout STA112FS_VisDayOneSlides_Fall2017.pdf}
+["Read this before the class"]{@exam STA112FS_VisDayOneSlides_Fall2017.pdf}
+["Practice"]{@exam STA112FS_VisDayOneSlides_Fall2017.pdf}
+
+```
+These asset formats also serve as links to these assets from the content repository from within respective folders - LECTURES, LABS, HANDOUT, READINGS, EXAMS. So, they can be used as part of the section's markdown formatted content as links.
+
+
+ 
 
