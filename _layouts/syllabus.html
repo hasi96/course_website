@@ -129,6 +129,7 @@ var linktemp = sections[i].getElementsByTagName("asset");
 if((sections[i]).getElementsByClassName("dates").length>0){
           var ps = (sections[i]).getElementsByClassName("dates");
           var ttd = document.createElement("td");
+          ttd.setAttribute("class","hide");
           var tex = document.createTextNode(ps[0].textContent);
                    ttd.appendChild(tex);
                     ttr.appendChild(ttd);
