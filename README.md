@@ -16,6 +16,8 @@ Developed by Hasitha Chikkala, Shachi K Shah under the guidance of Jesse Lecy fo
 
 ## Setting up a Course Website
 
+Fork this repository and update the `_config.yaml` file with your github info, baseurl and other details, also set up another repository for the content either by forking our sample repo or creating a similar one. 
+
 `_config.yml` - This is the principal data file used to configure the website's skeleton and then markdown files are used to add content to each of the pages in the website.
 
 For each of these pages mentioned, there is a markdown file and a html layout associated, wherein the html decides the generalized layout for each page while the markdown is used to input custom website content. This can be mapped easily as follows:
