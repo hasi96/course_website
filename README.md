@@ -278,7 +278,7 @@ The following is a post file with different configurations you can add as exampl
 
 ```yaml
 ---
-layout: post
+layout: dataset
 title: How To Travel On Low Budget
 ---
 ```
