@@ -27,6 +27,7 @@ For each of these pages mentioned, there is a markdown file and a html layout as
 * Resources Page         <- resources.md   +  resources.html
 * Datasets Page          <-  datasets.md   +   datasets.html   
 * GetHelp Page           <- discussions.md +  discussions.html
+* Posts page             <- year-month-day-title.md + post.html
 
 All of these layouts are present in the layouts folder. 
 Also, the config.yml has the information for the websites navigation, the baseurl to launch the website and content properly, the author details, the header and footer details, social media links, github repo names and the url for launching github pages. The following section explains each of these data fields in detail. 
@@ -288,7 +289,7 @@ After beginning a section, one can start writing all the course details for that
 These asset formats also serve as links to these assets from the content repository from within respective folders - LECTURES, LABS, HANDOUT, READINGS, EXAMS. So, they can be used as part of the section's markdown formatted content as links.
 
 
-## Datasets Page
+## Post Page
 
 
 
