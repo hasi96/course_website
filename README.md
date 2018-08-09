@@ -291,6 +291,19 @@ These asset formats also serve as links to these assets from the content reposit
 
 ## Post Page
 
+This page shows in detailed information regarding the dataset, a more detailed information regarding the dataset such as source of dataset, owner of dataset, type of data, and other such information regarding the dataset. This pages are stored under `_posts` folder with the naming convention followed as : 
+```
+YEAR-MONTH-DAY-title.md
+```
+Where the date should be in yyyy-mm-dd-title format, it is preffred to enter current date as the post are sorted on the basis of date so by giving it current date it will show that post fist in the datset page. 
+
+In the post.md file there are two types data to be entered:
+
+** Metadata
+** Content
+
+![](/assets/img/course.png)
+
 
 
 
@@ -312,9 +325,7 @@ To display Google map on contact page, add the following in your page content, r
 ## Dataset
 
 To create a new dataset card, you can create a new markdown file inside the `_posts` directory by following the recommended file naming format:
-```
-YEAR-MONTH-DAY-title.MARKUP
-```
+
 Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. For example, the following are examples of valid post filenames:
 
 ```
