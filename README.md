@@ -302,7 +302,7 @@ In the post.md file there are two types data to be entered:
 * Metadata
 * Content
 
-![](/assets/img/Capture3.PNG)
+![](/assets/img/Capture2.PNG)
 
 
 ## GetHelp Page
