@@ -34,7 +34,7 @@ github_info:
     website-repo:      course_website
     course-repo:        Data-Science-Class
 
-  index:
+index:
     title: Data Science
     subtitle: This course aims at empowering students especially from a non-computerscience background to learn easy tools that can be used for data analysis
     image: imac.svg
@@ -56,18 +56,19 @@ header:
 - title: GetHelp
   url: discussions/
 
-foo:
-- title: Course Syllabus
-  url: syllabus/
 
-- title: Textbook
-  url: https://bookdown.org/yihui/bookdown-demo/ 
+footer:
+- title: Home
+  url: /
 
 - title: Datasets
-  url: datasets/
+  url: /datasets/
 
-- title: Resources
-  url: resources/
+- title: Textbook
+  url:  https://bookdown.org/yihui/bookdown-demo/
+
+- title: Course Timeline
+  url: /syllabus/
 
 
 info: 
@@ -144,8 +145,8 @@ social:
 twitter_username:
 
 # Default footer image settings
-# footer:
-    # copyright:      Made by a <a href="https://ivanchromjak.com/">human</a> somewhere on the planet earth.
+footer:
+    copyright:      Made by a <a href="https://ivanchromjak.com/">human</a> somewhere on the planet earth.
 
 # Disqus comments shortname, requires Disqus account https://disqus.com/
 disqus:
