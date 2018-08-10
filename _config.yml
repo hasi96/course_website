@@ -86,15 +86,15 @@ info:
 instructor:
 -  name: Jesse 
    title: Professor
-   email:
-   phone:
-   website_url:
+   email: jdlecy@asu.edu
+   phone:  602-123-4567
+   website_url: http://www.lecy.info/
    office_hours_times: Mondays 1-3pm.
    office_hours_location:  UCENT 517
    office_hours_app_url:  https://calendly.com/
-   github_url: 
-   twitter_url:
-   scholar_url:
+   github_url: https://github.com/
+   twitter_url: https://twitter.com/
+   scholar_url: https://scholar.google.com/citations?user=Ir8H4wMAAAAJ&hl=en
    linked_in_url:
 -  name: Hasitha
    title:
