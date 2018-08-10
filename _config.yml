@@ -72,16 +72,16 @@ footer:
 
 
 info: 
- program_title: Data Science for Public Sector
+ program_title: MS in Program Evaluation and Data Analytics
  program_website: 
- course_title:
- course_number:
- course_level:
- course_website:
- course_start_end_dates:
- course_prerequisites:
- class_meets_when:
- class_meets_where:
+ course_title: Foundations of Data Science I
+ course_number: CPP 591
+ course_level: Graduate
+ course_website: 
+ course_start_end_dates: August 16th to December 5th
+ course_prerequisites: None
+ class_meets_when:  Online
+ class_meets_where: MWF 5:30pm
 
 instructor:
 -  name: Benjamin M. Friedman
