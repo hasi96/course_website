@@ -22,11 +22,8 @@
     {% include google-analytics.html %}
   {% endif %}
 <style>
-header {
-  background-color: "#f1f1f1";
-}
+
   footer {
-  background-color: #08688b;
   color: rgb(255,255,255);
 }
 </style>
@@ -113,25 +110,21 @@ header {
     </div>
 </div>
 {% endif %}
+
     {% include offcanvas.html %}
-
-
-
 
    <footer class="uk-section uk-text-center uk-link-muted" style="background-color:rgba(0,163,224,0.6); ">
       <table>
         <tr>
           <td><a href="https://www.asu.edu/" style="align-items: left"><img src="{{ "assets/img/asu.png" | relative_url }}" ></a></td>
           <td></td>
-          <td><img src="{{ "/assets/img/courseLogo.png" | prepend:site.baseurl }}" ></td>
-          <td><img src="{{ "assets/img/asu.png" | relative_url  }}" ></td>
+          <td> <img src="{{ "/assets/img/course.png" | prepend:site.baseurl }}" > </td>
         </tr>
         <tr>
           <td></td>
           <td>
-             <ul class="uk-navbar-nav uk-visible@m" >
-                {% for link in site.footer %}
-                <h1>{{ link.title }}</h1>
+             <ul class="uk-navbar-nav uk-visible@m" style="list-style-type:none" >
+               {% for link in site.header %}
                     {% if link.url contains 'http' %}
                         {% assign domain = '' %}
                     {% else %}
@@ -145,20 +138,17 @@ header {
                     {% if link.title %}
                         
                    {% if link.url contains 'http' %} 
-                    <li{{ current }}><a href="{{ link.url }}" style="color: black;" target="_blank"; >{{ link.title }}</a> 
-                 </li>
+                    <li{{ current }}> <a href="{{ link.url }}" style="color: black;" target="_blank"; >{{ link.title }}</a> </li>
                    {% else %} 
-                    <li{{ current }}><a href="{{ domain }}/{{ site.github_info.website-repo }}/{{ link.url }}" style="color: black; ">{{ link.title }}</a> 
-                 </li>
+                    <li{{ current }}> <a href="{{ domain }}/{{ site.github_info.website-repo }}/{{ link.url }}" style="color: black; ">{{ link.title }}</a> </li>
+
                  {% endif %}
                     {% endif %}
+                    <br>
                 {% endfor %}
-
             </ul>
-           
           </td>
-          <td>
-          </td>
+          <td></td>
         </tr>
       </table>
 </footer>

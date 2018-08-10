@@ -299,15 +299,10 @@ Where the date should be in yyyy-mm-dd-title format, it is preffred to enter cur
 
 In the post.md file there are two types data to be entered:
 
-** Metadata
-** Content
+* Metadata
+* Content
 
-![](/assets/img/course.png)
-
-
-
-
-
+![](/assets/img/Capture3.PNG)
 
 
 ## GetHelp Page
