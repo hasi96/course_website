@@ -89,9 +89,9 @@ instructor:
    email:
    phone:
    website_url:
-   office_hours_times:
-   office_hours_location:
-   office_hours_app_url:
+   office_hours_times: Mondays 1-3pm.
+   office_hours_location:  UCENT 517
+   office_hours_app_url:  https://calendly.com/
    github_url: 
    twitter_url:
    scholar_url:
@@ -101,9 +101,9 @@ instructor:
    email:
    phone: 
    website_url:
-   office_hours_times:
-   office_hours_location:
-   office_hours_app_url:
+   office_hours_times: Tuesday 12pm
+   office_hours_location: 421 Central
+   office_hours_app_url: https://calendly.com/
    github_url:
    twitter_url:
    scholar_url:
@@ -112,11 +112,15 @@ instructor:
 
 textbooks:
 - title: Intro to Data Science
-  authors:
-  edition:
+  authors: Smith, Smith, and Johnson
+  edition: First Edition
   link: https://www.w3schools.com/tags/att_body_link.asp
-  required (y/n): 
-
+  required (y/n): y
+- title: Advanced Data Science
+  authors: Yamuguchi
+  edition: 
+  link: https://www.w3schools.com/tags/att_body_link.asp
+  required (y/n): n
 
 
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
