@@ -16,10 +16,10 @@ Define section
 *** 
 
 # Scope of the Sector  
-["slides"]{@lecture module_2_slides.html}
+
 ["Tue 02,2018"]{@date}
 
-Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.   
+Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam. ["SLIDES"]{@lecture module_2_slides.html}  
 
 ## Introduction to the Course
 Personal introductions via BlackBoard before the course begins.
@@ -30,8 +30,9 @@ By the end of the unit, you will be able to classify the range of organizations 
 ## Assigned Readings 
 
 Chapter 1 from Bruce Hopkins' book Starting and Managing a Nonprofit Organization.  The chapter is titled "What is a Nonprofit Organization?"  (on Blackboard)
-US Internal Revenue Code Title 26, Sub A, Chapter 1F, Part 1, Section 501.  
-["Read At"]{@reading 01-reading.html}
+
+US Internal Revenue Code Title 26, Sub A, Chapter 1F, Part 1, Section 501.  ["LINK"]{@reading 01-reading.html}
+
 
 ## Exercises   
 Exercise 1: What Do You Know about the Scope of the Sector?
@@ -66,8 +67,9 @@ I'm also interested in your development of basic professional skills, such as us
 
 * Frumkin, On Being Nonprofit, Chapter 1
 * Arizona Nonprofit Incorporation:
-  + Instructions: http://www.azcc.gov/Divisions/Corporations/forms/starpas/instructionsSTPS/C011i-Instructions-Articles-of-Inc-Nonprofit-STPS.pdf
-  ["Read At"]{@asset reading http://www.azcc.gov/Divisions/Corporations/forms/starpas/instructionsSTPS/C011i-Instructions-Articles-of-Inc-Nonprofit-STPS.pdf}
+  + [Instructions:](http://www.azcc.gov/Divisions/Corporations/forms/starpas/instructionsSTPS/C011i-Instructions-Articles-of-Inc-Nonprofit-STPS.pdf)
+  
+  ["Read At"]{http://www.azcc.gov/Divisions/Corporations/forms/starpas/instructionsSTPS/C011i-Instructions-Articles-of-Inc-Nonprofit-STPS.pdf}
 
   + Form:  http://www. azcc.gov/Divisions/Corporations/forms/starpas/formsSTPS/C011-Articles-of-Incorporation-Nonprofit.pdf
 
