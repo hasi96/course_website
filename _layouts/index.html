@@ -1,8 +1,23 @@
 ---
 layout: default
 ---
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
 
-
+</body>
+</html>
+<head>
+  <style> 
+    td {
+      padding-left: 6px;
+    }
+  </style>
+</head>
+<body>
 <div class="uk-section section-hero .uk-width-1-1"  data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
     <div class="uk-container uk-container-small">
         {% if site.index.image %}
@@ -37,19 +52,19 @@ layout: default
 {% if site.info.program_title %}
 <tr>
 <td>Program Title</td>
-<td>: {{site.info.program_title}}</td>
+<td>: {{site.info.program_title}} </td>
 </tr>
 {% endif %}
 {% if site.info.program_website %}
 <tr>
 <td>Program Website</td>
-<td>{{site.info.program_website}}</td>
+<td> {{site.info.program_website}} </td>
 </tr>
 {% endif %}
 {% if site.info.course_title %}
 <tr>
 <td>Course Title</td>
-<td>: {{site.info.course_title}}</td>
+<td>: {{site.info.course_title}} </td>
 </tr>
 {% endif %}
 {% if site.info.course_number %}
@@ -61,37 +76,37 @@ layout: default
 {% if site.info.course_level %}
 <tr>
 <td>Course Level</td>
-<td>: {{site.info.course_level}}</td>
+<td>: {{site.info.course_level}} </td>
 </tr>
 {% endif %}
 {% if site.info.course_website %}
 <tr>
 <td>Course Website</td>
-<td>{{site.info.course_website}}</td>
+<td> {{site.info.course_website}} </td>
 </tr>
 {% endif %}
 {% if site.info.course_start_end_dates %}
 <tr>
 <td>Course Start-End dates</td>
-<td>{{site.info.course_start_end_dates }}</td>
+<td> {{site.info.course_start_end_dates }} </td>
 </tr>
 {% endif %}
 {% if site.info.course_prerequisites %}
 <tr>
 <td>Course Prerequisites</td>
-<td>{{site.info.course_prerequisites }}</td>
+<td> {{site.info.course_prerequisites }} </td>
 </tr>
 {% endif %}
 {% if site.info.class_meets_when %}
 <tr>
 <td>Class Timings</td>
-<td>{{site.info.class_meets_when }}</td>
+<td> {{site.info.class_meets_when }} </td>
 </tr>
 {% endif %}
 {% if site.info.class_meets_where %}
 <tr>
 <td>Class Location</td>
-<td>{{site.info.class_meets_where }}</td>
+<td> {{site.info.class_meets_where }} </td>
 </tr>
 {% endif %}
 
@@ -113,27 +128,23 @@ layout: default
 <td><a href="{{item.website_url}}">{{item.name}}</a></td>
 <td>{{item.title}}</td>
 <td>{{item.phone}}</td>
-<td>
-<a href="mailto:{{item.email}}" title="email"><i class="fa fa-envelope" style="color: rgb(140,29,64)"></i></a>
-</td>
+<td> <a href="mailto:{{item.email}}" title="email"><i class="fa fa-envelope" style="color: rgb(140,29,64)"></i></a> </td>
 {% if item.github_url %}
-<td>
-<a href="mailto:{{item.github_url}}" title="email"><i class="fa fa-github" style="color: rgb(140,29,64)"></i></a>
-</td>
+<td> <a href="mailto:{{item.github_url}}" title="email"><i class="fa fa-github" style="color: rgb(140,29,64)"></i></a> </td>
 {% endif %}
 {% if item.twitter_url %}
 <td>
-<a href="mailto:{{item.twitter_url}}" title="email"><i class="fa fa-twitter" style="color: rgb(140,29,64)"></i></a>
+ <a href="mailto:{{item.twitter_url}}" title="email"><i class="fa fa-twitter" style="color: rgb(140,29,64)"></i></a> 
 </td>
 {% endif %}
 {% if item.scholar_url %}
 <td>
-<a href="mailto:{{item.scholar_url}}" title="email"><i class="fa fa-graduation-cap" style="color: rgb(140,29,64)"></i></a>
+ <a href="mailto:{{item.scholar_url}}" title="email"><i class="fa fa-graduation-cap" style="color: rgb(140,29,64)"></i></a> 
 </td>
 {% endif %}
 {% if item.linked_in_url %}
 <td>
-<a href="{{item.linked_in_url}}" title="email"><i class="fa fa-linkedin" style="color: rgb(140,29,64)"></i></a>
+ <a href="{{item.linked_in_url}}" title="email"><i class="fa fa-linkedin" style="color: rgb(140,29,64)"></i></a> 
 </td>
 {% endif %}
 </tr>
@@ -158,7 +169,7 @@ layout: default
 <td>{{item.name}}</td>
 <td>{{item.office_hours_times}}</td>
 <td>{{item.office_hours_location}}</td>
-<td><button onclick="location.href='{{ item.office_hours_app_url }}'" type="button"> <i class="fas fa-calendar-check" style="color: rgb(140,29,64);"></i> Make an Appointment</button> </td>
+<td><button onclick="location.href='{{ item.office_hours_app_url }}'" type="button">  Make Appointment</button> </td>
 <td>
 </td>
 </tr>
@@ -222,6 +233,6 @@ layout: default
             <br>
             <br>
         </div>
-
-
+</body>
+</html>
  
