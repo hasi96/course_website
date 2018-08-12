@@ -76,7 +76,7 @@ layout: default
 <div class = "uk-container uk-container-xsmall" style="width:90%;margin-left:auto;margin-right:auto; ">
 	
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for issues.." title="Type in a name" style="width:60%;padding: 12px;"> 
-<a class="uk-button uk-button-default" href="https://github.com/{{site.github_info.username}}/{{ site.github_info.repo}}/issues/new">New Issue</a>
+<a class="uk-button uk-button-default" href="https://github.com/{{site.github_info.username}}/{{ site.github_info.course-repo}}/issues/new">New Issue</a>
 <div class = "table-responsive">
 <table id="myTable" style="width:90%;margin-left:20px;margin-right:20px;">
 
@@ -119,7 +119,7 @@ function myFunction() {
 
 </body>
 
-<div id="gitdata" class = {{ site.github_info.website-repo }} style="display: none;">{{ site.github_info.username }}</div>
+<div id="gitdata" class = {{ site.github_info.course-repo }} style="display: none;">{{ site.github_info.username }}</div>
 <div id = "results"></div>
 <script>
 var username = document.getElementById("gitdata").innerHTML;
