@@ -1,6 +1,6 @@
 ---
 layout: syllabus
-title: Syllabus
+title: Schedule
 subtitle: Introduction to R for non-profits
 tags: featured,othertag
 

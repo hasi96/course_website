@@ -13,7 +13,7 @@ layout: default
 <head>
   <style> 
     td {
-      padding-left: 6px;
+      padding-left: 8px;
     }
   </style>
 </head>
@@ -23,11 +23,16 @@ layout: default
         {% if site.index.image %}
         <p class="hero-image uk-text-center"><img src="{{ site.post_assets | absolute_url }}{{ site.index.image }}" alt="Hero"></p> 
         {% endif %}
-        <h2 class="uk-heading-hero uk-text-center uk-margin-remove-top " >{{ site.index.title }}</h2>
-        {% if site.index.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ site.index.subtitle }}</p>
+        <h2 class="uk-heading-hero uk-text-center uk-margin-remove-top uk-margin-remove-bottom " >{{ site.index.title }}</h2>
+        <div style="align-items: center;">
+        <a   href="https://github.com/{{ site.github_info.username }}/{{ site.github_info.website-repo }}/edit/master/{{page.path}}" target = "_blank"> <i class="fab fa-github" style="color: black;">Edit On Github</i></a>
+        </div>
+         {% if site.index.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ site.index.subtitle }}</p>
             {% endif %}
-
 </div>
+        
+       
+
   <br>
    <br>
    </div>
