@@ -56,7 +56,7 @@ layout: default
 
 <h2> Course Info </h2>
 
-<table class="table table-condensed">
+<table class="table table-condensed" cellpadding="5">
 <thead>
 <tr>
 <th><span></span></th>
@@ -68,8 +68,8 @@ layout: default
 
 {% if site.info.program_title %}
 <tr>
-<td>Program Title</td>
-<td>: {{site.info.program_title}} </td>
+<td>Program Title </td>
+<td> {{site.info.program_title}} </td>
 </tr>
 {% endif %}
 
@@ -83,21 +83,21 @@ layout: default
 {% if site.info.course_title %}
 <tr>
 <td>Course Title</td>
-<td>: {{site.info.course_title}} </td>
+<td> {{site.info.course_title}} </td>
 </tr>
 {% endif %}
 
 {% if site.info.course_number %}
 <tr>
 <td>Course Number</td>
-<td>: {{site.info.course_number}}</td>
+<td> {{site.info.course_number}}</td>
 </tr>
 {% endif %}
 
 {% if site.info.course_level %}
 <tr>
 <td>Course Level</td>
-<td>: {{site.info.course_level}} </td>
+<td> {{site.info.course_level}} </td>
 </tr>
 {% endif %}
 
@@ -110,7 +110,7 @@ layout: default
 
 {% if site.info.course_start_end_dates %}
 <tr>
-<td>Course Start-End dates</td>
+<td>Course Start-End</td>
 <td> {{site.info.course_start_end_dates }} </td>
 </tr>
 {% endif %}
@@ -146,7 +146,7 @@ layout: default
 
 <h2> Course Instructors </h2>
 
-<table class="table table-condensed">
+<table class="table table-condensed" cellpadding="10">
 <thead>
 <tr>
 <th><span></span></th>
