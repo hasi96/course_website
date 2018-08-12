@@ -238,7 +238,7 @@ layout: default
 <tbody>
 {% for item in site.textbooks %}
 <tr>
-<td><button  onclick="location.href='{{ item.link }}'" type="button"> <i class="fas fa-book" style="color: rgb(140,29,64);"></i> {{ item.title }}</button></td>
+<td><button class="uk-button uk-button-link" onclick="location.href='{{ item.link }}'"> <i class="fas fa-book" style="color: rgb(140,29,64);"></i> {{ item.title }}</button></td>
 {% if item.authors %}
 <td>{{item.authors}}</td>
 {% endif %}
