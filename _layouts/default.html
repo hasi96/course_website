@@ -94,24 +94,28 @@
         </nav>
     </div>
 </header>
-<div class = "uk-container uk-container-small">
+ 
+ 
+ 
+<div class = "uk-container">
 {{content}}
 </div>
+ 
     {% include offcanvas.html %}
 
 
 {% if page.disqus == true %} 
     {% include disqus_comments.html %}
-    {%  endif %}
+{%  endif %}
 
-    {% if page.cta.button_url contains 'http' %}
+{% if page.cta.button_url contains 'http' %}
     {% assign domain = '' %}
 {% else %}
     {% assign domain = relative_url %}
 {% endif %}
 
 
-    {% if page.cta %}
+{% if page.cta %}
 <div class="uk-section uk-text-center">
     <div class="uk-container" >
         <div data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
@@ -123,10 +127,14 @@
 </div>
 {% endif %}
 
-    {% include offcanvas.html %}
+{% include offcanvas.html %}
 
+ 
+ 
+ 
    <footer class="uk-section uk-text-center uk-link-muted" style="background-color:rgba(0,163,224,0.6); ">
-
+   <div class="uk-container">
+    
       <table>
         <tr>
           <td><a href="https://www.asu.edu/" style="align-items: left; "  ><img src="{{ "assets/img/asu.png" | relative_url }}" style="width: 55%; height: 80%; " align="left" ></a></td>
@@ -168,6 +176,10 @@
           </td>
         </tr>
       </table>
+ 
+</div>
 </footer>
+
+
 </body>
 </html>
