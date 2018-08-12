@@ -1,15 +1,19 @@
 ---
 layout: default
 ---
+
 <!DOCTYPE html>
 <html>
 <head>
   <title></title>
 </head>
-<body>
 
+
+<body>
 </body>
 </html>
+
+
 <head>
   <style> 
     td {
@@ -17,6 +21,8 @@ layout: default
     }
   </style>
 </head>
+
+
 <body>
 <div class="uk-section section-hero .uk-width-1-1"  data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
     <div class="uk-container uk-container-small">
@@ -25,26 +31,31 @@ layout: default
         {% endif %}
         <h2 class="uk-heading-hero uk-text-center uk-margin-remove-top uk-margin-remove-bottom " >{{ site.index.title }}</h2>
         <div style="align-items: center;">
-     
+        <a   href="https://github.com/{{ site.github_info.username }}/{{ site.github_info.website-repo }}/edit/master/{{page.path}}" target = "_blank"> <i class="fab fa-github" style="color: black;">Edit On Github</i></a>
         </div>
          {% if site.index.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ site.index.subtitle }}</p>
             {% endif %}
 </div>
-        
-       
+</div>
 
-  <br>
-   <br>
-   </div>
- 
+<br>
+<br>
 
-            <div class="uk-container container-fluid  uk-responsive-width uk-text-center bg-1">
-                    <br>
-   <br>
-            <div class="uk-grid-width-small-1-2 uk-grid-width-medium-1-4 uk-responsive-width  uk-text-center uk-container-center" data-uk-grid>
-<div class="col-sm-6 uk-width-1-2 " >
+
+
+<article class="uk-article">
+
+
+<div class="uk-section-muted uk-padding-large" >
+<div class="uk-container">
+
+
+<a class="uk-button uk-button-default" class="uk-align-center" onclick="print();">PRINT THE SYLLABUS</a>
+
+
+
 <h2> Course Info </h2>
-<center>
+
 <table class="table table-condensed">
 <thead>
 <tr>
@@ -52,6 +63,7 @@ layout: default
 <th><span></span></th>
 </tr>
 </thead>
+
 <tbody>
 
 {% if site.info.program_title %}
@@ -60,54 +72,63 @@ layout: default
 <td>: {{site.info.program_title}} </td>
 </tr>
 {% endif %}
+
 {% if site.info.program_website %}
 <tr>
 <td>Program Website</td>
 <td> {{site.info.program_website}} </td>
 </tr>
 {% endif %}
+
 {% if site.info.course_title %}
 <tr>
 <td>Course Title</td>
 <td>: {{site.info.course_title}} </td>
 </tr>
 {% endif %}
+
 {% if site.info.course_number %}
 <tr>
 <td>Course Number</td>
 <td>: {{site.info.course_number}}</td>
 </tr>
 {% endif %}
+
 {% if site.info.course_level %}
 <tr>
 <td>Course Level</td>
 <td>: {{site.info.course_level}} </td>
 </tr>
 {% endif %}
+
 {% if site.info.course_website %}
 <tr>
 <td>Course Website</td>
 <td> {{site.info.course_website}} </td>
 </tr>
 {% endif %}
+
 {% if site.info.course_start_end_dates %}
 <tr>
 <td>Course Start-End dates</td>
 <td> {{site.info.course_start_end_dates }} </td>
 </tr>
 {% endif %}
+
 {% if site.info.course_prerequisites %}
 <tr>
 <td>Course Prerequisites</td>
 <td> {{site.info.course_prerequisites }} </td>
 </tr>
 {% endif %}
+
 {% if site.info.class_meets_when %}
 <tr>
 <td>Class Timings</td>
 <td> {{site.info.class_meets_when }} </td>
 </tr>
 {% endif %}
+
 {% if site.info.class_meets_where %}
 <tr>
 <td>Class Location</td>
@@ -117,9 +138,15 @@ layout: default
 
 </tbody>
 </table>
-</center>
+
+<br>
+<br>
+
+
+
+
 <h2> Course Instructors </h2>
-<center>
+
 <table class="table table-condensed">
 <thead>
 <tr>
@@ -127,38 +154,52 @@ layout: default
 <th><span></span></th>
 </tr>
 </thead>
+
 <tbody>
+
+
 {% for item in site.instructor %}
+
 <tr>
 <td><a href="{{item.website_url}}">{{item.name}}</a></td>
 <td>{{item.title}}</td>
 <td>{{item.phone}}</td>
 <td> <a href="mailto:{{item.email}}" title="email"><i class="fa fa-envelope" style="color: rgb(140,29,64)"></i></a> </td>
+
 {% if item.github_url %}
 <td> <a href="mailto:{{item.github_url}}" title="email"><i class="fa fa-github" style="color: rgb(140,29,64)"></i></a> </td>
 {% endif %}
+
 {% if item.twitter_url %}
 <td>
  <a href="mailto:{{item.twitter_url}}" title="email"><i class="fa fa-twitter" style="color: rgb(140,29,64)"></i></a> 
 </td>
 {% endif %}
+
 {% if item.scholar_url %}
 <td>
  <a href="mailto:{{item.scholar_url}}" title="email"><i class="fa fa-graduation-cap" style="color: rgb(140,29,64)"></i></a> 
 </td>
 {% endif %}
+
 {% if item.linked_in_url %}
 <td>
  <a href="{{item.linked_in_url}}" title="email"><i class="fa fa-linkedin" style="color: rgb(140,29,64)"></i></a> 
 </td>
 {% endif %}
 </tr>
+
 {% endfor %}
+
 </tbody>
 </table>
-</div>
-<div class="col-sm-6 uk-width-1-2">
-<center>
+
+<br>
+<br>
+
+
+
+
 <h2> Office Hours </h2>
 
 <table class="table table-condensed">
@@ -168,6 +209,7 @@ layout: default
 <th><span></span></th>
 </tr>
 </thead>
+
 <tbody>
 {% for item in site.instructor %}
 <tr>
@@ -182,14 +224,14 @@ layout: default
 </tbody>
 </table>
 
-
-</center>
 <br>
 <br>
 
-<center>
+
+
 
 <h2> Textbooks </h2>
+
 <table class="table table-condensed">
 <thead>
 <tr>
@@ -197,6 +239,7 @@ layout: default
 <th><span></span></th>
 </tr>
 </thead>
+
 <tbody>
 {% for item in site.textbooks %}
 <tr>
@@ -215,29 +258,31 @@ layout: default
 {% endfor %}
 </tbody>
 </table>
-</center>
-</div>
 
-</div>
- <br>
 <br>
-</div>
-
-</center>
+<br>
 
 </div>
+</div>
 
- <div class="uk-container container-fluid uk-responsive-width uk-text-center bg-2">
-       <!-- <div class="uk-grid-large" data-uk-grid> -->
-<br><br>
-            <div class="uk-width-1 uk-responsive-width col-md-6 ">
-                <div class = "  uk-container-center">
-                    {{content}}
-                </div>
-            </div>
-            <br>
-            <br>
-        </div>
+
+
+
+
+
+<div class="uk-section">
+<div class="uk-container">
+
+{{content}}
+
+<br>
+<br>
+
+</div>
+</div>
+
+
+</article>
+
 </body>
 </html>
- 
