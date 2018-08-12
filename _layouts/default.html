@@ -140,7 +140,7 @@
  
  
  
-   <footer class="uk-section uk-text-center uk-link-muted" style="background-color:rgba(0,163,224,0.6); ">
+   <footer class="uk-section uk-text-center uk-link-muted" style="background-color:rgba(0,163,224,0.6); margin-top: 0px; ">
    <div class="uk-container">
     
       <table>
@@ -174,15 +174,14 @@
                 <tr><td>
                 <a href="https://github.com/{{ site.github_info.username }}/{{ site.github_info.website-repo }}/edit/master/{{page.path}}" target = "_blank"> <i class="fab fa-github" style="color: black; font-size: 1em;"></i></a>
                </td></tr>
-             
           </td>
         </tr>
       </table>
     </td>
   </tr>
-   <tr>
+  
          
-          <td align="left" style="text-align: left; align-content: left;padding-left: 5em;">
+         <!--  <td align="left" style="text-align: left; align-content: left;padding-left: 3em;">
             <a href="https://www.facebook.com/arizonastateuniversity"><i class="fab fa-facebook-f fa-3x"></i></a>
             <a href="https://plus.google.com/+arizonastateuniversity" style="padding-left: 0.75em;"><i class="fab fa-google-plus-g fa-3x"></i></a>
             <a href="https://twitter.com/asu" style="padding-left: 0.75em;"><i class="fab fa-twitter fa-3x"></i></a>
@@ -191,10 +190,14 @@
             <a href="https://foursquare.com/asu" style="padding-left: 0.75em;"><i class="fab fa-foursquare fa-3x"></i></a>
             <a href="https://www.instagram.com/" style="padding-left: 0.75em;"><i class="fab fa-instagram fa-3x"></i></a>
             <a href="https://vimeo.com/" style="padding-left: 0.75em;"><i class="fab fa-vimeo-v fa-3x"></i></a>
-          </td>
+          </td> -->
           
-        </tr>
+        
       </table>
+      <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                {% include social-networks.html %}
+            </div>
  
 </div>
 </footer>
