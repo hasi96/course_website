@@ -73,7 +73,7 @@ The following texts are recommended as good resources:
 
 Teetor, P. (2011). R Cookbook: Proven recipes for data analysis, statistics, and graphics. O'Reilly Media, Inc.
 
-Sanchez, G. (2013). Handling and processing strings in R. Berkeley: Trowchez Editions. ([ree online](https://www.gastonsanchez.com/Handling_and_Processing_Strings_in_R.pdf))
+Sanchez, G. (2013). Handling and processing strings in R. Berkeley: Trowchez Editions. ([free online](https://www.gastonsanchez.com/Handling_and_Processing_Strings_in_R.pdf))
 
 Peng, R. D., & Matsui, E. (2015). The Art of Data Science. A Guide for Anyone Who Works with Data. Skybrude Consulting, 200, 162.
 
