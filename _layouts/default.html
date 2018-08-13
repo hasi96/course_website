@@ -137,7 +137,7 @@
  
  
  
-<footer class="uk-section uk-link-muted" style="background-color:rgba(0,163,224,0.6); margin-top: 0px; ">
+<footer class="uk-section uk-text-center uk-link-muted" style="background-color:rgba(0,163,224,0.6); margin-top: 0px; ">
  
 <div class="uk-container">
     
@@ -162,13 +162,13 @@
                         {% assign current = null %}
                     {% endif %}
              
-                    <tr class="uk-width-large">
+                    <tr>
                     {% if link.title %}
                   
                        {% if link.url contains 'http' %} 
-                          <td> <a href="{{ link.url }}" style="color: black;" align="left;" target="_blank"; >{{ link.title }}</a> </td>
+                          <td class="uk-width-large"> <a href="{{ link.url }}" style="color: black;" align="left;" target="_blank"; >{{ link.title }}</a> </td>
                        {% else %} 
-                          <td> <a href="{{ domain }}/{{ site.github_info.website-repo }}/{{ link.url }}" style="color: black; ">{{ link.title }}</a> </td>
+                          <td class="uk-width-large"> <a href="{{ domain }}/{{ site.github_info.website-repo }}/{{ link.url }}" style="color: black; ">{{ link.title }}</a> </td>
                        {% endif %}
                     
                     {% endif %}
