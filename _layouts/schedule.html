@@ -152,9 +152,13 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                          button.setAttribute("onclick","expand("+i+");");
                           var ttr2 = document.createElement("tr");
                       var title = sections[i].getElementsByTagName("h1");
-                     
+                     if(title.length>0){
                     var tex = document.createTextNode(title[0].innerHTML);
-                
+                }
+                else{
+                    var tex = document.createTextNode("");
+
+                }
                     button.appendChild(tex);
                    ttd.appendChild(button);
 
@@ -362,7 +366,6 @@ function expand(i){
 
               var hr = document.createElement("hr");
              secs[j].appendChild(hr);
-
               var h1 = secs[j].getElementsByTagName("h1");
               (h1[0]).setAttribute("style","color:#8c1d40;");
               h1[0].appendChild(hr);
@@ -382,7 +385,7 @@ function expand(i){
 <script type="text/javascript">
 var b = document.getElementById("divCheckbox");
 var str = b.innerHTML;
-var regex = /\<hr\>(.*)/ig ,   body = str,   result = body.replace(regex,"</section> <section> # Default title ");
+var regex = /\<hr\>(.*)/ig ,   body = str,   result = body.replace(regex,"</section> <section> ");
 var res = result.match(/\[(.*)\]\{\@lecture(.*)\}/ig);
 var baseurl = b.getAttribute("class");
 for( var i=0;i<res.length;i++)
