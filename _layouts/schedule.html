@@ -388,7 +388,7 @@ function expand(i){
 <script type="text/javascript">
 var b = document.getElementById("divCheckbox");
 var str = b.innerHTML;
-var regex = /\<hr\>(.*)/ig ,   body = str,   result = body.replace(regex,"</section> <section> ");
+var regex = /\<hr\>(.*)/ig ,   body = str,   result = body.replace(regex,"</section><hr> <section> ");
 var res = result.match(/\[(.*)\]\{\@lecture(.*)\}/ig);
 var baseurl = b.getAttribute("class");
 for( var i=0;i<res.length;i++)
