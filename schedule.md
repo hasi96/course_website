@@ -114,10 +114,11 @@ Download the Exempt Organization Business Master File Extract Excel file for y
 ["slides"]{@lecture STA112FS_VisDayOneSlides_Fall2017.pdf}
 
 
-***  ["Unit 4: August 16-20"]{@date}
+***  
 
 # New Unit
 
 Some other text. 
 
+["Unit 4: August 16-20"]{@date}
   
