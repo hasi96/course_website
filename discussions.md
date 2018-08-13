@@ -29,6 +29,14 @@ If you're having trouble summarizing the problem, write the title last - sometim
 * Bad: android if else problems
 * Good: Why does str == "value" evaluate to false when str is set to "value"?
 
+Some sample code:
+
+```r
+x <- 1:100
+y <- 2*x + rnorm(100)
+plot( x, y )
+```
+
 ### Introduce the problem before you post any code
 In the body of your question, start by expanding on the summary you put in the title. Explain how you encountered the problem you're trying to solve, and any difficulties that have prevented you from solving it yourself. The first paragraph in your question is the second thing most readers will see, so make it as engaging and informative as possible.
 
