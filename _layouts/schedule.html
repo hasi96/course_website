@@ -78,14 +78,17 @@ disqus: true
 </div>
 </div>
 </body>
-      <script>
+
+
+
+<script>
 
                     // Table of contents scroll to
                     UIkit.scroll('#markdown-toc a', {
                         duration: 400,
                         offset: 120
                     });
-                </script>
+</script>
 
      <script>
   $(function() {
@@ -101,9 +104,11 @@ disqus: true
     });
 });
   </script>
-  <section>
 
-  <div id="divCheckbox" class = "{{ site.url }}{{site.github_info.course-repo}}" style="display: none;">{{ content | checked }}</div>
+
+
+<section>
+<div id="divCheckbox" class = "{{ site.url }}{{site.github_info.course-repo}}" style="display: none;">{{ content | checked }}</div>
 
 
 
@@ -485,6 +490,7 @@ document.getElementById("divCheckbox").innerHTML = result;
 
 </div>
 </div>
+</section>
 <!-- </div> -->
 
 <br>
