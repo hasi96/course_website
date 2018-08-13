@@ -87,6 +87,12 @@ Download the Exempt Organization Business Master File Extract Excel file for y
 
 
 ***
+["MIDTERM"]{@date}
+
+["slides"]{@exam STA112FS_VisDayOneSlides_Fall2017.pdf}
+
+
+***
 
 # Civic and Political Engagement   
 ["slides"]{@handout STA112FS_VisDayOneSlides_Fall2017.pdf}
@@ -100,8 +106,42 @@ Download the Exempt Organization Business Master File Extract Excel file for y
   + Estimate the trajectory of current and future changes in civic engagement 
   
 ["Tue 02,2018"]{@date}
-["slides"]{@exam STA112FS_VisDayOneSlides_Fall2017.pdf}
+
 ["slides"]{@lecture STA112FS_VisDayOneSlides_Fall2017.pdf}
 
 
-***
+***  ["Unit 4: August 16-20"]{@date}
+
+# Scope of the Sector  
+
+Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam. ["SLIDES"]{@lecture module_2_slides.html}  
+
+## Introduction to the Course
+Personal introductions via BlackBoard before the course begins.
+
+## Varieties of Nonprofit Organizations   
+By the end of the unit, you will be able to classify the range of organizations that operate within the nonprofit sector.
+
+## Assigned Readings 
+
+Chapter 1 from Bruce Hopkins' book Starting and Managing a Nonprofit Organization.  The chapter is titled "What is a Nonprofit Organization?"  (on Blackboard)
+
+US Internal Revenue Code Title 26, Sub A, Chapter 1F, Part 1, Section 501.  ["LINK"]{@reading 01-reading.html}
+
+
+## Exercises   
+Exercise 1: What Do You Know about the Scope of the Sector?
+
+Exercise 2: Coding Public Charities by NTEE
+
+["Lab"]{@lab 02-mini-hw.html} 
+
+
+## Discussion Questions 2.1 – Scope of the Sector  
+Use this forum to discuss any questions or reflections you have related to the Exercise 1. As an orientation to the forums, I would like you to post a thread related to the introduction and exercise, OR respond to at least one of your classmates' posts.
+This forum is UNGRADED, although I would like everyone to either post a reflection/question related to the introduction and exercise, OR respond to at least one of your classmates' posts.
+
+## Discussion Questions 2.2 – Classifying Nonprofits by NTEE Codes   
+Use this forum to discuss any questions or reflections you have related to the Exercise 2 or the materials leading up to it. Again for "practice," I would like you to post a thread related to the public charities discussion and NTEE exercise, OR respond to at least one of your classmates' posts.
+This forum is also UNGRADED, although I would again like everyone to either post a reflection/question related to the public charities discussion and NTEE exercise, OR respond to at least one of your classmates' posts.
+
