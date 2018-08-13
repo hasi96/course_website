@@ -2,8 +2,6 @@
 layout: schedule
 title: Schedule
 subtitle: Introduction to R for non-profits
-tags: featured,othertag
-
 ---
 
 <!--- 
