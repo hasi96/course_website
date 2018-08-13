@@ -87,9 +87,10 @@ Download the Exempt Organization Business Master File Extract Excel file for y
 
 
 ***
+
 ["MIDTERM"]{@date}
 
-["slides"]{@exam STA112FS_VisDayOneSlides_Fall2017.pdf}
+["exam"]{@exam STA112FS_VisDayOneSlides_Fall2017.pdf}
 
 
 ***
@@ -110,13 +111,16 @@ Download the Exempt Organization Business Master File Extract Excel file for y
 ["slides"]{@lecture STA112FS_VisDayOneSlides_Fall2017.pdf}
 
 
-***  ["Unit 4: August 16-20"]{@date}
+***  
+
+["Unit 4: August 16-20"]{@date}
 
 # Scope of the Sector  
 
 Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam. ["SLIDES"]{@lecture module_2_slides.html}  
 
 ## Introduction to the Course
+
 Personal introductions via BlackBoard before the course begins.
 
 ## Varieties of Nonprofit Organizations   
@@ -130,6 +134,7 @@ US Internal Revenue Code Title 26, Sub A, Chapter 1F, Part 1, Section 501.  ["LI
 
 
 ## Exercises   
+
 Exercise 1: What Do You Know about the Scope of the Sector?
 
 Exercise 2: Coding Public Charities by NTEE
