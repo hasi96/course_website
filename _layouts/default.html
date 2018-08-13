@@ -147,7 +147,7 @@
           <td><a href="https://www.asu.edu/" style="align-items: left; "  ><img src="{{ "assets/img/asu.png" | relative_url }}" style="width: 60%; height: 50%;" align="left" ></a></td>
           
           <td>
-            <table class="uk-table uk-table-small">
+            <table class="uk-table">
                {% for link in site.header %}
                   
                   
@@ -164,7 +164,7 @@
                     
                     {% if link.title %}
                 
-                       <tr>     
+                       <tr class="uk-width-small">     
                        {% if link.url contains 'http' %} 
                           <td> <a href="{{ link.url }}" style="color: black;" align="left;" target="_blank"; >{{ link.title }}</a> </td>
                        {% else %} 
@@ -183,9 +183,7 @@
                 </tr>
           </table>
           
-          </td>
-
-    </td>
+       </td>
   </tr>
   
   <tr>
