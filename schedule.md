@@ -88,11 +88,13 @@ Download the Exempt Organization Business Master File Extract Excel file for y
 
 ***
 
+Some text.
+
 ["MIDTERM"]{@date}
 
 ["exam"]{@exam STA112FS_VisDayOneSlides_Fall2017.pdf}
 
-Some text.
+
 
 ***
 
@@ -118,3 +120,5 @@ Some text.
 
 Some other text. 
 
+
+***  
