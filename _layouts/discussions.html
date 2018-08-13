@@ -157,7 +157,10 @@ function httpGetAsync(theUrl, resp)
                 		td.appendChild(a);
                 		tr.appendChild(td);
                 		var td = document.createElement("td");
-                    if(obj[i].labels[0].name){
+                    if(!obj[i].labels[0].name){
+                      var txt = document.createTextNode("");
+                    td.appendChild(txt);
+                    }else{
                 		var txt = document.createTextNode(obj[i].labels[0].name);
                 		td.appendChild(txt);
                     }
