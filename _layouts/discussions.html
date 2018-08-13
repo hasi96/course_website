@@ -1,6 +1,5 @@
 ---
 layout: default
-
 ---
 
 
@@ -39,12 +38,16 @@ layout: default
   background-color: #f1f1f1;
 }
 </style>
+
+
 </head>
+
 <body class="page-responsive">
 
 {{content}}
 <br>
 <br>
+	
 <div class = "officehours uk-container" style="width:90%;margin-left:auto;margin-right:auto">
 <h2> Office Hours </h2>
 
@@ -62,12 +65,13 @@ layout: default
 {% endfor %}
 </tbody>
 </table>
-
-
-<br>
-<br>
 </div>
-<div class = "uk-container uk-container-xsmall" style="width:90%;margin-left:auto;margin-right:auto; ">
+	
+<br>
+<br>
+	
+	
+<div class = "uk-container" style="width:90%;margin-left:auto;margin-right:auto; ">
 	
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for issues.." title="Type in a name" style="width:60%;padding: 12px;"> 
 <a class="uk-button uk-button-default" href="https://github.com/{{site.github_info.username}}/{{ site.github_info.course-repo}}/issues/new">New Issue</a>
