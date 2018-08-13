@@ -3,24 +3,24 @@ layout: default
 ---
 <div class="uk-section">
     <article class="uk-article">
-    <div class="uk-container uk-container-xsmall">
+    <div class="uk-container">
             {% if page.title %}
             <h1 class="uk-article-title">{{ page.title }}</h1>
             {% else %}
             {% endif %}
 
             {% if page.short_description %}
-            <h3>  Description: {{page.short_description}} </h3>
+            <h4>  Description: {{page.short_description}} </h4>
             {% else %}
             {% endif %}
 
             {% if page.topic_keywords %}
-            <h3> Keywords: {{page.topic_keywords}} </h4>
+            <h4> Keywords: {{page.topic_keywords}} </h4>
             {% else %}
             {% endif %}
             <br>
         </div>
- <div  style=" background-color: rgb(220,220,220)">
+ <div  class="uk-section-muted">
     <div class="uk-container uk-container-xsmall">
             <div class="uk-article-content">
                
@@ -241,7 +241,7 @@ layout: default
              </div>
          </div>
 </div>
-<div class="uk-container uk-container-xsmall">
+<div class="uk-container uk-container">
             <div class="uk-article-content">
                  <br>
                  {{ content }}
