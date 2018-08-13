@@ -67,13 +67,13 @@ The purpose of all exams and assigned written work is also threefold: (1) the as
 
 There is one required textbook for the data science courses (I, II, and III):
 
-Wickham, H., & Grolemund, G. (2016). *R for Data Science.* O’Reilly Press. (free online)
+Wickham, H., & Grolemund, G. (2016). _R for Data Science._ O’Reilly Press. ([free online](http://r4ds.had.co.nz/))
 
 The following texts are recommended as good resources:
 
 Teetor, P. (2011). *R Cookbook: Proven recipes for data analysis, statistics, and graphics.* O'Reilly Media, Inc.
 
-Sanchez, G. (2013). *Handling and processing strings in R.* Berkeley: Trowchez Editions. (free online)
+Sanchez, G. (2013). *Handling and processing strings in R.* Berkeley: Trowchez Editions. ([ree online](https://www.gastonsanchez.com/Handling_and_Processing_Strings_in_R.pdf))
 
 Peng, R. D., & Matsui, E. (2015). *The Art of Data Science. A Guide for Anyone Who Works with Data.* Skybrude Consulting, 200, 162.
 
