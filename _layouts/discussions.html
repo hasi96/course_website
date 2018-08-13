@@ -44,9 +44,9 @@ layout: default
 
 <body class="page-responsive">
 
-{{content}}
-<br>
-<br>
+<h1>How to Get Help</h1>
+	
+You have several options for asking questions about course content and seeking help on labs.
 	
 <div class = "officehours uk-container">
 <h2> Office Hours </h2>
@@ -119,6 +119,14 @@ function myFunction() {
 
 <div id="gitdata" class = {{ site.github_info.course-repo }} style="display: none;">{{ site.github_info.username }}</div>
 <div id = "results"></div>
+
+<br>
+<br>
+{{content}}
+<br>
+<br>
+
+
 <script>
 var username = document.getElementById("gitdata").innerHTML;
 var repo = document.getElementById("gitdata").getAttribute("class");
