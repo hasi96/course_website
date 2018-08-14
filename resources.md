@@ -23,7 +23,7 @@ In addition to packages created for R, there are also powerful tools that make i
 <img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/data-science-ecosystem.png" alt="Data Science Ecosystem" style="width:400px" align="center" ></p>
 <br>
 
-A big part of this course is learning about some of these resources and how they fit together to improve work-flow, analysis, and reporting. The most powerful tool that you will discover, however, is the community of smart and creative people active in the field of data science. Some are engineers working on solutions to hard technical problems in the open source space, but most are regular users such as data analysts, artists, educators and activists. Once you understand a few foundational concepts and develop a rudimentary vocabulary you can tap into the community through message boards and list-serves. 
+A big part of this course is learning about some of these resources and how they fit together to improve work-flow, analysis, and reporting. The most powerful tool that you will discover, however, is the community of smart and creative people active in the field of data science. Some are engineers working on solutions to hard technical problems in the open source space, but most are regular users such as data analysts, artists, educators and activists. Once you understand a few foundational concepts and develop a rudimentary vocabulary you can tap into the community through message boards and list-serves. See the Get Help tab for rules to follow as a good community member. 
 
 <br>
 <p align="left">
@@ -85,6 +85,11 @@ This course will introduce students to [GitHub](https://www.economist.com/the-ec
 <br>
 <iframe width="854" height="480" src="https://www.youtube.com/embed/w3jLJU7DT5E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <br>
+
+
+## Useful Data Sources
+
+http://shop.oreilly.com/product/0636920018254.do
 
 
 <br><br><br>
