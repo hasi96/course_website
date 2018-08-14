@@ -78,10 +78,7 @@ This course will introduce students to [GitHub](https://www.economist.com/the-ec
 
 
 <br>
-<p align="left">
-<a href="https://www.youtube.com/watch?v=w3jLJU7DT5E" target="_blank"><img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/R-in-60-seconds.png" 
-alt="R in 60 seconds" width="854" border="0" /></a>
-</p>
+<iframe width="854" src="https://www.youtube.com/embed/w3jLJU7DT5E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <br>
 
 
