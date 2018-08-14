@@ -20,7 +20,7 @@ In addition to packages created for R, there are also powerful tools that make i
 
 <br>
 <p align="center">
-<img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/data-science-ecosystem.png" alt="Data Science Ecosystem" style="width:400px" align="center" ></p>
+<img src="assets/img/data-science-ecosystem.png" alt="Data Science Ecosystem" style="width:400px" align="center" ></p>
 <br>
 
 {% include image.html img="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/data-science-ecosystem.png" style="wide" lightbox="true" alt="Data Science Ecosystem" caption="The Data Science Ecosystem" %}
