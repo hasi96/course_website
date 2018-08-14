@@ -37,6 +37,8 @@ alt="R in 60 seconds" width="854" border="0" /></a>
 R is a programming langauge that was [designed specifically for data analysis](https://www.nytimes.com/2009/01/07/technology/business-computing/07program.html). Along with Python, it is the [most popular tool](https://stackoverflow.blog/2017/10/10/impressive-growth-r/) used by data scientists, data journalists, and quantitative social scientists. 
 
 
+https://medium.com/@GalarnykMichael/install-r-and-rstudio-on-windows-5f503f708027
+
 ## Installing Packages in R
 
 CRAN Views
