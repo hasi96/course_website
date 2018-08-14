@@ -29,7 +29,7 @@ The most powerful tool that you can learn to utilize is the community of smart a
 
 ## R in 60 Seconds
 
-<a href="https://vimeo.com/180644880" target="_blank"><img src="./assets/img/R-in-60-seconds.png" 
+<a href="https://vimeo.com/180644880" target="_blank"><img src="https://github.com/hasi96/course_website/blob/master/assets/img/R-in-60-seconds.png?raw=true" 
 alt="R in 60 seconds" width="240" height="180" border="10" /></a>
 
 
