@@ -19,16 +19,18 @@ The R community has taken this to another scale. There are currently 13,000 free
 In addition to packages created for R, there are also powerful tools that make it easier to share data, collaborate on work, and share your results in creative ways. One of the reasons R has become an industry favorite is that it is highly integrated into this ecosystem. Many of these tools are built-right into R Studio, making it easier to manage large projects or collaborate.
 
 <br>
-<img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/data-science-ecosystem.png" alt="Data Science Ecosystem" style="width:400px" align="center" >
+<p align="center">
+<img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/data-science-ecosystem.png" alt="Data Science Ecosystem" style="width:400px" align="center" ></p>
 <br>
 
-The most powerful tool that you can learn to utilize is the community of smart and creative people active in the field of data science. A big part of this class is learning about some of these resources and how they fit together to improve work-flow, analysis, and reporting. Another part if gaining some familiarity with communities of data artists, educators, intellectuals, and activists that comprise the open source community. 
+A big part of this course is learning about some of these resources and how they fit together to improve work-flow, analysis, and reporting. The most powerful tool that you will discover, however, is the community of smart and creative people active in the field of data science. Some are engineers working on solutions to hard technical problems in the open source space, but most are regular users such as data analysts, artists, educators and activists. Once you understand a few foundational concepts and develop a rudimentary vocabulary you can tap into the community through message boards and list-serves. 
 
 ## R in 60 Seconds
 
+<p align="center">
 <a href="https://vimeo.com/180644880" target="_blank"><img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/R-in-60-seconds.png" 
-alt="R in 60 seconds" width="800" border="1" align="center" /></a>
-
+alt="R in 60 seconds" width="800" border="1" /></a>
+</p>
 
 ## Installing R
 
