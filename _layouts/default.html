@@ -43,20 +43,6 @@
     <div data-uk-navbar>
         <div class="uk-navbar-left">
           <b><a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}" style="color: black;">{% if site.brand.image %}<img src="{{ site.post_assets | absolute_url }}{{ site.brand.image }}" alt="{{ site.brand.text | escape }}">{% else %}{{ site.brand.text | escape }}{% endif %}</a></b> <br>
-          
-          <!-- <table>
-            <tr>
-              <td>
-            
-            </td>
-          </tr>
-          <tr>
-            <td>
-             <a   href="https://github.com/{{ site.github_info.username }}/{{ site.github_info.website-repo }}/edit/master/{{page.path}}" target = "_blank"> <i class="fab fa-github" style="color: black;">Edit On Github</i></a>
-           </td>
-         </tr>
-       </table> -->
-
         </div>
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav uk-visible@m" >
@@ -135,23 +121,16 @@
 {% include offcanvas.html %}
 
  
- 
- 
 <footer class="uk-section uk-text-center uk-link-muted" style="background-color:rgba(0,163,224,0.6); margin-top: 0px; ">
- 
-<div class="uk-container">
-    
-      <table class="uk-table">
-        <tr>
-          
-          <td><a href="https://www.asu.edu/" style="align-items: left; "  ><img src="{{ "assets/img/asu.png" | relative_url }}" style="width: 60%; height: 50%;" align="left" ></a></td>
-          
-          <td>
-            <table class="uk-table">
-               <tr><td><br></td></tr>
-               {% for link in site.header %}
-                  
-                  
+<div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-7 col-xs-8">
+          <a href="https://www.asu.edu/" ><img src="{{ "assets/img/asu.png" | relative_url }}" style="width: 70%; height: 50%;" align="left" ></a>
+        </div>
+      
+        <div class="col-lg-5 col-md-5 col-xs-4">
+          <table>
+                {% for link in site.header %}
                     {% if link.url contains 'http' %}
                         {% assign domain = '' %}
                     {% else %}
@@ -162,59 +141,39 @@
                     {% else %}
                         {% assign current = null %}
                     {% endif %}
-             
-                    <tr>
                     {% if link.title %}
-                  
-                       {% if link.url contains 'http' %} 
-                          <td class="uk-width-large"> <a href="{{ link.url }}" style="color: black;" align="left;" target="_blank"; >{{ link.title }}</a> </td>
-                       {% else %} 
-                          <td class="uk-width-large"> <a href="{{ domain }}/{{ site.github_info.website-repo }}/{{ link.url }}" style="color: black; ">{{ link.title }}</a> </td>
-                       {% endif %}
-                    
+                        
+                   {% if link.url contains 'http' %} 
+                    <tr>
+                      <td style="padding-left: 7em;"><a href="{{ link.url }}" style="color: black;" target="_blank"; >{{ link.title }}</a></td>
+                 </tr>
+                   {% else %} 
+                    <tr>
+                      <td style="padding-left: 7em;"><a href="{{ domain }}/{{ site.github_info.website-repo }}/{{ link.url }}" style="color: black; ">{{ link.title }}</a></td>
+                 </tr>
+                 {% endif %}
                     {% endif %}
-                    </tr>
-                
-               {% endfor %}
-
-               <tr>
-                 <td>
+                {% endfor %}
+                  <tr>
+                 <td style="padding-left: 7em;>
                    <a href="https://github.com/{{ site.github_info.username }}/{{ site.github_info.website-repo }}/edit/master/{{page.path}}" target = "_blank"> <i class="fab fa-github" style="color: black; font-size: 1.2em;"></i></a>
                 </td>
                </tr>
-             
-          </table>
-       </td>   
-  </tr>
+              </table>
+        </div>
+      </div>
+       <div class="row">
+          <div class="col-lg-7 col-md-7 col-xs-8" style="color: transparent;">
+            Data Science
+          </div>
+          <div class="col-lg-5 col-md-5 col-xs-4" align="left" style="margin-left: 2em;">
+            {% include social-networks.html %}
+          </div>
+        </div>
+    </div>
   
-  <tr>
-    <td align="left" >
-      {% include social-networks.html %}
-    </td>
-  </tr>
+</footer> 
 
- 
- </table>    
- 
- 
-         <!--  <td align="left" style="text-align: left; align-content: left;padding-left: 3em;">
-            <a href="https://www.facebook.com/arizonastateuniversity"><i class="fab fa-facebook-f fa-3x"></i></a>
-            <a href="https://plus.google.com/+arizonastateuniversity" style="padding-left: 0.75em;"><i class="fab fa-google-plus-g fa-3x"></i></a>
-            <a href="https://twitter.com/asu" style="padding-left: 0.75em;"><i class="fab fa-twitter fa-3x"></i></a>
-            <a href="https://www.linkedin.com/school/arizona-state-university/" style="padding-left: 0.75em;"><i class="fab fa-linkedin-in fa-3x"></i></a>
-            <a href="https://www.youtube.com/user/ASU" style="padding-left: 0.75em;"><i class="fab fa-youtube fa-3x"></i></a>
-            <a href="https://foursquare.com/asu" style="padding-left: 0.75em;"><i class="fab fa-foursquare fa-3x"></i></a>
-            <a href="https://www.instagram.com/" style="padding-left: 0.75em;"><i class="fab fa-instagram fa-3x"></i></a>
-            <a href="https://vimeo.com/" style="padding-left: 0.75em;"><i class="fab fa-vimeo-v fa-3x"></i></a>
-          </td> -->
-
-     <!--  <div class="uk-margin-medium">
-            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
-                {% include social-networks.html %}
-            </div> -->
- 
-</div>
-</footer>
 
  </body>
 </html>

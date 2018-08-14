@@ -87,7 +87,8 @@ Download the Exempt Organization Business Master File Extract Excel file for y
 
 
 ***
-Some text.
+
+# MIDTERM EXAM
 
 ["MIDTERM"]{@date}
 
@@ -115,9 +116,14 @@ Some text.
 
 ***  
 
-["Unit 4: August 16-20"]{@date}
+# New Unit
 
 Some other text. 
 
+## Subsection
+
+["Unit 4: August 16-20"]{@date}
+
 
 ***  
+  
