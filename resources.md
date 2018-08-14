@@ -28,7 +28,7 @@ A big part of this course is learning about some of these resources and how they
 <br>
 <p align="center">
 <a href="https://vimeo.com/180644880" target="_blank"><img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/R-in-60-seconds.png" 
-alt="R in 60 seconds" width="800" border="1" /></a>
+alt="R in 60 seconds" width="800" border="0" /></a>
 </p>
 <br>
 
