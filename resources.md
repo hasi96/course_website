@@ -22,6 +22,8 @@ In addition to packages created for R, there are also powerful tools that make i
 <img src="/assets/img/data-science-ecosystem.png" alt="Data Science Ecosystem" class="center">
 <br>
 
+![](assets/img/data-science-ecosystem.png)
+
 The most powerful tool that you can learn to utilize is the community of smart and creative people active in the field of data science. A big part of this class is learning about some of these resources and how they fit together to improve work-flow, analysis, and reporting. Another part if gaining some familiarity with communities of data artists, educators, intellectuals, and activists that comprise the open source community. 
 
 ## R in 60 Seconds
