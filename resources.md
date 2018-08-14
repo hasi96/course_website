@@ -25,16 +25,53 @@ In addition to packages created for R, there are also powerful tools that make i
 
 A big part of this course is learning about some of these resources and how they fit together to improve work-flow, analysis, and reporting. The most powerful tool that you will discover, however, is the community of smart and creative people active in the field of data science. Some are engineers working on solutions to hard technical problems in the open source space, but most are regular users such as data analysts, artists, educators and activists. Once you understand a few foundational concepts and develop a rudimentary vocabulary you can tap into the community through message boards and list-serves. 
 
-## R in 60 Seconds
-
+<br>
 <p align="center">
 <a href="https://vimeo.com/180644880" target="_blank"><img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/R-in-60-seconds.png" 
 alt="R in 60 seconds" width="800" border="1" /></a>
 </p>
+<br>
 
 ## Installing R
 
 R is a programming langauge that was [designed specifically for data analysis](https://www.nytimes.com/2009/01/07/technology/business-computing/07program.html). Along with Python, it is the [most popular tool](https://stackoverflow.blog/2017/10/10/impressive-growth-r/) used by data scientists, data journalists, and quantitative social scientists. 
+
+
+## Installing Packages in R
+
+CRAN Views
+
+[Tidyverse toolkit](https://www.tidyverse.org/packages/)
+
+```r
+install.packages("tidyverse")
+library(tidyverse)
+```
+
+
+## Documentation of Packages
+
+
+
+## Data-Driven Documents
+
+Motivation - crisis of reproducibility
+
+Example
+
+Cheat Sheet
+
+Rmarkdown
+
+Gallery
+
+
+
+## Collaboration Tools
+
+
+<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/clay_shirky_how_the_internet_will_one_day_transform_government" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+Install GitHub in R Studio
 
 
 
