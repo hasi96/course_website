@@ -192,11 +192,32 @@ post_css: /assets/css/posts
 markdown:           kramdown
 highlighter:        rouge
 
+scholar:
+  style: apa
+  locale: en
+
+  sort_by: none
+  order: ascending
+
+  source: ./_bibliography
+  bibliography: bibliography.bib
+  bibliography_template: <abbr>[{{key}}]</abbr>{{reference}}
+
+  replace_strings: true
+  join_strings:    true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
+
 gems:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-gist
   - jekyll-avatar
+  - jekyll-scholar
 exclude:
   - Gemfile
   - Gemfile.lock

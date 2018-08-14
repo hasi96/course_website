@@ -29,7 +29,7 @@ By the end of the unit, you will be able to classify the range of organizations 
 
 Chapter 1 from Bruce Hopkins' book Starting and Managing a Nonprofit Organization.  The chapter is titled "What is a Nonprofit Organization?"  (on Blackboard)
 
-US Internal Revenue Code Title 26, Sub A, Chapter 1F, Part 1, Section 501.  ["LINK"]{@reading 01-reading.html}
+US Internal Revenue Code Title 26, Sub A, Chapter 1F, Part 1, Section 501.  ["LINK"]{@reading 01-reading.html}{% cite ruby %}
 
 
 ## Exercises   

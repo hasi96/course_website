@@ -49,7 +49,6 @@ disqus: true
 
 <body class = "page-responsive">
 <!-- <div class="wrapper"> -->
-
   <div class="main main-raised uk-section" id = "pp">
     <div class="table-responsive uk-container">
 
@@ -78,8 +77,6 @@ disqus: true
 </div>
 </div>
 </body>
-
-
 
 <script>
 
@@ -197,6 +194,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                 var newCell = document.createElement("td");
            
                 var icon = document.createElement("i");
+                
                 icon.className = "fa fa-check-circle";    
                                 newCell.appendChild(icon);
 
@@ -470,7 +468,6 @@ for( var i=0;i<res.length;i++)
     res[i].indexOf("\}")
 );
   var link = sub.split(" ")[1];
-
    if(!ValidURL(link)){
                     var sr = baseurl + "/READINGS/"+link;
                     link = sr; }
@@ -482,7 +479,7 @@ var res = result.match(/\[(.*)\]\{\@date(.*)\}/ig);
 for( var i=0;i<res.length;i++)
 {
   var mySubString = res[i].substring(
-    res[i].indexOf("\[") + 2, 
+    res[i].indexOf("\ [") + 2, 
     res[i].indexOf("\]") -1
 );
 
@@ -492,6 +489,7 @@ result = result.replace(res[i],"\<div class=\"dates\" style=\"display: none;\"\>
 document.getElementById("divCheckbox").innerHTML = result;
 
 </script>
+
 
 
 
