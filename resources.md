@@ -75,7 +75,7 @@ Working in groups [is hard](https://www.ted.com/talks/clay_shirky_on_institution
 <br>
 
 <br>
-<iframe width="854" src="https://embed.ted.com/talks/clay_shirky_how_the_internet_will_one_day_transform_government" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="854" src="https://www.ted.com/talks/clay_shirky_how_the_internet_will_one_day_transform_government" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <br>
 <br>
 
@@ -85,7 +85,7 @@ This course will introduce students to [GitHub](https://www.economist.com/the-ec
 
 
 <br>
-<iframe width="854" src="https://www.youtube.com/embed/w3jLJU7DT5E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/w3jLJU7DT5E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <br>
 
 
