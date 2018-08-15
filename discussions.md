@@ -10,10 +10,10 @@ We are using GitHub Issues for discussion boards so that you can get practice po
 GitHub speaks Markdown, which allows you to write questions that include reproducible code so that others can easily diagnose the problem and offer you solutions.
 
 <br>
-<img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/github-issues.png" 
+<img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/github-issue.png" 
 alt="Issues" width="400" />
 <br>
-<img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/github-issues-preview.png" 
+<img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/github-issue-preview.png" 
 alt="Issues" width="400" />
 <br>
 
