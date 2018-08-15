@@ -24,10 +24,11 @@ In addition to packages created for R, there are also powerful tools that make i
 </div>
 
 <br>
-<img data-src="assets/img/data-science-ecosystem.png" width="400" alt="The Data Science Ecosystem" uk-img>
+<img src="assets/img/data-science-ecosystem.png" width="400" alt="The Data Science Ecosystem" uk-img>
 <br>
 
-{% include image img="assets/img/data-science-ecosystem.png" style="wide" lightbox="true" alt="Data Science Ecosystem" caption="The Data Science Ecosystem" %}
+<img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/data-science-ecosystem.png" 
+alt="The DS ECO" width="400" border="0" />
 
 A big part of this course is learning about some of these resources and how they fit together to improve work-flow, analysis, and reporting. The most powerful tool that you will discover, however, is the community of smart and creative people active in the field of data science. Some are engineers working on solutions to hard technical problems in the open source space, but most are regular users such as data analysts, artists, educators and activists. Once you understand a few foundational concepts and develop a rudimentary vocabulary you can tap into the community through message boards and list-serves. See the Get Help tab for rules to follow as a good community member. 
 
