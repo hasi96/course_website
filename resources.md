@@ -19,8 +19,14 @@ The R community has taken this to another scale. There are currently 13,000 free
 In addition to packages created for R, there are also powerful tools that make it easier to share data, collaborate on work, and share your results in creative ways. One of the reasons R has become an industry favorite is that it is highly integrated into this ecosystem. Many of these tools are built-right into R Studio, making it easier to manage large projects or collaborate.
 
 <br>
-<p align="center">
+
 <img src="assets/img/data-science-ecosystem.png" alt="Data Science Ecosystem" style="width:400px">
+
+<br>
+
+<br>
+<p align="center">
+<img data-src="assets/img/data-science-ecosystem.png" width="400" alt="The Data Science Ecosystem" uk-img>
 </p>
 <br>
 
