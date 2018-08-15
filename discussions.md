@@ -2,6 +2,85 @@
 layout: discussions
 ---
 
+
+## Discussion Board Etiquette
+
+We are using GitHub Issues for discussion boards so that you can get practice posting questions in a typical data science forum. This format is similar to Stack Overflow, one of the best resources available for questions about R code and R packages.
+
+GitHub speaks Markdown, which allows you to write questions that include reproducible code so that others can easily diagnose the problem and offer you solutions.
+
+<br>
+<img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/github-issues.png" 
+alt="Issues" width="400" />
+<br>
+<img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/github-issues-preview.png" 
+alt="Issues" width="400" />
+<br>
+
+## Simple Rules for Clear Questions
+
+#### Don't Repeat Questions
+
+Check the existing list of questions and topics to make sure your questions has not been asked already. Often times the answer already exists, you just need to read a couple of previous discussions.
+
+#### Include Your Code 
+
+There are a million ways to do something incorrectly, so we cannot guess what you are doing wrong unless you show us. Don't write questions like:
+
+> I am trying to merge my data, but I keep getting the error message, "x is not a factor".
+
+You need to show the code that generated the error message. 
+
+I am trying to merge my data, but I keep getting the error message, "cannot merge object type list". Here is my code:
+
+```r
+x <- data.frame( id=letters[1:10], v1=rnorm(10) )
+y <- data.frame( id=letters[1:10], v2=rbinom(10) )
+z <- list( x, y )
+merge( y, z )
+```
+
+#### State Your Goal
+
+Often times people will post code without explaining what they are trying to do. Be clear about your goal so that the problem is easier to spot. 
+
+#### Include Data
+
+You can include data in your questions in a few ways. 
+
+There are some functions that allow you generate random data that can be used to demonstrate the problem.
+
+Many packages include built-in datasets that can be easily referenced with the data() function.
+
+```r
+data( Iris )
+plot( Iris[,1:2] )
+```
+
+If the data is important for your example, you can post a small sample of your data using the dput() function.
+
+```r
+x <- 1:100
+y <- rnorm(100)
+dat <- data.frame( x, y )
+dput( head( dat, 10 ) )
+
+> structure(list(x = 1:10, 
+> y = c(1.02, 1.28, 0.9, -1.35, 0.5, 0.25, 
+> -0.29, 0.33, 1.61, 0.85)), 
+> .Names = c("x", "y"), row.names = c(NA, 
+> 10L), class = "data.frame"))
+```
+
+The output code can be pasted directly into R to re-create the original dataset.
+
+
+
+
+# Stack Overflow Etiquette
+
+When posting on a forum like St
+
 ## How do I ask a good question?
 
 We’d love to help you. To improve your chances of getting an answer, here are some tips:
@@ -29,13 +108,6 @@ If you're having trouble summarizing the problem, write the title last - sometim
 * Bad: android if else problems
 * Good: Why does str == "value" evaluate to false when str is set to "value"?
 
-Some sample code:
-
-```r
-x <- 1:100
-y <- 2*x + rnorm(100)
-plot( x, y )
-```
 
 ### Introduce the problem before you post any code
 In the body of your question, start by expanding on the summary you put in the title. Explain how you encountered the problem you're trying to solve, and any difficulties that have prevented you from solving it yourself. The first paragraph in your question is the second thing most readers will see, so make it as engaging and informative as possible.
