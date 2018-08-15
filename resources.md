@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<div class = "uk-container uk-container-small">
+  
 <br><br>
 
 # Resources
@@ -123,5 +125,6 @@ For those that are new to data science, I have compiled some useful resources fo
 
 http://www.lecy.info/r-for-public-policy
 
+</div>
 <br><br><br>
 
