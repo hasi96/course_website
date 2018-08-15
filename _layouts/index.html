@@ -44,7 +44,7 @@ layout: default
 <article class="uk-article">
 
 
-<div class="uk-section uk-section-muted uk-padding-large">
+<div class="uk-section-muted uk-padding-large">
 <div class="uk-container uk-container-small">
 
   
@@ -67,70 +67,70 @@ layout: default
 {% if site.info.program_title %}
 <tr>
 <td>Program Title </td>
-<td> {{site.info.program_title}} </td>
+  <td> <b>{{site.info.program_title}}</b> </td>
 </tr>
 {% endif %}
 
 {% if site.info.program_website %}
 <tr>
 <td>Program Website</td>
-<td> {{site.info.program_website}} </td>
+<td><b> {{site.info.program_website}} </b></td>
 </tr>
 {% endif %}
 
 {% if site.info.course_title %}
 <tr>
 <td>Course Title</td>
-<td> {{site.info.course_title}} </td>
+<td><b> {{site.info.course_title}} </b></td>
 </tr>
 {% endif %}
 
 {% if site.info.course_number %}
 <tr>
 <td>Course Number</td>
-<td> {{site.info.course_number}}</td>
+<td><b> {{site.info.course_number}} </b></td>
 </tr>
 {% endif %}
 
 {% if site.info.course_level %}
 <tr>
-<td>Course Level</td>
-<td> {{site.info.course_level}} </td>
+<td> Course Level </td>
+<td><b> {{site.info.course_level}} </b></td>
 </tr>
 {% endif %}
 
 {% if site.info.course_website %}
 <tr>
 <td>Course Website</td>
-<td> {{site.info.course_website}} </td>
+<td><b> {{site.info.course_website}} </b></td>
 </tr>
 {% endif %}
 
 {% if site.info.course_start_end_dates %}
 <tr>
-<td>Course Start-End</td>
-<td> {{site.info.course_start_end_dates }} </td>
+<td> Course Start-End </td>
+<td><b> {{site.info.course_start_end_dates }} </b></td>
 </tr>
 {% endif %}
 
 {% if site.info.course_prerequisites %}
 <tr>
 <td>Course Prerequisites</td>
-<td> {{site.info.course_prerequisites }} </td>
+<td><b> {{site.info.course_prerequisites }} </b></td>
 </tr>
 {% endif %}
 
 {% if site.info.class_meets_when %}
 <tr>
 <td>Class Timings</td>
-<td> {{site.info.class_meets_when }} </td>
+<td><b> {{site.info.class_meets_when }} </b></td>
 </tr>
 {% endif %}
 
 {% if site.info.class_meets_where %}
 <tr>
 <td>Class Location</td>
-<td> {{site.info.class_meets_where }} </td>
+<td><b> {{site.info.class_meets_where }} </b></td>
 </tr>
 {% endif %}
 
@@ -164,18 +164,18 @@ layout: default
 <td> <a href="mailto:{{item.email}}" title="email"><i class="fa fa-envelope" style="color: rgb(140,29,64)"></i></a> </td>
 
 {% if item.github_url %}
-<td> <a href="mailto:{{item.github_url}}" title="email"><i class="fab fa-github" style="color: rgb(140,29,64)"></i></a> </td>
+<td> <a href="{{item.github_url}}" title="email"><i class="fab fa-github" style="color: rgb(140,29,64)"></i></a> </td>
 {% endif %}
 
 {% if item.twitter_url %}
 <td>
- <a href="mailto:{{item.twitter_url}}" title="email"><i class="fab fa-twitter" style="color: rgb(140,29,64)"></i></a> 
+ <a href="{{item.twitter_url}}" title="email"><i class="fab fa-twitter" style="color: rgb(140,29,64)"></i></a> 
 </td>
 {% endif %}
 
 {% if item.scholar_url %}
 <td>
- <a href="mailto:{{item.scholar_url}}" title="email"><i class="fa fa-graduation-cap" style="color: rgb(140,29,64)"></i></a> 
+ <a href="{{item.scholar_url}}" title="email"><i class="fa fa-graduation-cap" style="color: rgb(140,29,64)"></i></a> 
 </td>
 {% endif %}
 
@@ -212,7 +212,9 @@ layout: default
 <td>{{item.name}}</td>
 <td>{{item.office_hours_times}}</td>
 <td>{{item.office_hours_location}}</td>
-<td><button onclick="location.href='{{ item.office_hours_app_url }}'" type="button">  Make Appointment</button> </td>
+<td>
+  <a class="uk-button uk-button-default uk-button-small" class="uk-align-center" onclick="location.href='{{ item.office_hours_app_url }}'" target="_blank">ONLINE OFFICE HOURS</a>
+  </td>
 <td>
 </td>
 </tr>
@@ -264,7 +266,7 @@ layout: default
 
 
 
-<div class="uk-section">
+<div class="uk-section uk-padding-large">
 <div class="uk-container-small">
 
 {{content}}
