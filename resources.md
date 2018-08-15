@@ -19,7 +19,11 @@ The R community has taken this to another scale. There are currently 13,000 free
 In addition to packages created for R, there are also powerful tools that make it easier to share data, collaborate on work, and share your results in creative ways. One of the reasons R has become an industry favorite is that it is highly integrated into this ecosystem. Many of these tools are built-right into R Studio, making it easier to manage large projects or collaborate.
 
 <img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/data-science-ecosystem.png" 
-alt="The DS ECO" width="400" border="0" />
+alt="The DS ECO" width="400" align="center" />
+
+<div uk-lightbox>
+    <a href="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/data-science-ecosystem.png"></a>
+</div>
 
 A big part of this course is learning about some of these resources and how they fit together to improve work-flow, analysis, and reporting. The most powerful tool that you will discover, however, is the community of smart and creative people active in the field of data science. Some are engineers working on solutions to hard technical problems in the open source space, but most are regular users such as data analysts, artists, educators and activists. Once you understand a few foundational concepts and develop a rudimentary vocabulary you can tap into the community through message boards and list-serves. See the Get Help tab for rules to follow as a good community member. 
 
