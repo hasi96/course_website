@@ -212,7 +212,9 @@ layout: default
 <td>{{item.name}}</td>
 <td>{{item.office_hours_times}}</td>
 <td>{{item.office_hours_location}}</td>
-<td><button onclick="location.href='{{ item.office_hours_app_url }}'" type="button">  Make Appointment</button> </td>
+<td>
+  <a class="uk-button uk-button-default uk-button-small" class="uk-align-center" onclick="location.href='{{ item.office_hours_app_url }}'">MAKE APPOINTMENT</a>
+  </td>
 <td>
 </td>
 </tr>
