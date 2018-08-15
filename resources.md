@@ -98,9 +98,8 @@ Markdown is used on GitHub, Stack Overflow, and in R Markdown documents. Familia
 Working in groups [is hard](https://www.ted.com/talks/clay_shirky_on_institutions_versus_collaboration). Most work is done in groups. As a result, project management is a non-trivial task that should not be approached in an ad-hoc fashion. The field of data science has inherited many great collaboration tools that were developed to manage large teams of software engineers, but are being used for many other creative purposes:
 
 <br>
-<p align="center">
-<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/clay_shirky_how_the_internet_will_one_day_transform_government" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
->/p><br>
+<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/clay_shirky_how_the_internet_will_one_day_transform_government" width="854" height="480" style="position:absolute;center:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+<br>
 
 
 Install GitHub in R Studio
@@ -109,9 +108,7 @@ This course will introduce students to [GitHub](https://www.economist.com/the-ec
 
 
 <br>
-<p align="center">
 <iframe width="854" height="480" src="https://www.youtube.com/embed/w3jLJU7DT5E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>
 <br>
 
 Here are some resources for configuring GitHub to work with R Studio:
