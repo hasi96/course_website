@@ -81,7 +81,7 @@ info:
  course_number: CPP 591
  course_level: Graduate
  course_website: 
- course_start_end_dates: August 16th to December 5th, 2018
+ course_start_end_dates: Aug 16th - Dec 5th, 2018
  course_prerequisites: None
  class_meets_when:  Online
  class_meets_where: Online
@@ -93,7 +93,7 @@ instructor:
    website_url: http://www.lecy.info/
    office_hours_times: Whenever necessary, by appointment
    office_hours_location:  UCENT 517
-   office_hours_app_url:  https://calendly.com/lecy
+   office_hours_app_url:  https://calendly.com/lecy/15min/
    github_url: https://github.com/lecy
    twitter_url: 
    scholar_url: https://scholar.google.com/citations?user=Ir8H4wMAAAAJ&hl=en
