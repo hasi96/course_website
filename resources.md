@@ -54,10 +54,6 @@ library(tidyverse)
 ```
 
 
-## Documentation of Packages
-
-
-
 ## Data-Driven Documents
 
 For the purpose of transparency and reproducibility, as well as simple convenience, there is high demand for documents that combine typical elements of publications and reports such as text, tables, graphs and images, and the code that was used to create the analysis presented in the text. These efforts have largely converged on Markdown as a simple publishing language, and derivations like R Markdown to incorporate output from models into documents. 
@@ -69,7 +65,7 @@ Markdown is a simple set of rules used to format text and images. Formatting it 
 ## H2
 ### H3
 ```
-![]()markdown-example.png)
+![](markdown-example.png)
 
 The basics are very easy to master by referencing a basic [Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
