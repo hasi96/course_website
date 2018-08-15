@@ -20,6 +20,7 @@ Text allowed before schedule?
 # Scope of the Sector  
 
 ["Unit 1: August 16-20"]{@date}
+{@handout}
 
 [fake link]()
 
