@@ -18,19 +18,16 @@ The R community has taken this to another scale. There are currently 13,000 free
 
 In addition to packages created for R, there are also powerful tools that make it easier to share data, collaborate on work, and share your results in creative ways. One of the reasons R has become an industry favorite is that it is highly integrated into this ecosystem. Many of these tools are built-right into R Studio, making it easier to manage large projects or collaborate.
 
-<br>
 
-<img src="assets/img/data-science-ecosystem.png" alt="Data Science Ecosystem" style="width:400px">
+<div uk-lightbox>
+    <a href="assets/img/data-science-ecosystem.png"></a>
+</div>
 
 <br>
-
-<br>
-<p align="center">
 <img data-src="assets/img/data-science-ecosystem.png" width="400" alt="The Data Science Ecosystem" uk-img>
-</p>
 <br>
 
-{% include image.html img="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/data-science-ecosystem.png" style="wide" lightbox="true" alt="Data Science Ecosystem" caption="The Data Science Ecosystem" %}
+{% include image img="assets/img/data-science-ecosystem.png" style="wide" lightbox="true" alt="Data Science Ecosystem" caption="The Data Science Ecosystem" %}
 
 A big part of this course is learning about some of these resources and how they fit together to improve work-flow, analysis, and reporting. The most powerful tool that you will discover, however, is the community of smart and creative people active in the field of data science. Some are engineers working on solutions to hard technical problems in the open source space, but most are regular users such as data analysts, artists, educators and activists. Once you understand a few foundational concepts and develop a rudimentary vocabulary you can tap into the community through message boards and list-serves. See the Get Help tab for rules to follow as a good community member. 
 
@@ -71,7 +68,9 @@ Markdown is a simple set of rules used to format text and images. Formatting it 
 ## H2
 ### H3
 ```
-![](markdown-example.png)
+![](assets/img/markdown-example.png)
+
+<img data-src="assets/img/markdown-example.png" width="200" alt="Markdown Headers" uk-img>
 
 The basics are very easy to master by referencing a basic [Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
