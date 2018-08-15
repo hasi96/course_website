@@ -32,12 +32,16 @@ alt="R in 60 seconds" width="854" border="0" /></a>
 </p>
 <br>
 
+
+
 ## Installing R
 
 R is a programming langauge that was [designed specifically for data analysis](https://www.nytimes.com/2009/01/07/technology/business-computing/07program.html). Along with Python, it is the [most popular tool](https://stackoverflow.blog/2017/10/10/impressive-growth-r/) used by data scientists, data journalists, and quantitative social scientists. 
 
 
 https://medium.com/@GalarnykMichael/install-r-and-rstudio-on-windows-5f503f708027
+
+
 
 ## Installing Packages in R
 
@@ -106,11 +110,17 @@ This course will introduce students to [GitHub](https://www.economist.com/the-ec
 <iframe width="854" height="480" src="https://www.youtube.com/embed/w3jLJU7DT5E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <br>
 
+Here are some resources for configuring GitHub to work with R Studio:
 
-## Useful Data Sources
+* [Nice Blog](https://www.molecularecologist.com/2013/11/using-github-with-r-and-rstudio/)
+* [R Studio Documentation](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
 
-http://shop.oreilly.com/product/0636920018254.do
 
+## More Resources
+
+For those that are new to data science, I have compiled some useful resources for getting acquainted with R and the data science community, as well as some notable applications of data science in the public and nonprofit sectors.
+
+http://www.lecy.info/r-for-public-policy
 
 <br><br><br>
 
