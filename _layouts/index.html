@@ -44,7 +44,7 @@ layout: default
 <article class="uk-article">
 
 
-<div class="uk-section uk-section-muted uk-padding-large">
+<div class="uk-section uk-section-muted uk-padding-small">
 <div class="uk-container uk-container-small">
 
   
@@ -164,18 +164,18 @@ layout: default
 <td> <a href="mailto:{{item.email}}" title="email"><i class="fa fa-envelope" style="color: rgb(140,29,64)"></i></a> </td>
 
 {% if item.github_url %}
-<td> <a href="mailto:{{item.github_url}}" title="email"><i class="fab fa-github" style="color: rgb(140,29,64)"></i></a> </td>
+<td> <a href="{{item.github_url}}" title="email"><i class="fab fa-github" style="color: rgb(140,29,64)"></i></a> </td>
 {% endif %}
 
 {% if item.twitter_url %}
 <td>
- <a href="mailto:{{item.twitter_url}}" title="email"><i class="fab fa-twitter" style="color: rgb(140,29,64)"></i></a> 
+ <a href="{{item.twitter_url}}" title="email"><i class="fab fa-twitter" style="color: rgb(140,29,64)"></i></a> 
 </td>
 {% endif %}
 
 {% if item.scholar_url %}
 <td>
- <a href="mailto:{{item.scholar_url}}" title="email"><i class="fa fa-graduation-cap" style="color: rgb(140,29,64)"></i></a> 
+ <a href="{{item.scholar_url}}" title="email"><i class="fa fa-graduation-cap" style="color: rgb(140,29,64)"></i></a> 
 </td>
 {% endif %}
 
