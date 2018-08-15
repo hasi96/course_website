@@ -18,15 +18,6 @@ The R community has taken this to another scale. There are currently 13,000 free
 
 In addition to packages created for R, there are also powerful tools that make it easier to share data, collaborate on work, and share your results in creative ways. One of the reasons R has become an industry favorite is that it is highly integrated into this ecosystem. Many of these tools are built-right into R Studio, making it easier to manage large projects or collaborate.
 
-
-<div uk-lightbox>
-    <a href="assets/img/data-science-ecosystem.png"></a>
-</div>
-
-<br>
-<img src="assets/img/data-science-ecosystem.png" width="400" alt="The Data Science Ecosystem" uk-img>
-<br>
-
 <img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/data-science-ecosystem.png" 
 alt="The DS ECO" width="400" border="0" />
 
@@ -69,9 +60,8 @@ Markdown is a simple set of rules used to format text and images. Formatting it 
 ## H2
 ### H3
 ```
-![](assets/img/markdown-example.png)
-
-<img data-src="assets/img/markdown-example.png" width="200" alt="Markdown Headers" uk-img>
+<img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/markdown-example.png" 
+alt="markdown" width="200" />
 
 The basics are very easy to master by referencing a basic [Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
