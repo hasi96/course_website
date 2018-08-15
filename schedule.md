@@ -11,6 +11,10 @@ Define section
 -->
 
 
+Text allowed before schedule? 
+
+
+
 *** 
 
 # Scope of the Sector  
