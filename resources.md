@@ -20,7 +20,8 @@ In addition to packages created for R, there are also powerful tools that make i
 
 <br>
 <p align="center">
-<img src="assets/img/data-science-ecosystem.png" alt="Data Science Ecosystem" style="width:400px" align="center" ></p>
+<img src="assets/img/data-science-ecosystem.png" alt="Data Science Ecosystem" style="width:400px">
+</p>
 <br>
 
 {% include image.html img="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/data-science-ecosystem.png" style="wide" lightbox="true" alt="Data Science Ecosystem" caption="The Data Science Ecosystem" %}
@@ -59,16 +60,39 @@ library(tidyverse)
 
 ## Data-Driven Documents
 
-Motivation - crisis of reproducibility
+For the purpose of transparency and reproducibility, as well as simple convenience, there is high demand for documents that combine typical elements of publications and reports such as text, tables, graphs and images, and the code that was used to create the analysis presented in the text. These efforts have largely converged on Markdown as a simple publishing language, and derivations like R Markdown to incorporate output from models into documents. 
 
-Example
+Markdown is a simple set of rules used to format text and images. Formatting it accomplished by adding tags to text. 
 
-Cheat Sheet
+```
+# H1
+## H2
+### H3
+```
+![]()markdown-example.png)
 
-Rmarkdown
+The basics are very easy to master by referencing a basic [Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-Gallery
+But don't let the simplicity fool you. Markdown documents are extremely versatile and powerful. Using the same text and code in a document, minor changes can be made to select a variety of document outputs that best meet the needs of the client or team. For example, check out the diversity of formats available in the [R Markdown Gallery](https://rmarkdown.rstudio.com/gallery.html).
 
+R Studio makes it easy to create R Markdown documents, and you can select the format by changing the output type. Perhaps you have a regular report created as an HTML page:   
+
+```
+--- 
+output: html_document
+---
+```
+And you want to re-organize the material into a dashboard. Simply change the output type:
+
+```
+--- 
+output: flexdashboard
+---
+```
+
+Then add a few page dividers, and your analysis will now be organized something like this [StoryBoard](https://beta.rstudioconnect.com/jjallaire/htmlwidgets-showcase-storyboard/htmlwidgets-showcase-storyboard.html).
+
+Markdown is used on GitHub, Stack Overflow, and in R Markdown documents. Familiarity with the basics offers a lot of power in controlling how your analysis is presented to your audience. 
 
 
 ## Collaboration Tools
