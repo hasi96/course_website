@@ -5,7 +5,7 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site title and description
-title:              DS4PS
+title:              Intro to Data Science
 description:        Website for the MS in Program Eval and Data Analytics Program, ASU
 
 # Site subpath, e.g. /blog
@@ -20,23 +20,23 @@ url :               "https://hasi96.github.io"
 # Site logo, image or text
 brand:
     image:          # logo.svg  # e.g. logo.png, upload logo image file to /assets/img/ folder
-    text:           Foundations of Data Science      # if the above "logo:" image variable  is not set, this text logo is displayed instead
+    text:           Intro to Data Science      # if the above "logo:" image variable  is not set, this text logo is displayed instead
 
 # Default author settings
 author:
-    name:       Hasitha
-    github:     hasi96   # Github username for avatar
+    name:       Jesse Lecy
+    github:     lecy   # Github username for avatar
 
 
 github_info:
-    username:       hasi96 # Github username for avatar
-    branch:       master
+    username:          hasi96 # Github location of the course
+    branch:            master
     website-repo:      course_website
-    course-repo:        Data-Science-Class
+    course-repo:       Data-Science-Class
 
 index:
-    title: Data Science
-    subtitle: This course aims at empowering students especially from a non-computerscience background to learn easy tools that can be used for data analysis
+    title: Intro to Data Science for the Social Sector
+    subtitle: This course introduces students to foundational tools in the field of data science.
     image: imac.svg
 
 
@@ -48,7 +48,7 @@ header:
   url: schedule/
 
 - title: Textbook
-  url: https://bookdown.org/yihui/bookdown-demo/ 
+  url: https://ds4ps.github.io/Data-Science-Class/01-TEXTBOOK/docs/index.html 
 
 - title: Datasets
   url: datasets/
@@ -70,109 +70,85 @@ footer:
 - title: Textbook
   url:  https://bookdown.org/yihui/bookdown-demo/
 
-- title: Course Syllabus
-  url: /syllabus/
+- title: Course Schedule
+  url: /schedule/
 
 
 info: 
  program_title: MS in Program Evaluation and Data Analytics
  program_website: 
- course_title: Foundations of Data Science I
+ course_title: Introduction to Data Science for the Social Sector
  course_number: CPP 591
  course_level: Graduate
  course_website: 
- course_start_end_dates: August 16th to December 5th
+ course_start_end_dates: Aug 16th - Dec 5th, 2018
  course_prerequisites: None
  class_meets_when:  Online
- class_meets_where: MWF 5:30pm
+ class_meets_where: Online
 
 instructor:
--  name: Benjamin M. Friedman
+-  name: Jesse Lecy
    title: Professor
    email: jdlecy@asu.edu
-   phone:  602-123-4567
    website_url: http://www.lecy.info/
-   office_hours_times: Mondays 1-3pm.
+   office_hours_times: Very flexible, online or in-person
    office_hours_location:  UCENT 517
-   office_hours_app_url:  https://calendly.com/
-   github_url: https://github.com/
-   twitter_url: https://twitter.com/
+   office_hours_app_url:  https://calendly.com/lecy/15min/
+   github_url: https://github.com/lecy
+   twitter_url: 
    scholar_url: https://scholar.google.com/citations?user=Ir8H4wMAAAAJ&hl=en
    linked_in_url:
--  name: Hasitha
-   title:
-   email:
-   phone: 
-   website_url:
-   office_hours_times: Tuesday 12pm
-   office_hours_location: 421 Central
-   office_hours_app_url: https://calendly.com/
-   github_url:
-   twitter_url:
-   scholar_url:
-   linked_in_url:
--  name: Shachi
-   title:
-   email:
-   phone: 
-   website_url:
-   office_hours_times: Tuesday 12pm
-   office_hours_location: 421 Central
-   office_hours_app_url: https://calendly.com/
-   github_url:
-   twitter_url:
-   scholar_url:
-   linked_in_url:
+
 
 
 textbooks:
-- title: Intro to Data Science
+- title: Big Book of Dashboards
   authors: Smith, Smith, and Johnson
   edition: First Edition
-  link: https://www.w3schools.com/tags/att_body_link.asp
-  required (y/n): y
-- title: Advanced Data Science
-  authors: Yamuguchi
-  edition: 
-  link: https://www.w3schools.com/tags/att_body_link.asp
+  link: https://www.amazon.com/Big-Book-Dashboards-Visualizing-Real-World/dp/1119282713/
+  required (y/n): n
+- title: R Cookbook
+  authors: Paul Teetor
+  edition: First Edition
+  link: https://www.amazon.com/Cookbook-Analysis-Statistics-Graphics-Cookbooks/dp/0596809158/
   required (y/n): n
 
 
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
 authors:
-    peter:
-        name:       Peter Brown
-        github:     PressApps    # Github username for avatar
+    jesse:
+        name:       Jesse Lecy
+        github:     lecy    # Github username for avatar
 
 # Social icons displayed in footer
 social:
     email:
     website:
-    facebook:       https://www.facebook.com/
+    facebook:       https://www.facebook.com/asupublicservice
     flickr:
     dribbble:
     github:
     googleplus:
-    instagram:      https://www.instagram.com/
-    linkedin:
+    instagram:      https://www.instagram.com/asupublicservice/
+    linkedin:       https://www.linkedin.com/school/asupublicservice/
     pinterest:
-    twitter:        https://twitter.com/
-    vimeo:          https://vimeo.com/
-    youtube:
+    twitter:        https://twitter.com/asupublicsvc
+    vimeo:          
+    youtube:        https://www.youtube.com/user/coppvideos
 
 # Twitter share button
 twitter_username:
 
 # Default footer image settings
 footer:
-    copyright:      Made by a <a href="https://ivanchromjak.com/">human</a> somewhere on the planet earth.
+    copyright:      Made by a <a href="https://www.youtube.com/watch?v=WUAcN9UCnbU">human</a> somewhere on the planet earth.
 
 # Disqus comments shortname, requires Disqus account https://disqus.com/
 disqus:
     shortname:      1234
 
 # Google analytics code, get your code here https://www.google.com/analytics/
-google_analytics:
+google_analytics:   UA-123960540-1
 
 # Google maps API key, get your key here: https://developers.google.com/maps/documentation/javascript/get-api-key
 google_maps_api_key:
@@ -192,11 +168,32 @@ post_css: /assets/css/posts
 markdown:           kramdown
 highlighter:        rouge
 
+scholar:
+  style: apa
+  locale: en
+
+  sort_by: none
+  order: ascending
+
+  source: ./_bibliography
+  bibliography: bibliography.bib
+  bibliography_template: <abbr>[{{key}}]</abbr>{{reference}}
+
+  replace_strings: true
+  join_strings:    true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
+
 gems:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-gist
   - jekyll-avatar
+  - jekyll-scholar
 exclude:
   - Gemfile
   - Gemfile.lock

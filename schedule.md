@@ -11,11 +11,19 @@ Define section
 -->
 
 
+Text allowed before schedule? 
+
+
+
 *** 
 
 # Scope of the Sector  
 
 ["Unit 1: August 16-20"]{@date}
+
+[]{@handout}
+
+[fake link]()
 
 Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam. ["SLIDES"]{@lecture module_2_slides.html}  
 
@@ -83,7 +91,7 @@ Download the Exempt Organization Business Master File Extract Excel file for y
 2. Save the file. (Note above the U.S. map that the IRS tells you the DATE at which it last uploaded data.  As I write this I'm seeing 06/13/2016, but you may very well be seeing a more current date.  Whenever I save this file, I put that DATE in the filename, so I always know what exactly my datafile represents.)
 
 
-["Unit 2: August 21-24"]{@date}
+[Unit 2: August 21-24]{@date}
 
 
 ***
