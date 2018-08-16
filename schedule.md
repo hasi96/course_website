@@ -106,7 +106,7 @@ output: html_document
 ---
 
 
-# Bio for Prof. Lecy
+# Bio for Your Name
 
 --> your picture here <--
 
