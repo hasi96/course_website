@@ -15,7 +15,7 @@ baseurl:            "/course_website"
 permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
-url :               "https://ds4ps.github.io"
+url :               "https://hasi96.github.io"
 
 # Site logo, image or text
 brand:
