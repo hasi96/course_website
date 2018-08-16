@@ -69,8 +69,34 @@ i#general {
 
 
 a{
-    color: black;
+    color: maroon;
+    text-decoration: underline; 
 }
+
+/* unvisited link */
+a:link {
+    color: maroon;
+    text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+    color: maroon;
+    text-decoration: underline;
+}
+
+/* mouse over link */
+a:hover {
+    color: blue;
+}
+
+/* selected link */
+a:active {
+    color: maroon;
+    text-decoration: underline;
+}
+
+
  i#github_icon {
     color: black; 
     font-size: 1.2em;
