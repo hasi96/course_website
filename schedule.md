@@ -84,7 +84,16 @@ https://www.ted.com/talks/anne_milgram_why_smart_statistics_are_the_key_to_fight
 <br>
 
 
-## Labs
+## Assignments
+
+**PART I**
+
+Install R Studio and Pandoc on your machine.
+
+* [Helpful Vocabulary]{@handouts https://github.com/DS4PS/Data-Science-Class/raw/master/HANDOUTS/Helpful%20Programming%20Vocabulary.pdf}
+* [Base R Cheat Sheet]{@handouts base-r-cheat-sheet.pdf}
+
+**PART II**
 
 [ Download Rmd Template ]{@lab https://cdn.rawgit.com/DS4PS/Data-Science-Class/master/01-TEXTBOOK/Unit-04-Analysis-with-Groups.Rmd}
 
