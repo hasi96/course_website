@@ -77,10 +77,10 @@ https://www.ted.com/talks/anne_milgram_why_smart_statistics_are_the_key_to_fight
 ## Lectures
 
 
-* [Welcome]{@lecture https://youtu.be/0tak8PvXO7w}
+* [ Welcome ]{@lecture https://youtu.be/0tak8PvXO7w}
 
 <br>
-<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src=" https://youtu.be/0tak8PvXO7w" width="854" height="480" style="position:absolute;center:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src=" https://youtu.be/0tak8PvXO7w" width="600" style="position:absolute;center:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
 <br>
 
 
@@ -90,8 +90,8 @@ https://www.ted.com/talks/anne_milgram_why_smart_statistics_are_the_key_to_fight
 
 Install R Studio and Pandoc on your machine.
 
-* [Helpful Vocabulary]{@handouts https://github.com/DS4PS/Data-Science-Class/raw/master/HANDOUTS/Helpful%20Programming%20Vocabulary.pdf}
-* [Base R Cheat Sheet]{@handouts base-r-cheat-sheet.pdf}
+* [ Helpful Vocabulary ]{@handouts https://github.com/DS4PS/Data-Science-Class/raw/master/HANDOUTS/Helpful%20Programming%20Vocabulary.pdf}
+* [ Base R Cheat Sheet ]{@handouts base-r-cheat-sheet.pdf}
 
 **PART II**
 
