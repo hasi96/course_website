@@ -79,11 +79,15 @@ a{
  img#logo {
     width: 60%; 
     height: 40%;
+    margin-left: 2em;
+    padding-right: 2em;
+    margin-right: 8em;
  }
 
  td#footer {
-    padding-left: 17em;
+    padding-left:2em;
     color: black;
+    align-items: center;
  }
 
  li#list {
