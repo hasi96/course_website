@@ -22,7 +22,7 @@ and include an H1 text element.
 
 # Course Overview 
 
-[Unit 0]{@date}
+[ Unit 0 ]{@date}
 
 welcome
 
@@ -40,7 +40,7 @@ how to succeed
 
 # Introduction to Data Science 
 
-[Unit 1: Aug 16-22]{@date}
+[Unit 1: Aug 16-22 ]{@date}
 
 This unit defines the concept of "data science" and provides an overview of the course schedule for the semester. 
 
@@ -80,7 +80,7 @@ https://www.ted.com/talks/anne_milgram_why_smart_statistics_are_the_key_to_fight
 
 ## Labs
 
-[Download Rmd Template]{ @lab https://cdn.rawgit.com/DS4PS/Data-Science-Class/master/01-TEXTBOOK/Unit-04-Analysis-with-Groups.Rmd }
+[Download Rmd Template]{ @labs https://cdn.rawgit.com/DS4PS/Data-Science-Class/master/01-TEXTBOOK/Unit-04-Analysis-with-Groups.Rmd }
 
 Here is what your Markdown file will look like. You need to replace all -->text<-- with the appropriate responses formatted using Markdown syntax.
 
