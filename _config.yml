@@ -103,16 +103,28 @@ instructor:
 
 
 textbooks:
-- title: Big Book of Dashboards
-  authors: Smith, Smith, and Johnson
-  edition: First Edition
+- title: R Cookbook: Proven recipes for data analysis, statistics, and graphics
+  authors: Paul Teetor
+  edition: Not Required
+  link: http://www.bagualu.net/wordpress/wp-content/uploads/2015/10/R_Cookbook.pdf
+  required (y/n): n
+- title: R for Data Science
+  authors: Wickham, H., & Grolemund, G.
+  edition: Free Online
+  link: http://r4ds.had.co.nz/
+  required (y/n): n
+- title: The Art of Data Science. A Guide for Anyone Who Works with Data
+  authors: Peng, R. D., & Matsui, E.
+  edition: Free Online
   link: https://www.amazon.com/Big-Book-Dashboards-Visualizing-Real-World/dp/1119282713/
   required (y/n): n
-- title: R Cookbook
-  authors: Paul Teetor
-  edition: First Edition
-  link: https://www.amazon.com/Cookbook-Analysis-Statistics-Graphics-Cookbooks/dp/0596809158/
+- title: Big Book of Dashboards
+  authors: Smith, Smith, and Johnson
+  edition: Not Required
+  link: https://www.amazon.com/Big-Book-Dashboards-Visualizing-Real-World/dp/1119282713/
   required (y/n): n
+
+
 
 
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
