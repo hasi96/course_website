@@ -169,85 +169,9 @@ By the end of this unit, you will be able to:
 Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and graphics. " O'Reilly Media, Inc.". [ CH 5.2-5.5 ]{@reading http://www.bagualu.net/wordpress/wp-content/uploads/2015/10/R_Cookbook.pdf}
 
 
-## Lectures
-
-## Labs
 
 
 
-
-
-
-***
-
-# Expressive Business Rules
-
-[ Unit 3: Aug 30 - Sept 5 ]{@date}
-
-
-
-
-
-
-***
-
-# Building Datasets
-
-[ Unit 4: Sept 6-12 ]{@date}
-
-
-
-
-
-
-
-***
-
-# Descriptive Analysis
-
-[ Unit 5: Sept 13-19 ]{@date}
-
-
-
-
-
-
-***
-
-# Visualization I
-
-[ Unit 6: Sept 20-26 ]{@date}
-
-
-
-
-
-***
-
-# Visualization II
-
-[ Unit 7: Sept 27 - Oct 3 ]{@date}
-
-
-
-
-
-***
-
-# Data Ingestion
-
-[ Unit 8: Sept 27 - Oct 3 ]{@date}
-
-
-
-
-
-
-***
-
-# Advanced Visualization
-
-[ Unit 9: Oct 4 - 10 ]{@date}
 
 
 
