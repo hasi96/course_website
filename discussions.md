@@ -11,10 +11,10 @@ GitHub speaks Markdown, which allows you to write questions that include reprodu
 
 <br>
 <img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/github-issue.png" 
-alt="Issues" width="400" />
+alt="Issues" width="800" />
 <br>
 <img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/github-issue-preview.png" 
-alt="Issues" width="400" />
+alt="Issues" width="800" />
 <br>
 
 ## Simple Rules for Clear Questions
