@@ -51,18 +51,9 @@ layout: default
 
 
 
-<h2> Course Info </h2>
+<div><h2> Course Info </h2></div>
 
 <table id="index" class="table table-condensed" cellspacing="10">
-<thead>
-<tr>
-<th><span></span></th>
-<th><span></span></th>
-</tr>
-</thead>
-
-<tbody>
-
 {% if site.info.program_title %}
 <tr>
 <td> Program Title </td>
@@ -133,69 +124,42 @@ layout: default
 </tr>
 {% endif %}
 
-</tbody>
 </table>
 
 <br>
+<br>
 
-
-
-
-<h2> Course Instructors </h2>
-
-<table id="index" class="table table-condensed" cellspacing="10">
-<thead>
-<tr>
-<th><span></span></th>
-<th><span></span></th>
-</tr>
-</thead>
-
-<tbody>
-
-
+<div><h2> Course Instructors </h2></div>
+<div>
 {% for item in site.instructor %}
-
-<tr>
-<td><a href="{{item.website_url}}">{{item.name}}</a></td>
-<td>{{item.title}}</td>
-<td>{{item.phone}}</td>
-<td> <a href="mailto:{{item.email}}" title="email"><i id="general" class="fa fa-envelope" ></i></a> </td>
+ <div id="index" style="width: 15%; "><a href="{{item.website_url}}">{{item.name}}</a></div>
+ <div id="index" style="width: 15%; ">{{item.title}}</div>
+ <div id="index" style="width: 5%; ">{{item.phone}}</div>
+ <div id="index" style="width: 5%; "><a href="mailto:{{item.email}}" title="email"><i id="general" class="fa fa-envelope" ></i></a> </div>
 
 {% if item.github_url %}
-<td> <a href="{{item.github_url}}" title="email"><i id="general" class="fab fa-github" "></i></a> </td>
+ <div id="index" style="width: 5%; "><a href="{{item.github_url}}" title="email"><i id="general" class="fab fa-github" "></i></a> </div>
 {% endif %}
 
 {% if item.twitter_url %}
-<td>
- <a href="{{item.twitter_url}}" title="email"><i id="general" class="fab fa-twitter" ></i></a> 
-</td>
+ <div id="index" style="width: 5%; "><a href="{{item.twitter_url}}" title="email"><i id="general" class="fab fa-twitter" ></i></a></div>
 {% endif %}
 
 {% if item.scholar_url %}
-<td>
- <a href="{{item.scholar_url}}" title="email"><i id="general" class="fa fa-graduation-cap" ></i></a> 
-</td>
+ <div id="index" style="width: 5%; "><a href="{{item.scholar_url}}" title="email"><i id="general" class="fa fa-graduation-cap" ></i></a></div>
 {% endif %}
 
 {% if item.linked_in_url %}
-<td>
- <a href="{{item.linked_in_url}}" title="email"><i id="general" class="fa fa-linkedin" ></i></a> 
-</td>
+ <div id="index" style="width: 5%; "><a href="{{item.linked_in_url}}" title="email"><i id="general" class="fa fa-linkedin" ></i></a></div>
 {% endif %}
-</tr>
 
 {% endfor %}
-
-</tbody>
-</table>
+</div>
 
 <br>
+<br>
 
-
-
-
-<h2> Office Hours </h2>
+<div><h2> Office Hours </h2></div>
 <div>
 {% for item in site.instructor %}
   <div id="index" style="width: 15%; ">{{item.name}}</div>
@@ -204,19 +168,13 @@ layout: default
   <div id="index" style=" "><a class="uk-button uk-button-default uk-button-small" class="uk-align-center" onclick="location.href='{{ item.office_hours_app_url }}'" target="_blank">ONLINE OFFICE HOURS</a></div>
 {% endfor %}
 </div>
+
 <br>
 <br>
+
 <div><h2> Textbooks </h2></div>
 
 <table  id="index" class="table table-condensed" cellspacing="10">
-<thead>
-<tr>
-<th><span></span></th>
-<th><span></span></th>
-</tr>
-</thead>
-
-<tbody>
 {% for item in site.textbooks %}
 <tr align="left">
 <td align="left"><button class="uk-button uk-button-link" onclick="location.href='{{ item.link }}'" > <i id="general" class="fas fa-book" ></i> {{ item.title }}</button></td>
@@ -232,7 +190,6 @@ layout: default
 {% endif %}
 </tr>
 {% endfor %}
-</tbody>
 </table>
 
 <br>
