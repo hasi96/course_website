@@ -77,8 +77,29 @@ https://www.ted.com/talks/anne_milgram_why_smart_statistics_are_the_key_to_fight
 ## Lectures
 
 
+* [ Welcome ]{@lecture https://youtu.be/0tak8PvXO7w}
 
-## Labs
+<br>
+<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src=" https://youtu.be/0tak8PvXO7w" width="600" style="position:absolute;center:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0tak8PvXO7w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+## Assignments
+
+**PART I**
+
+Install R Studio and Pandoc on your machine.
+
+* [ Helpful Vocabulary ]{@handouts https://github.com/DS4PS/Data-Science-Class/raw/master/HANDOUTS/Helpful%20Programming%20Vocabulary.pdf}
+* [ Base R Cheat Sheet ]{@handouts base-r-cheat-sheet.pdf}
+
+
+**PART II - MY FIRST MARKDOWN DOCUMENT**
+
+Read about Markdown in the [Resources](https://hasi96.github.io/course_website/resources/) tab.
 
 [ Download Rmd Template ]{@lab https://cdn.rawgit.com/DS4PS/Data-Science-Class/master/01-TEXTBOOK/Unit-04-Analysis-with-Groups.Rmd}
 
@@ -91,7 +112,7 @@ output: html_document
 ---
 
 
-# Bio for Prof. Lecy
+# Bio for Your Name
 
 --> your picture here <--
 
@@ -117,6 +138,9 @@ output: html_document
 
 ```
 
+**Instructions for Submitting**
+
+
 
 
 
@@ -127,16 +151,12 @@ output: html_document
 
 [ Unit 2: Aug 23-29 ]{@date}
 
-This week you will learn the basics of programming in R. 
-
-## Learning Objectives
-
 By the end of this unit, you will be able to:
 * Use functions in R.
 * Use data types properly.
 
 
-## Key Concepts
+#### Key Concepts
 
 * functions()
 * arguments
@@ -153,7 +173,7 @@ By the end of this unit, you will be able to:
 
 ## Readings
 
-Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and graphics. " O'Reilly Media, Inc.". [ CH 5.2-5.5 ]{ @reading http://www.bagualu.net/wordpress/wp-content/uploads/2015/10/R_Cookbook.pdf}
+Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and graphics. " O'Reilly Media, Inc.". [ CH 5.2-5.5 ]{@reading http://www.bagualu.net/wordpress/wp-content/uploads/2015/10/R_Cookbook.pdf}
 
 
 ## Lectures
@@ -177,6 +197,7 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 [ Unit 2: Aug 23-29 ]{@date}
 
+[   ]{@lab https://www.w3schools.com/cssref/css_colors.asp}
 
 ***
 

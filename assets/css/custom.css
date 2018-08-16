@@ -1,8 +1,8 @@
 button {
     border-radius: 5px;
-    border-color: rgb(140,29,64);
+    border-color: darkgray;
     background-color: transparent;
-    color: black;
+    color: rgb(140,29,64);
 }
 
 button:hover {
@@ -38,15 +38,18 @@ h4 {
     margin: 1em 0 1rem;
 }
 
-footer {
-     color: rgb(255,255,255);
+
+header {
+    color: black;
 }
 
-div#header1 {
-    position: fixed; 
-    top: 0px; 
-    width: 1904px;
+footer {
+    background-color:rgb(38, 184, 239);
+    color: rgb(255,255,255);
+    margin-top: 0px;
 }
+
+
 
  button#dataset {
     border-radius: 5px;
@@ -59,7 +62,7 @@ button#dataset:hover {
 }
 
 i#general {
-    color: rgb(140,29,64)
+    color: rgb(140,29,64);
 }
 
 #default_nav {
@@ -73,28 +76,6 @@ a{
     text-decoration: underline; 
 }
 
-/* unvisited link */
-a:link {
-    color: maroon;
-    text-decoration: underline;
-}
-
-/* visited link */
-a:visited {
-    color: maroon;
-    text-decoration: underline;
-}
-
-/* mouse over link */
-a:hover {
-    color: blue;
-}
-
-/* selected link */
-a:active {
-    color: maroon;
-    text-decoration: underline;
-}
 
 
  i#github_icon {
@@ -120,10 +101,7 @@ a:active {
     color: black;
  }
 
-footer {
-    background-color:rgb(38, 184, 239);
-    margin-top: 0px;
-}
+
 
  #myInput {
   background-image: url('/css/searchicon.png');
