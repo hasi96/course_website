@@ -76,28 +76,6 @@ a{
     text-decoration: underline; 
 }
 
-/* unvisited link */
-a:link {
-    color: maroon;
-    text-decoration: underline;
-}
-
-/* visited link */
-a:visited {
-    color: maroon;
-    text-decoration: underline;
-}
-
-/* mouse over link */
-a:hover {
-    color: blue;
-}
-
-/* selected link */
-a:active {
-    color: green;
-    text-decoration: underline;
-}
 
 
  i#github_icon {
