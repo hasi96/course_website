@@ -51,8 +51,8 @@ header:
 - title: Textbook
   url: https://ds4ps.github.io/Data-Science-Class/TEXTBOOK/docs/index.html 
 
-- title: Datasets
-  url: datasets/
+# - title: Datasets
+#   url: datasets/
 
 - title: Resources
   url: resources/
