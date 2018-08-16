@@ -65,8 +65,8 @@ layout: default
 
 {% if site.info.program_title %}
 <tr>
-<td>Program Title </td>
-  <td> <b>{{site.info.program_title}}</b> </td>
+<td> Program Title </td>
+<td> <b>{{site.info.program_title}}</b> </td>
 </tr>
 {% endif %}
 
@@ -196,37 +196,17 @@ layout: default
 
 
 <h2> Office Hours </h2>
-
-<table id="index" class="table table-condensed" cellspacing="10">
-<thead>
-<tr>
-<th><span></span></th>
-<th><span></span></th>
-</tr>
-</thead>
-
-<tbody>
+<div>
 {% for item in site.instructor %}
-<tr>
-<td>{{item.name}}</td>
-<td>{{item.office_hours_times}}</td>
-<td>{{item.office_hours_location}}</td>
-<td>
-  <a class="uk-button uk-button-default uk-button-small" class="uk-align-center" onclick="location.href='{{ item.office_hours_app_url }}'" target="_blank">ONLINE OFFICE HOURS</a>
-  </td>
-<td>
-</td>
-</tr>
+  <div id="index" style="width: 15%; ">{{item.name}}</div>
+  <div id="index" style="width: 25%; ">{{item.office_hours_times}}</div>
+  <div id="index" style="width: 15%; ">{{item.office_hours_location}}</div>
+  <div id="index" style=" "><a class="uk-button uk-button-default uk-button-small" class="uk-align-center" onclick="location.href='{{ item.office_hours_app_url }}'" target="_blank">ONLINE OFFICE HOURS</a></div>
 {% endfor %}
-</tbody>
-</table>
-
+</div>
 <br>
-
-
-
-
-<h2> Textbooks </h2>
+<br>
+<div><h2> Textbooks </h2></div>
 
 <table  id="index" class="table table-condensed" cellspacing="10">
 <thead>

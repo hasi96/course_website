@@ -194,3 +194,9 @@ h1#course_schedule {
 table#index {
     background-color: transparent;
 }
+
+div#index {
+    float: left;
+    padding-right: 1.15em;
+    padding-bottom: 1em;
+}
