@@ -64,6 +64,8 @@ Then add a few page dividers, and your analysis will now be organized something 
 
 Markdown is used on GitHub, Stack Overflow, and in R Markdown documents. Familiarity with the basics offers a lot of power in controlling how your analysis is presented to your audience. 
 
+You can see some advanced R Markdown features [HERE](https://raw.githubusercontent.com/DS4PS/Data-Science-Class/master/HANDOUTS/R_Markdown_Template.html).
+
 
 ## Collaboration Tools
 
@@ -74,7 +76,7 @@ Working in groups [is hard](https://www.ted.com/talks/clay_shirky_on_institution
 <br>
 
 
-Install GitHub in R Studio
+### Install GitHub in R Studio
 
 This course will introduce students to [GitHub](https://www.economist.com/the-economist-explains/2018/06/18/what-is-github), one of the most popular collaboration and publishing platforms used by the open source community. GitHub is integrated into R Studio for easy deployment. 
 
