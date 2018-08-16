@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/gaborcsardi/r-font/master/rlogo.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/wesbos/Font-Awesome-Docker-Icon/master/fontcustom/fontcustom.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <link rel ="stylesheet" href="{{ "assets/css/posts.css" | relative_url  }}">
+  <link rel ="stylesheet" href="{{ "assets/css/custom.css" | relative_url  }}">
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,27 +22,21 @@
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
   {% endif %}
-<style>
-
-  footer {
-  color: rgb(255,255,255);
-}
-</style>
 
 </head>
 <body class="page-responsive">
 
 <header class="uk-background-secondary">
-    <div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-sticky uk-sticky-fixed" style="position: fixed; top: 0px; width: 1904px;background-color:lightgrey;">
+    <div class="header1" data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-sticky uk-sticky-fixed" >
 
 
-        <nav class="uk-navbar-container" style="background-color:rgba(0,163,224,0.6); font-size: 1.7em; " >
+        <nav id="default_nav" class="uk-navbar-container" >
 
 
     <div class="uk-container">
     <div data-uk-navbar>
         <div class="uk-navbar-left">
-          <b><a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}" style="color: black;">{% if site.brand.image %}<img src="{{ site.post_assets | absolute_url }}{{ site.brand.image }}" alt="{{ site.brand.text | escape }}">{% else %}{{ site.brand.text | escape }}{% endif %}</a></b> <br>
+          <b><a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}" >{% if site.brand.image %}<img src="{{ site.post_assets | absolute_url }}{{ site.brand.image }}" alt="{{ site.brand.text | escape }}">{% else %}{{ site.brand.text | escape }}{% endif %}</a></b> <br>
         </div>
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav uk-visible@m" >
@@ -60,16 +54,16 @@
                     {% if link.title %}
                         
                    {% if link.url contains 'http' %} 
-                    <li{{ current }}><a href="{{ link.url }}" style="color: black;" target="_blank"; >{{ link.title }}</a> 
+                    <li{{ current }}><a href="{{ link.url }}" id="list"  target="_blank"; >{{ link.title }}</a> 
                  </li>
                    {% else %} 
-                    <li{{ current }}><a href="{{ domain }}/{{ site.github_info.website-repo }}/{{ link.url }}" style="color: black; ">{{ link.title }}</a> 
+                    <li{{ current }}><a href="{{ domain }}/{{ site.github_info.website-repo }}/{{ link.url }}" id="list" >{{ link.title }}</a> 
                  </li>
                  {% endif %}
                     {% endif %}
                 {% endfor %}
                 <li>
-                <a href="https://github.com/{{ site.github_info.username }}/{{ site.github_info.website-repo }}/edit/master/{{page.path}}" target = "_blank"> <i class="fab fa-github" style="color: black; font-size: 1em;"></i></a>
+                <a href="https://github.com/{{ site.github_info.username }}/{{ site.github_info.website-repo }}/edit/master/{{page.path}}" target = "_blank"> <i class="fab fa-github" id="github_icon"></i></a>
                </li>
 
             </ul>
@@ -81,7 +75,6 @@
         </div>
       </div>
 
-  
         </nav>
     </div>
 </header>
@@ -125,7 +118,7 @@
 <div class="container">
     <div class="row">
       <div class="col-lg-7 col-md-7 col-xs-8">
-          <a href="https://www.asu.edu/" ><img src="{{ "assets/img/asu.png" | relative_url }}" style="width: 70%; height: 50%;" align="left" ></a>
+          <a href="https://www.asu.edu/" ><img  id="logo" src="{{ "assets/img/asu.png" | relative_url }}" align="left" ></a>
         </div>
       
         <div class="col-lg-5 col-md-5 col-xs-4">
@@ -145,18 +138,18 @@
                         
                    {% if link.url contains 'http' %} 
                     <tr>
-                      <td style="padding-left: 7em;"><a href="{{ link.url }}" style="color: black;" target="_blank"; >{{ link.title }}</a></td>
+                      <td id="footer" ><a href="{{ link.url }}" target="_blank"; >{{ link.title }}</a></td>
                  </tr>
                    {% else %} 
                     <tr>
-                      <td style="padding-left: 7em;"><a href="{{ domain }}/{{ site.github_info.website-repo }}/{{ link.url }}" style="color: black; ">{{ link.title }}</a></td>
+                      <td id="footer" ><a href="{{ domain }}/{{ site.github_info.website-repo }}/{{ link.url }}">{{ link.title }}</a></td>
                  </tr>
                  {% endif %}
                     {% endif %}
                 {% endfor %}
                   <tr>
-                 <td style="padding-left: 7em;>
-                   <a href="https://github.com/{{ site.github_info.username }}/{{ site.github_info.website-repo }}/edit/master/{{page.path}}" target = "_blank"> <i class="fab fa-github" style="color: black; font-size: 1.2em;"></i></a>
+                 <td id="footer">
+                   <a href="https://github.com/{{ site.github_info.username }}/{{ site.github_info.website-repo }}/edit/master/{{page.path}}" target = "_blank"> <i id="github_icon" class="fab fa-github" ></i></a>
                 </td>
                </tr>
               </table>
@@ -171,8 +164,7 @@
           </div>
         </div>
     </div>
-  
-</footer> 
+</footer>   
 
 
  </body>

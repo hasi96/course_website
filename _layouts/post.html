@@ -30,7 +30,7 @@ layout: default
                     </tr>
 
                     <tr>
-                        <th>  <i class="fas fa-bar-chart fa-lg" style="color: rgb(140,29,64)"></i> Type Of Data </th>
+                        <th >  <i  id="general" class="fas fa-bar-chart fa-lg" ></i> Type Of Data </th>
                     </tr>
 
                     {% if page.type_of_data %}
@@ -129,16 +129,16 @@ layout: default
                     </tr>
 
                     <tr>
-                        <th> <i data-uk-icon="icon: database ; ratio: 2" style="color: rgb(140,29,64)"></i> Data Availability </th>
+                        <th> <i id="general" data-uk-icon="icon: database ; ratio: 2" style="color: rgb(140,29,64)"></i> Data Availability </th>
                     </tr>
                     {% if page.open_data %}
                     <tr>
                         <td>Open Data </td>
                         {% if page.open_data contains 'Y' %}
-                        <td><i class="fas fa-check fa-lg" style="color: rgb(50,205,50);"></i></td>
+                        <td><i id="general" class="fas fa-check fa-lg" style="color: rgb(50,205,50);"></i></td>
                         {% else %}
                             {% if page.open_data contains 'N' %}
-                            <td><i class="fas fa-times" style= "color: rgb()255,0,0)"></i></td>
+                            <td><i id="general" class="fas fa-times" style= "color: rgb()255,0,0)"></i></td>
                             {% else %}
                             {% endif %}
                         {% endif %}
@@ -154,7 +154,7 @@ layout: default
                     <tr>
                         <td> Data Download </td>
                         {% if page.available_for_download contains 'Y' %}
-                        <td><i class="fas fa-check fa-lg" style="color: rgb(50,205,50);"></i></td>
+                        <td><i id="general" class="fas fa-check fa-lg" style="color: rgb(50,205,50);"></i></td>
                         {% else %}
                             {% if page.available_for_download contains 'N' %}
                             <td>NO</td>
@@ -162,7 +162,7 @@ layout: default
                             {% endif %}
                         {% endif %}
                         {% if page.available_for_download %}
-                        <td> <button onclick="location.href='{{ page.link_to_dataset }}'" type="button"> <i class="fas fa-external-link-alt"></i> Dataset </button></td>
+                        <td> <button onclick="location.href='{{ page.link_to_dataset }}'" type="button"> <i id="general" class="fas fa-external-link-alt"></i> Dataset </button></td>
                         {% else %}
                         {% endif %}
                     </tr>
@@ -173,7 +173,7 @@ layout: default
                     <tr>
                         <td> Data Dictionary </td>
                         {% if page.data_dictionary contains 'Y' %}
-                        <td><i class="fas fa-check fa-lg" style="color: rgb(50,205,50);"></td>
+                        <td><i id="general" class="fas fa-check fa-lg" style="color: rgb(50,205,50);"></td>
                         {% else %}
                             {% if page.data_dictionary contains 'N' %}
                             <td>NO</td>
@@ -181,7 +181,7 @@ layout: default
                             {% endif %}
                         {% endif %}
                         {% if page.data_dictionary %}
-                        <td> <button onclick="location.href='{{ page.link_to_data_dictionary }}'" type="button"> <i class="fas fa-external-link-alt"></i> Data Dictionary </button></td>
+                        <td> <button onclick="location.href='{{ page.link_to_data_dictionary }}'" type="button"> <i id="general" class="fas fa-external-link-alt"></i> Data Dictionary </button></td>
                         {% else %}
                         {% endif %}
                     </tr>
@@ -192,7 +192,7 @@ layout: default
                     <tr>
                         <td> Production Code </td>
                         {% if page.production_code_availability contains'Y' %}
-                        <td><i class="fas fa-check fa-lg" style="color: rgb(50,205,50);"></td>
+                        <td><i id="general" class="fas fa-check fa-lg" style="color: rgb(50,205,50);"></td>
                         {% else %}
                             {% if page.production_code_availability contains 'N' %}
                             <td>NO</td>
@@ -200,7 +200,7 @@ layout: default
                             {% endif %}
                         {% endif %}
                         {% if page.production_code_availability %}
-                        <td> <button onclick="location.href='{{ page.link_to_github }}'" type="button"> <i class="fas fa-external-link-alt"></i> Production Code </button></td>
+                        <td> <button onclick="location.href='{{ page.link_to_github }}'" type="button"> <i id="general" class="fas fa-external-link-alt"></i> Production Code </button></td>
                         {% else %}
                         {% endif %}
                     </tr>
@@ -215,13 +215,13 @@ layout: default
                     </tr>
 
                     <tr>
-                        <th><i class="fas fa-address-card" style="color: rgb(140,29,64)"></i> Contact Information </th>
+                        <th><i  id="general" class="fas fa-address-card" style="color: rgb(140,29,64)"></i> Contact Information </th>
                     </tr>
                     {% if page.name_of_contributor %}
                      <tr>
                         <td> Name Of Contributor </td>
                         <td>{{ page.name_of_contributor }}</td>
-                        <td> <button onclick="location.href='mailto:{{ page.email_of_contributor }}'" type="button"> <i class="fa fa-envelope"></i> Email Contributor </button></td>
+                        <td> <button onclick="location.href='mailto:{{ page.email_of_contributor }}'" type="button"> <i id="general" class="fa fa-envelope"></i> Email Contributor </button></td>
                     </tr>
                     {% else %}
                     {% endif %}
@@ -230,7 +230,7 @@ layout: default
                      <tr>
                         <td> Name Of Contact </td>
                         <td>{{ page.name_of_contact }}</td>
-                        <td> <button onclick="location.href='mailto:{{ page.email_of_contact }}'" type="button"> <i class="fa fa-envelope"></i> Email Contact </button></td>
+                        <td> <button onclick="location.href='mailto:{{ page.email_of_contact }}'" type="button"> <i id="general" class="fa fa-envelope"></i> Email Contact </button></td>
                     </tr>
                     {% else %}
                     {% endif %}
@@ -258,9 +258,9 @@ layout: default
      
             {% include paginate-post.html %}
                 
-            <!--
+            
             {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
-            -->
+            
 </div>     
 </article>
 
