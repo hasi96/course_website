@@ -57,19 +57,33 @@ data( Iris )
 plot( Iris[,1:2] )
 ```
 
-If the data is important for your example, you can post a small sample of your data using the dput() function.
+If the data is important for your question, you can post a small sample of your data using the dput() function. For example, here is the dput() output from the US Arrests dataset that comes with R.
 
 ```r
-x <- 1:100
-y <- rnorm(100)
-dat <- data.frame( x, y )
-dput( head( dat, 10 ) )
+> dput( head( USArrests ) )
 
-> structure(list(x = 1:10, 
-> y = c(1.02, 1.28, 0.9, -1.35, 0.5, 0.25, 
-> -0.29, 0.33, 1.61, 0.85)), 
-> .Names = c("x", "y"), row.names = c(NA, 
-> 10L), class = "data.frame"))
+structure(list(Murder = c(13.2, 10, 8.1, 8.8, 9, 7.9), Assault = c(236L, 
+263L, 294L, 190L, 276L, 204L), UrbanPop = c(58L, 48L, 80L, 50L, 
+91L, 78L), Rape = c(21.2, 44.5, 31, 19.5, 40.6, 38.7)), .Names = c("Murder", 
+"Assault", "UrbanPop", "Rape"), row.names = c("Alabama", "Alaska", 
+"Arizona", "Arkansas", "California", "Colorado"), class = "data.frame")
+```
+And here is what the output looks like after being pasted back into R:
+
+```r
+> structure(list(Murder = c(13.2, 10, 8.1, 8.8, 9, 7.9), Assault = c(236L, 
++ 263L, 294L, 190L, 276L, 204L), UrbanPop = c(58L, 48L, 80L, 50L, 
++ 91L, 78L), Rape = c(21.2, 44.5, 31, 19.5, 40.6, 38.7)), .Names = c("Murder", 
++ "Assault", "UrbanPop", "Rape"), row.names = c("Alabama", "Alaska", 
++ "Arizona", "Arkansas", "California", "Colorado"), class = "data.frame")
+
+           Murder Assault UrbanPop Rape
+Alabama      13.2     236       58 21.2
+Alaska       10.0     263       48 44.5
+Arizona       8.1     294       80 31.0
+Arkansas      8.8     190       50 19.5
+California    9.0     276       91 40.6
+Colorado      7.9     204       78 38.7
 ```
 
 The output code can be pasted directly into R to re-create the original dataset.
