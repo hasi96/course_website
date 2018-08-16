@@ -70,6 +70,7 @@ i#general {
 
 a{
     color: maroon;
+    text-decoration: underline; 
 }
 
 /* unvisited link */
