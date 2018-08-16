@@ -64,7 +64,7 @@ Then add a few page dividers, and your analysis will now be organized something 
 
 Markdown is used on GitHub, Stack Overflow, and in R Markdown documents. Familiarity with the basics offers a lot of power in controlling how your analysis is presented to your audience. 
 
-You can see some advanced R Markdown features [HERE](https://raw.githubusercontent.com/DS4PS/Data-Science-Class/master/HANDOUTS/R_Markdown_Template.html).
+You can see some advanced R Markdown features [HERE](https://ds4ps.github.io/Data-Science-Class/HANDOUTS/R_Markdown_Template.html).
 
 
 ## Collaboration Tools
