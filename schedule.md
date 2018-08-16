@@ -40,7 +40,7 @@ how to succeed
 
 # Introduction to Data Science 
 
-[Unit 1: Aug 16-22 ]{@date}
+[ Unit 1: Aug 16-22 ]{@date}
 
 This unit defines the concept of "data science" and provides an overview of the course schedule for the semester. 
 
@@ -54,7 +54,7 @@ By the end of this unit, you will:
 
 > A data scientist is a person who should be able to leverage existing data sources, and create new ones as needed in order to extract meaningful information and actionable insights. These insights can be used to drive business decisions and changes intended to achieve business goals... ‘The Perfect Data Scientist’ is the individual who is equally strong in business, programming, statistics, and communication.
 
-FROM: [What Is Data Science, and What Does a Data Scientist Do?]{@reading https://www.innoarchitech.com/what-is-data-science-does-data-scientist-do/}
+FROM: [ What Is Data Science, and What Does a Data Scientist Do? ]{@reading https://www.innoarchitech.com/what-is-data-science-does-data-scientist-do/}
 
 > Universities can hardly turn out data scientists fast enough. To meet demand from employers, the United States will need to increase the number of graduates with skills handling large amounts of data by as much as 60 percent.
 
@@ -80,7 +80,7 @@ https://www.ted.com/talks/anne_milgram_why_smart_statistics_are_the_key_to_fight
 
 ## Labs
 
-[Download Rmd Template]{ @labs https://cdn.rawgit.com/DS4PS/Data-Science-Class/master/01-TEXTBOOK/Unit-04-Analysis-with-Groups.Rmd }
+[ Download Rmd Template ]{@lab https://cdn.rawgit.com/DS4PS/Data-Science-Class/master/01-TEXTBOOK/Unit-04-Analysis-with-Groups.Rmd }
 
 Here is what your Markdown file will look like. You need to replace all -->text<-- with the appropriate responses formatted using Markdown syntax.
 
