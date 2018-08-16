@@ -1,8 +1,8 @@
 button {
     border-radius: 5px;
-    border-color: rgb(140,29,64);
+    border-color: darkgray;
     background-color: transparent;
-    color: black;
+    color: rgb(140,29,64);
 }
 
 button:hover {
@@ -59,7 +59,7 @@ button#dataset:hover {
 }
 
 i#general {
-    color: rgb(140,29,64)
+    color: rgb(140,29,64);
 }
 
 #default_nav {
@@ -92,7 +92,7 @@ a:hover {
 
 /* selected link */
 a:active {
-    color: maroon;
+    color: green;
     text-decoration: underline;
 }
 
