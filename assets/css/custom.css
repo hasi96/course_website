@@ -80,7 +80,8 @@ a:link {
 
 /* visited link */
 a:visited {
-    color: midnightblue ;
+    color: navy ;
+    text-decoration: underline;
 }
 
 /* mouse over link */
@@ -90,7 +91,7 @@ a:hover {
 
 /* selected link */
 a:active {
-    color: midnightblue;
+    color: navy;
 }
 
 
