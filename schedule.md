@@ -85,6 +85,8 @@ https://www.ted.com/talks/anne_milgram_why_smart_statistics_are_the_key_to_fight
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0tak8PvXO7w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+
+
 ## Assignments
 
 **PART I**
@@ -94,7 +96,10 @@ Install R Studio and Pandoc on your machine.
 * [ Helpful Vocabulary ]{@handouts https://github.com/DS4PS/Data-Science-Class/raw/master/HANDOUTS/Helpful%20Programming%20Vocabulary.pdf}
 * [ Base R Cheat Sheet ]{@handouts base-r-cheat-sheet.pdf}
 
-**PART II**
+
+**PART II - MY FIRST MARKDOWN DOCUMENT**
+
+Read about Markdown in the [Resources](https://hasi96.github.io/course_website/resources/) tab.
 
 [ Download Rmd Template ]{@lab https://cdn.rawgit.com/DS4PS/Data-Science-Class/master/01-TEXTBOOK/Unit-04-Analysis-with-Groups.Rmd}
 
@@ -132,6 +137,9 @@ output: html_document
 --> embed a video <--
 
 ```
+
+**Instructions for Submitting**
+
 
 
 
