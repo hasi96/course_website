@@ -159,7 +159,7 @@ By the end of this unit, you will be able to:
 
 ## Readings
 
-Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and graphics. " O'Reilly Media, Inc.". [ CH 5.2-5.5 ]{ @reading http://www.bagualu.net/wordpress/wp-content/uploads/2015/10/R_Cookbook.pdf}
+Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and graphics. " O'Reilly Media, Inc.". [ CH 5.2-5.5 ]{@reading http://www.bagualu.net/wordpress/wp-content/uploads/2015/10/R_Cookbook.pdf}
 
 
 ## Lectures
