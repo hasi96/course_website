@@ -151,16 +151,12 @@ output: html_document
 
 [ Unit 2: Aug 23-29 ]{@date}
 
-This week you will learn the basics of programming in R. 
-
-## Learning Objectives
-
 By the end of this unit, you will be able to:
 * Use functions in R.
 * Use data types properly.
 
 
-## Key Concepts
+#### Key Concepts
 
 * functions()
 * arguments
