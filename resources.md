@@ -27,36 +27,6 @@ alt="The DS ECO" width="400" align="center" />
 
 A big part of this course is learning about some of these resources and how they fit together to improve work-flow, analysis, and reporting. The most powerful tool that you will discover, however, is the community of smart and creative people active in the field of data science. Some are engineers working on solutions to hard technical problems in the open source space, but most are regular users such as data analysts, artists, educators and activists. Once you understand a few foundational concepts and develop a rudimentary vocabulary you can tap into the community through message boards and list-serves. See the Get Help tab for rules to follow as a good community member. 
 
-<br>
-<p align="center">
-<a href="https://vimeo.com/180644880" target="_blank"><img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/R-in-60-seconds.png" 
-alt="R in 60 seconds" width="854" border="0" /></a>
-</p>
-<br>
-
-
-
-## Installing R
-
-R is a programming langauge that was [designed specifically for data analysis](https://www.nytimes.com/2009/01/07/technology/business-computing/07program.html). Along with Python, it is the [most popular tool](https://stackoverflow.blog/2017/10/10/impressive-growth-r/) used by data scientists, data journalists, and quantitative social scientists. 
-
-
-https://medium.com/@GalarnykMichael/install-r-and-rstudio-on-windows-5f503f708027
-
-
-
-## Installing Packages in R
-
-CRAN Views
-
-[Tidyverse toolkit](https://www.tidyverse.org/packages/)
-
-```r
-install.packages("tidyverse")
-library(tidyverse)
-```
-
-
 ## Data-Driven Documents
 
 For the purpose of transparency and reproducibility, as well as simple convenience, there is high demand for documents that combine typical elements of publications and reports such as text, tables, graphs and images, and the code that was used to create the analysis presented in the text. These efforts have largely converged on Markdown as a simple publishing language, and derivations like R Markdown to incorporate output from models into documents. 
@@ -119,6 +89,48 @@ Here are some resources for configuring GitHub to work with R Studio:
 
 * [Nice Blog](https://www.molecularecologist.com/2013/11/using-github-with-r-and-rstudio/)
 * [R Studio Documentation](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
+
+
+
+## Installing R
+
+
+R is a programming langauge that was [designed specifically for data analysis](https://www.nytimes.com/2009/01/07/technology/business-computing/07program.html). Along with Python, it is the [most popular tool](https://stackoverflow.blog/2017/10/10/impressive-growth-r/) used by data scientists, data journalists, and quantitative social scientists. 
+
+**R in 60 Seconds:**
+
+<br>
+<p align="center">
+<a href="https://vimeo.com/180644880" target="_blank"><img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/R-in-60-seconds.png" 
+alt="R in 60 seconds" width="854" border="0" /></a>
+</p>
+<br>
+
+See [some tips](https://medium.com/@GalarnykMichael/install-r-and-rstudio-on-windows-5f503f708027) on installing R and R Studio.
+
+
+
+## Installing Packages in R
+
+A large part of R's popularity is it's enormous library of custom programs, called packages. If you know the package name, they are easy to install and load.
+
+```r
+install.packages( "dplyr" )
+library( dplyr )
+```
+
+Note that quotation marks are mandatory during the install phase, but optional during the load phase. There are good reasons for this that will not be discussed here. Be sure to remember the quotes or you will get an error.
+
+With 13,000 available packages, it can be hard to find the ones that are most useful for your task at hand. The R Team has tried to make it a little easier by organizing packages into a [Task Views](https://cran.r-project.org/web/views/) library.
+
+One of the most useful packages is called [The Tidyverse](https://www.tidyverse.org/packages/). It's actually a collection of packages developed by the R Studio team to make basic data processing steps faster and more reliable. They also make it easy to install all of the packages at once by calling:
+
+```r
+install.packages("tidyverse")
+library(tidyverse)
+```
+
+
 
 
 ## More Resources
