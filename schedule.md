@@ -184,9 +184,7 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 [ Unit 3: Aug 30 - Sept 5 ]{@date}
 
-[   ]{@reading}
-[   ]{@handouts}
-[   ]{@lab}
+
 
 
 
@@ -197,9 +195,7 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 [ Unit 4: Sept 6-12 ]{@date}
 
-[   ]{@reading}
-[   ]{@handouts}
-[   ]{@lab}
+
 
 
 
@@ -211,9 +207,7 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 [ Unit 5: Sept 13-19 ]{@date}
 
-[   ]{@reading}
-[   ]{@handouts}
-[   ]{@lab}
+
 
 
 
@@ -224,9 +218,7 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 [ Unit 6: Sept 20-26 ]{@date}
 
-[   ]{@reading}
-[   ]{@handouts}
-[   ]{@lab}
+
 
 
 
@@ -236,9 +228,6 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 [ Unit 7: Sept 27 - Oct 3 ]{@date}
 
-[   ]{@reading}
-[   ]{@handouts}
-[   ]{@lab}
 
 
 
@@ -249,9 +238,7 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 [ Unit 8: Sept 27 - Oct 3 ]{@date}
 
-[   ]{@reading}
-[   ]{@handouts}
-[   ]{@lab}
+
 
 
 
@@ -262,9 +249,6 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 [ Unit 9: Oct 4 - 10 ]{@date}
 
-[   ]{@reading}
-[   ]{@handouts}
-[   ]{@lab}
 
 
 
