@@ -15,12 +15,24 @@ layout: default
 
 <body class="page-responsive">
 
-<div class = "uk-container">
+<div class = "uk-container-small">
 
 <br>
 <br>	
-<h1>How to Get Help</h1>	
-You have several options for asking questions about course content and seeking help on labs.
+<h1>Getting Help</h1>	
+When you get stuck on labs or projects you have several options to get help:
+<br>
+<br>
+	
+<ul class="uk-list uk-list-divider uk-text-small">
+    <li>1. Work with a friend.</li>
+    <li>2. Post a question to the discussion board (see below).</li>
+    <li uk-text-small>3. Attend a weekly lab session.</li>
+    <li uk-text-warning>4. Make an appointment for online office hours (link below).</li>
+    <li>5. Email your instructor to set up in-person office hours.</li>
+</ul>
+  
+  		
 <br>
 <br>
 	
@@ -34,7 +46,9 @@ You have several options for asking questions about course content and seeking h
 <td>{{item.name}}</td>
 <td>{{item.office_hours_times}}</td>
 <td>{{item.office_hours_location}}</td>
-<td><a href={{item.office_hours_app_url}}> Make an Appointment </a> </td>
+<td>
+<a class="uk-button uk-button-default uk-button-small" class="uk-align-center" onclick="location.href='{{ item.office_hours_app_url }}'" target="_blank">ONLINE OFFICE HOURS</a>
+</td>
 <td>
 </td>
 </tr>
@@ -47,7 +61,9 @@ You have several options for asking questions about course content and seeking h
 <br>
 	
 	
-<div class = "uk-container">
+<div class = "uk-container-small">
+
+<h2> Discussion Board </h2>
 	
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for issues.." title="Type in a name" style="width:60%;padding: 12px;"> 
 <a class="uk-button uk-button-default" href="https://github.com/{{site.github_info.username}}/{{ site.github_info.course-repo}}/issues/new">New Issue</a>

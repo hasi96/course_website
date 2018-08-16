@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<div class = "uk-container uk-container-small">
+  
 <br><br>
 
 # Resources
@@ -18,22 +20,21 @@ The R community has taken this to another scale. There are currently 13,000 free
 
 In addition to packages created for R, there are also powerful tools that make it easier to share data, collaborate on work, and share your results in creative ways. One of the reasons R has become an industry favorite is that it is highly integrated into this ecosystem. Many of these tools are built-right into R Studio, making it easier to manage large projects or collaborate.
 
-<br>
 <p align="center">
-<img src="assets/img/data-science-ecosystem.png" alt="Data Science Ecosystem" style="width:400px">
+<img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/data-science-ecosystem.png" 
+alt="The DS ECO" width="400" align="center" />
 </p>
-<br>
-
-{% include image.html img="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/data-science-ecosystem.png" style="wide" lightbox="true" alt="Data Science Ecosystem" caption="The Data Science Ecosystem" %}
 
 A big part of this course is learning about some of these resources and how they fit together to improve work-flow, analysis, and reporting. The most powerful tool that you will discover, however, is the community of smart and creative people active in the field of data science. Some are engineers working on solutions to hard technical problems in the open source space, but most are regular users such as data analysts, artists, educators and activists. Once you understand a few foundational concepts and develop a rudimentary vocabulary you can tap into the community through message boards and list-serves. See the Get Help tab for rules to follow as a good community member. 
 
 <br>
-<p align="left">
+<p align="center">
 <a href="https://vimeo.com/180644880" target="_blank"><img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/R-in-60-seconds.png" 
 alt="R in 60 seconds" width="854" border="0" /></a>
 </p>
 <br>
+
+
 
 ## Installing R
 
@@ -41,6 +42,8 @@ R is a programming langauge that was [designed specifically for data analysis](h
 
 
 https://medium.com/@GalarnykMichael/install-r-and-rstudio-on-windows-5f503f708027
+
+
 
 ## Installing Packages in R
 
@@ -65,7 +68,8 @@ Markdown is a simple set of rules used to format text and images. Formatting it 
 ## H2
 ### H3
 ```
-![](markdown-example.png)
+<img src="https://raw.githubusercontent.com/hasi96/course_website/master/assets/img/markdown-example.png" 
+alt="markdown" width="200" />
 
 The basics are very easy to master by referencing a basic [Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
@@ -95,7 +99,8 @@ Markdown is used on GitHub, Stack Overflow, and in R Markdown documents. Familia
 
 Working in groups [is hard](https://www.ted.com/talks/clay_shirky_on_institutions_versus_collaboration). Most work is done in groups. As a result, project management is a non-trivial task that should not be approached in an ad-hoc fashion. The field of data science has inherited many great collaboration tools that were developed to manage large teams of software engineers, but are being used for many other creative purposes:
 
-<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/clay_shirky_how_the_internet_will_one_day_transform_government" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+<br>
+<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/clay_shirky_how_the_internet_will_one_day_transform_government" width="854" height="480" style="position:absolute;center:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
 <br>
 
 
@@ -105,14 +110,23 @@ This course will introduce students to [GitHub](https://www.economist.com/the-ec
 
 
 <br>
-<iframe width="854" height="480" src="https://www.youtube.com/embed/w3jLJU7DT5E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/w3jLJU7DT5E" width="854" height="480" style="position:absolute;center:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
 <br>
 
 
-## Useful Data Sources
 
-http://shop.oreilly.com/product/0636920018254.do
+Here are some resources for configuring GitHub to work with R Studio:
+
+* [Nice Blog](https://www.molecularecologist.com/2013/11/using-github-with-r-and-rstudio/)
+* [R Studio Documentation](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
 
 
+## More Resources
+
+For those that are new to data science, I have compiled some useful resources for getting acquainted with R and the data science community, as well as some notable applications of data science in the public and nonprofit sectors.
+
+http://www.lecy.info/r-for-public-policy
+
+</div>
 <br><br><br>
 

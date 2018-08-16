@@ -301,7 +301,7 @@ In the post.md file there are two types data to be entered:
 
 * Metadata
 * Content
-
+    
 ![](/assets/img/Image.png)
 
 

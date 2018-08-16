@@ -1,42 +1,55 @@
 # Create New Dataset
 
-blah blah 
+This page shows in detailed information regarding the dataset, a more detailed information regarding the dataset such as source of dataset, owner of dataset, type of data, and other such information regarding the dataset. This pages are stored under `_posts` folder with the naming convention followed as : 
+```
+YEAR-MONTH-DAY-title.md
+```
+Where the date should be in yyyy-mm-dd-title format, it is preffred to enter current date as the post are sorted on the basis of date so by giving it current date it will show that post fist in the datset page. 
+
+In the post.md file there are two types data to be entered:
+
+* Metadata
+* Content
+
+![](/assets/img/Image.png)
+
+You can use the template given below to create a new post.
 
 Here is a template:
 
 ```
 ---
 layout: post  
-name_of_dataset: Water Consumption Data   <!-- Enter the name od dataset --> 
-short_description: THe amount of water consumed in a city in a month   <!-- Description of the dataset, what is the dataset all about  -->
-topic_keywords: Water Consumpion, unit in gallons  <!-- Keywords that depict your dataset  -->
-type_of_data: Water Consumption data type <!-- Type of data  -->
-relational_database: Y <!--Whether a given dataset has relational database or not. Please enter Y for yes and N for no.  --> 
-panel: Not available  <!-- Whether a given dataset has panel or not.please enter Y for yes and N for no.  --> 
-unit_of_analysis: city <!-- Specify the unit of analysis -->
-time_periods: daily  <!-- When the dataset isbeing updated -->
-geography: mountains <!-- The location about where the data is collected -->
-number_of_rows: 58K	<!-- Number of rows in a dataset -->
-number_of_columns: 60  <!-- Number of columns in a dataset -->
-number_of_tables: 5  <!-- Number of table in the dataset -->
-source_of_data: abc corporation    <!-- Data provided by -->
-open_data: Y  <!--Whether a given data is open data or not. Please enter Y for yes and N for no.  --> 
-open_data_license: http://www.google.com/  <!-- Enter the license for open data -->
-available_for_download: Y  <!-- Whether the dataset available for download. Please enter Y for yes and N for no.  --> 
-link_to_dataset:  http://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9  <!-- Enter the link from where dataset can be downloaded. -->
-data_dictionary: Y  <!-- Whether data dictionary is available or not. Please enter Y for yes and N for no.  --> 
-link_to_data_dictionary: http://www.google.com/  <!-- Enter the link to downloaddata dictionary -->
-production_code_availability: N   <!-- Whether production code is available or not. please enter Y for yes and N for no.  --> 
-link_to_github: http://www.gmail.com/ <!-- Enter the link to github repository.  -->
-name_of_contributor: Jesse Lecy <!-- Enter the name of contributor -->
-email_of_contributor: jlecy@asu.edu <!-- Enter the email adress of the contributor -->
-name_of_contact: Shachi  <!-- Enter the name of contact -->
-email_of_contact: skshah11@asu.edu  <!-- Enter the email adress of the contact -->
+name_of_dataset:
+short_description: 
+topic_keywords: 
+type_of_data: 
+relational_database:  
+panel:  
+unit_of_analysis:
+time_periods: 
+geography: 
+number_of_rows: 
+number_of_columns: 
+number_of_tables: 
+source_of_data: 
+open_data:  
+open_data_license: 
+available_for_download: 
+link_to_dataset: 
+data_dictionary:
+link_to_data_dictionary: 
+production_code_availability: 
+link_to_github: 
+name_of_contributor: 
+email_of_contributor: 
+name_of_contact:
+email_of_contact: 
 ---
 
 <!-- Regular markdown starts here -->
 
-### Environment
+
 
 ```
 

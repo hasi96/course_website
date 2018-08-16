@@ -91,7 +91,7 @@ instructor:
    title: Professor
    email: jdlecy@asu.edu
    website_url: http://www.lecy.info/
-   office_hours_times: Very flexible, online or in-person
+   office_hours_times: Flexible, by appointment
    office_hours_location:  UCENT 517
    office_hours_app_url:  https://calendly.com/lecy/15min/
    github_url: https://github.com/lecy
@@ -168,32 +168,11 @@ post_css: /assets/css/posts
 markdown:           kramdown
 highlighter:        rouge
 
-scholar:
-  style: apa
-  locale: en
-
-  sort_by: none
-  order: ascending
-
-  source: ./_bibliography
-  bibliography: bibliography.bib
-  bibliography_template: <abbr>[{{key}}]</abbr>{{reference}}
-
-  replace_strings: true
-  join_strings:    true
-
-  details_dir:    bibliography
-  details_layout: bibtex.html
-  details_link:   Details
-
-  query: "@*"
-
 gems:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-gist
   - jekyll-avatar
-  - jekyll-scholar
 exclude:
   - Gemfile
   - Gemfile.lock
