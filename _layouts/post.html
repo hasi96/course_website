@@ -138,7 +138,7 @@ layout: default
                         <td><i id="general" class="fas fa-check fa-lg" style="color: rgb(50,205,50);"></i></td>
                         {% else %}
                             {% if page.open_data contains 'N' %}
-                            <td><i id="general" class="fas fa-times" style= "color: rgb()255,0,0)"></i></td>
+                            <td><i id="general" class="fas fa-times fa-lg" style= "color: rgb(255,0,0);"></i></td>
                             {% else %}
                             {% endif %}
                         {% endif %}
@@ -157,7 +157,7 @@ layout: default
                         <td><i id="general" class="fas fa-check fa-lg" style="color: rgb(50,205,50);"></i></td>
                         {% else %}
                             {% if page.available_for_download contains 'N' %}
-                            <td>NO</td>
+                            <td><i id="general" class="fas fa-times fa-lg" style= "color: rgb(255,0,0);"></i></td>
                             {% else %}
                             {% endif %}
                         {% endif %}
@@ -176,7 +176,7 @@ layout: default
                         <td><i id="general" class="fas fa-check fa-lg" style="color: rgb(50,205,50);"></td>
                         {% else %}
                             {% if page.data_dictionary contains 'N' %}
-                            <td>NO</td>
+                            <td><i id="general" class="fas fa-times fa-lg" style= "color: rgb(255,0,0);"></i></td>
                             {% else %}
                             {% endif %}
                         {% endif %}
@@ -195,7 +195,7 @@ layout: default
                         <td><i id="general" class="fas fa-check fa-lg" style="color: rgb(50,205,50);"></td>
                         {% else %}
                             {% if page.production_code_availability contains 'N' %}
-                            <td><i id="general" class="fas fa-times fa-lg" style="color: rgb(50,205,50);"></td>
+                            <td><i id="general" class="fas fa-times fa-lg" style="color: rgb(255,0,0);"></td>
                             {% else %}
                             {% endif %}
                         {% endif %}

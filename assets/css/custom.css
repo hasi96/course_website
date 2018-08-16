@@ -2,6 +2,7 @@ button {
     border-radius: 5px;
     border-color: rgb(140,29,64);
     background-color: transparent;
+    color: black;
 }
 
 button:hover {
@@ -61,10 +62,11 @@ i#general {
     color: rgb(140,29,64)
 }
 
-nav#default_nav {
-    background-color:rgba(0,163,224,0.6);
+#default_nav {
+    background-color:rgb(38, 184, 239);
     font-size: 1.7em;
 }
+
 
 a{
     color: black;
@@ -75,12 +77,12 @@ a{
  }
 
  img#logo {
-    width: 70%; 
-    height: 50%;
+    width: 60%; 
+    height: 40%;
  }
 
  td#footer {
-    padding-left: 7em;
+    padding-left: 17em;
     color: black;
  }
 
@@ -88,7 +90,10 @@ a{
     color: black;
  }
 
-
+footer {
+    background-color:rgb(38, 184, 239);
+    margin-top: 0px;
+}
 
  #myInput {
   background-image: url('/css/searchicon.png');

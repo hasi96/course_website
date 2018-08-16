@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 <head>
+ <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+ <link rel ="stylesheet" href="{{ "assets/css/custom.css" | relative_url  }}">
  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
@@ -8,14 +10,14 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/gaborcsardi/r-font/master/rlogo.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/wesbos/Font-Awesome-Docker-Icon/master/fontcustom/fontcustom.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <link rel ="stylesheet" href="{{ "assets/css/custom.css" | relative_url  }}">
+  
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %} 
   <meta property="og:image" content="{% if site.brand.image contains 'http' %}{{ site.brand.image }}{% else %}{{ site.post_assets | absolute_url }}{{ site.brand.image }}{% endif %}"/>
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+ 
   <link rel="shortcut icon" type="image/png" href="{{ "assets/img/favicon.png" | relative_url }}" >
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <script src="{{ "assets/js/main.js" | relative_url }}"></script>
@@ -54,10 +56,10 @@
                     {% if link.title %}
                         
                    {% if link.url contains 'http' %} 
-                    <li{{ current }}><a href="{{ link.url }}" id="list"  target="_blank"; >{{ link.title }}</a> 
+                    <li{{ current }}><a href="{{ link.url }}" id="list"  target="_blank"; style="color: black;">{{ link.title }}</a> 
                  </li>
                    {% else %} 
-                    <li{{ current }}><a href="{{ domain }}/{{ site.github_info.website-repo }}/{{ link.url }}" id="list" >{{ link.title }}</a> 
+                    <li{{ current }}><a href="{{ domain }}/{{ site.github_info.website-repo }}/{{ link.url }}" id="list" style="color: black;">{{ link.title }}</a> 
                  </li>
                  {% endif %}
                     {% endif %}
@@ -114,7 +116,7 @@
 {% include offcanvas.html %}
 
  
-<footer class="uk-section uk-text-center uk-link-muted" style="background-color:rgba(0,163,224,0.6); margin-top: 0px; ">
+<footer class="uk-section uk-text-center uk-link-muted" >
 <div class="container">
     <div class="row">
       <div class="col-lg-7 col-md-7 col-xs-8">
@@ -138,11 +140,11 @@
                         
                    {% if link.url contains 'http' %} 
                     <tr>
-                      <td id="footer" ><a href="{{ link.url }}" target="_blank"; >{{ link.title }}</a></td>
+                      <td id="footer" ><a href="{{ link.url }}" target="_blank"; style="color: black" >{{ link.title }}</a></td>
                  </tr>
                    {% else %} 
                     <tr>
-                      <td id="footer" ><a href="{{ domain }}/{{ site.github_info.website-repo }}/{{ link.url }}">{{ link.title }}</a></td>
+                      <td id="footer" ><a href="{{ domain }}/{{ site.github_info.website-repo }}/{{ link.url }}" style="color: black">{{ link.title }}</a></td>
                  </tr>
                  {% endif %}
                     {% endif %}

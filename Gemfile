@@ -26,10 +26,6 @@ group :jekyll_plugins do
    gem 'jekyll-gist'
    gem 'jekyll-livereload'
    gem 'jekyll-avatar'
-<<<<<<< HEAD
-  
-=======
->>>>>>> f4c9042de9d45c32bc25ba692127d803805f1613
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
