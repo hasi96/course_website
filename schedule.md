@@ -192,6 +192,7 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 [ Unit 2: Aug 23-29 ]{@date}
 
+[   ]{@lab https://www.w3schools.com/cssref/css_colors.asp}
 
 ***
 
