@@ -38,15 +38,18 @@ h4 {
     margin: 1em 0 1rem;
 }
 
-footer {
-     color: rgb(255,255,255);
+
+header {
+    color: black;
 }
 
-div#header1 {
-    position: fixed; 
-    top: 0px; 
-    width: 1904px;
+footer {
+    background-color:rgb(38, 184, 239);
+    color: rgb(255,255,255);
+    margin-top: 0px;
 }
+
+
 
  button#dataset {
     border-radius: 5px;
@@ -120,10 +123,7 @@ a:active {
     color: black;
  }
 
-footer {
-    background-color:rgb(38, 184, 239);
-    margin-top: 0px;
-}
+
 
  #myInput {
   background-image: url('/css/searchicon.png');
