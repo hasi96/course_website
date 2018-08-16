@@ -49,7 +49,7 @@ header:
   url: schedule/
 
 - title: Textbook
-  url: https://ds4ps.github.io/Data-Science-Class/01-TEXTBOOK/docs/index.html 
+  url: https://ds4ps.github.io/Data-Science-Class/TEXTBOOK/docs/index.html 
 
 - title: Datasets
   url: datasets/
