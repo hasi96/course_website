@@ -103,7 +103,7 @@ instructor:
 
 
 textbooks:
-- title: R Cookbook. Proven recipes for data analysis, statistics, and graphics
+- title: R Cookbook. Proven recipes
   authors: Paul Teetor
   edition: Not Required
   link: http://www.bagualu.net/wordpress/wp-content/uploads/2015/10/R_Cookbook.pdf
@@ -113,7 +113,7 @@ textbooks:
   edition: Free Online
   link: http://r4ds.had.co.nz/
   required (y/n): n
-- title: The Art of Data Science. A Guide for Anyone Who Works with Data
+- title: The Art of Data Science
   authors: Peng, R. D., & Matsui, E.
   edition: Free Online
   link: https://www.amazon.com/Big-Book-Dashboards-Visualizing-Real-World/dp/1119282713/
