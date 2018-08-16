@@ -9,64 +9,39 @@ disqus: true
   <link rel="icon" type="image/png" href="../img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
    <script src="../assets/js/my_js.js"></script>
-<style>
-
- .collapsible {
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: center;
-      outline: none;
-      font-size: 15px;
-      background-color: white;
-    } 
-    .collapsible:hover {
-      background-color:rgb(220,220,220);
-    }
-
-    td {
-      text-align: center;
-    }
-    .child {
-      display:none;
-    }
-
-
-    .table{
-      background-color: white;
-      margin-left: 15px;
-    } 
-
-    .link{
-  color:  "#ffc425";
-}
-  </style>
-</head>
 <br>
 <br>
 <div >
+  <style>
+    td {
+      text-align: center;
+    }
+  </style>
+</div>
+</head>
 
 <body class = "page-responsive">
 <!-- <div class="wrapper"> -->
-
   <div class="main main-raised uk-section" id = "pp">
-    <div class="table-responsive uk-container uk-container-xsmall">
+    <div class="table-responsive uk-container">
 
-<h1 style="text-align: left; margin-left: 15px ">Syllabus Overview</h1>
-<button onclick="print();" type="button" style="margin-left: 15px"> <i class="fas fa-external-link-alt" style="color: rgb(140,29,64);"></i>Print </button>
-<table class="table table-condensed"  style="width:100%; margin-right:auto; padding-left:5px;">
+<h1 style="text-align: left; margin-left: 15px ">Course Schedule</h1>    
+<button onclick="print();" class="uk-button uk-button-default" style="margin-left: 15px"> </i>PRINT ALL UNITS</button>
+
+<br>
+      
+ <table class="table table-condensed"  style="width:100%; margin-right:auto; padding-left:5px;">
  <tr>
   <td> <br> </td>
   </tr>
   <tr>
-    <th class = "hide" style="width:10%;text-align:center;">Date</th>
-    <th style="width:40%;text-align:center;">Lesson</th>
-    <th style ="width:10%;text-align:center;">Lecture</th>
-    <th style ="width:10%;text-align:center;">Lab</th>
-    <th style="width:10%;text-align:center;">Handout</th>
-    <th style="width:10%;text-align:center;">Reading</th>
-    <th style="width:10%;text-align:center;">Exam</th>
+    <th class = "hide" style="width:20%;text-align:center;">Unit</th>
+    <th style="width:40%;text-align:center;">Topic</th>
+    <th style ="width:8%;text-align:center;">Lecture</th>
+    <th style ="width:8%;text-align:center;">Lab</th>
+    <th style="width:8%;text-align:center;">Handout</th>
+    <th style="width:8%;text-align:center;">Reading</th>
+    <th style="width:8%;text-align:center;">Project/Exam</th>
   </tr> 
   <tr>
     <td><br></td>
@@ -75,14 +50,15 @@ disqus: true
 </div>
 </div>
 </body>
-      <script>
+
+<script>
 
                     // Table of contents scroll to
                     UIkit.scroll('#markdown-toc a', {
                         duration: 400,
                         offset: 120
                     });
-                </script>
+</script>
 
      <script>
   $(function() {
@@ -98,9 +74,11 @@ disqus: true
     });
 });
   </script>
-  <section>
 
-  <div id="divCheckbox" class = "{{ site.url }}{{site.github_info.course-repo}}" style="display: none;">{{ content | checked }}</div>
+
+
+<section>
+<div id="divCheckbox" class = "{{ site.url }}{{site.github_info.course-repo}}" style="display: none;">{{ content | checked }}</div>
 
 
 
@@ -144,8 +122,13 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                          button.setAttribute("onclick","expand("+i+");");
                           var ttr2 = document.createElement("tr");
                       var title = sections[i].getElementsByTagName("h1");
+                     if(title.length>0){
                     var tex = document.createTextNode(title[0].innerHTML);
+                }
+                else{
+                    var tex = document.createTextNode("");
 
+                }
                     button.appendChild(tex);
                    ttd.appendChild(button);
 
@@ -184,6 +167,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
                 var newCell = document.createElement("td");
            
                 var icon = document.createElement("i");
+                
                 icon.className = "fa fa-check-circle";    
                                 newCell.appendChild(icon);
 
@@ -355,8 +339,10 @@ function expand(i){
              secs[j].appendChild(hr);
 
               var h1 = secs[j].getElementsByTagName("h1");
+              if(h1.length>0){
               (h1[0]).setAttribute("style","color:#8c1d40;");
-              h1[0].appendChild(hr);
+
+              h1[0].appendChild(hr);}
             }
             divC.setAttribute("display","block");
             var divContents = "<br>"+divC.innerHTML;
@@ -373,7 +359,7 @@ function expand(i){
 <script type="text/javascript">
 var b = document.getElementById("divCheckbox");
 var str = b.innerHTML;
-var regex = /\<hr\>(.*)/ig ,   body = str,   result = body.replace(regex,"</section> <section>");
+var regex = /\<hr\>(.*)/ig ,   body = str,   result = body.replace(regex,"</section><hr> <section> ");
 var res = result.match(/\[(.*)\]\{\@lecture(.*)\}/ig);
 var baseurl = b.getAttribute("class");
 for( var i=0;i<res.length;i++)
@@ -455,7 +441,6 @@ for( var i=0;i<res.length;i++)
     res[i].indexOf("\}")
 );
   var link = sub.split(" ")[1];
-
    if(!ValidURL(link)){
                     var sr = baseurl + "/READINGS/"+link;
                     link = sr; }
@@ -467,7 +452,7 @@ var res = result.match(/\[(.*)\]\{\@date(.*)\}/ig);
 for( var i=0;i<res.length;i++)
 {
   var mySubString = res[i].substring(
-    res[i].indexOf("\[") + 2, 
+    res[i].indexOf("\ [") + 2, 
     res[i].indexOf("\]") -1
 );
 
@@ -480,8 +465,10 @@ document.getElementById("divCheckbox").innerHTML = result;
 
 
 
+
 </div>
 </div>
+</section>
 <!-- </div> -->
 
 <br>
