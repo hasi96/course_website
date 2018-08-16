@@ -15,7 +15,7 @@ baseurl:            "/course_website"
 permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
-url :               "https://hasi96.github.io"
+url :               "https://ds4ps.github.io"
 
 # Site logo, image or text
 brand:
@@ -205,5 +205,5 @@ kramdown:
 
 
 
-course_url: "https://hasi96.github.io/Data-Science-Class/"
+course_url: "https://ds4ps.github.io/Data-Science-Class/"
 
