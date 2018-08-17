@@ -239,7 +239,7 @@ a .material-icons, a:hover .material-icons, a:focus .material-icons {
 .navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle, .open >
 .navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle:focus, .open >
 .navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle:hover {
-  background-color: #5388CD;
+  /*background-color: #5388CD;*/
   color: #FFFFFF;
 }
 .btn.btn-primary:focus, .btn.btn-primary:active, .btn.btn-primary:hover,
@@ -1976,7 +1976,6 @@ legend {
   margin-bottom: 15px;
 }
 .navbar .navbar-nav > li > a {
-  color: inherit;
   padding-top: 15px;
   padding-bottom: 15px;
   font-weight: 400;
@@ -1985,7 +1984,6 @@ legend {
   border-radius: 3px;
 }
 .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
-  color: inherit;
   background-color: transparent;
 }
 .navbar .navbar-nav > li > a .material-icons,

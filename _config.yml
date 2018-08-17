@@ -36,8 +36,9 @@ github_info:
 
 index:
     title: Intro to Data Science for the Social Sector
-    subtitle: This course introduces students to foundational tools in the field of data science.
     image: imac.svg
+    subtitle: This course introduces students to the field of data science and its applications in the public sector. Modern performance management and evaluation processes require strong data literacy and the ability to combine and analyze data from a variety of sources to inform managerial processes. We offer a practical, tools-based approach that is designed to build strong foundations for people that want to work as policy analysts or data-driven managers. We will cover data programming fundamentals, visualization, text analysis, automated reporting, and dynamic reporting using dashboards. The course is analytically rigorous, but no prior programming experience is assumed.
+    
 
 
 header:
@@ -48,7 +49,7 @@ header:
   url: schedule/
 
 - title: Textbook
-  url: https://ds4ps.github.io/Data-Science-Class/01-TEXTBOOK/docs/index.html 
+  url: https://ds4ps.github.io/Data-Science-Class/TEXTBOOK/docs/index.html 
 
 - title: Datasets
   url: datasets/
@@ -102,16 +103,28 @@ instructor:
 
 
 textbooks:
-- title: Big Book of Dashboards
-  authors: Smith, Smith, and Johnson
-  edition: First Edition
+- title: R Cookbook. Proven recipes
+  authors: Paul Teetor
+  edition: Not Required
+  link: http://www.bagualu.net/wordpress/wp-content/uploads/2015/10/R_Cookbook.pdf
+  required (y/n): n
+- title: R for Data Science
+  authors: Wickham, H., & Grolemund, G.
+  edition: Free Online
+  link: http://r4ds.had.co.nz/
+  required (y/n): n
+- title: The Art of Data Science
+  authors: Peng, R. D., & Matsui, E.
+  edition: Free Online
   link: https://www.amazon.com/Big-Book-Dashboards-Visualizing-Real-World/dp/1119282713/
   required (y/n): n
-- title: R Cookbook
-  authors: Paul Teetor
-  edition: First Edition
-  link: https://www.amazon.com/Cookbook-Analysis-Statistics-Graphics-Cookbooks/dp/0596809158/
+- title: Big Book of Dashboards
+  authors: Smith, Smith, and Johnson
+  edition: Not Required
+  link: https://www.amazon.com/Big-Book-Dashboards-Visualizing-Real-World/dp/1119282713/
   required (y/n): n
+
+
 
 
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
