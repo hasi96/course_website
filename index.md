@@ -26,6 +26,103 @@ The six main learning objectives for the course are:
 *	Ability to build custom visualizations through the base R graphics package
 *	Creation of dynamic graphics and data dashboards using R shiny tools
 
+
+## Course Schedule
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> UNIT </th>
+   <th style="text-align:left;"> DATES </th>
+   <th style="text-align:left;"> TOPIC </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Week 1 </td>
+   <td style="text-align:left;"> Aug 17-24 </td>
+   <td style="text-align:left;"> Intro to Markdown, Overview of Data Science </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Week 2 </td>
+   <td style="text-align:left;"> Aug 24-31 </td>
+   <td style="text-align:left;"> Functions and Data Structures </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Week 3 </td>
+   <td style="text-align:left;"> Aug 31 - Sept 7 </td>
+   <td style="text-align:left;"> Expressive Logic </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Week 4 </td>
+   <td style="text-align:left;"> Sep 7 - Sept 14 </td>
+   <td style="text-align:left;"> Joining Data </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Week 5 </td>
+   <td style="text-align:left;"> Sept 14 - Sept 21 </td>
+   <td style="text-align:left;"> Descriptive Analysis </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Week 6 </td>
+   <td style="text-align:left;"> Sept 21 - Sept 28 </td>
+   <td style="text-align:left;"> Visualization I </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Week 7 </td>
+   <td style="text-align:left;"> Sept 28 - Oct 5 </td>
+   <td style="text-align:left;"> Visualization II </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Week 8 </td>
+   <td style="text-align:left;"> Oct 5 - Oct 12 </td>
+   <td style="text-align:left;"> Data Ingestion </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Week 9 </td>
+   <td style="text-align:left;"> Oct 12 - Oct 19 </td>
+   <td style="text-align:left;"> Advanced Graphics </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Week 10 </td>
+   <td style="text-align:left;"> Oct 19 - Oct 26 </td>
+   <td style="text-align:left;"> Data Dashboards </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Week 11 </td>
+   <td style="text-align:left;"> Oct 26 - Nov 2 </td>
+   <td style="text-align:left;"> Collaboration Tools </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Week 12 </td>
+   <td style="text-align:left;"> Nov 2 - Nov 9 </td>
+   <td style="text-align:left;"> Programming Principles and Control </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Week 13 </td>
+   <td style="text-align:left;"> Nov 9 - Nov 16 </td>
+   <td style="text-align:left;"> Text Analysis </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Week 14 </td>
+   <td style="text-align:left;"> Nov 16 - Nov 23 </td>
+   <td style="text-align:left;"> Final Project </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Week 15 </td>
+   <td style="text-align:left;"> Nov 23 - Nov 30 </td>
+   <td style="text-align:left;"> Thanksgiving </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Week 16 </td>
+   <td style="text-align:left;"> Nov 30 - Dec 7 </td>
+   <td style="text-align:left;"> Final Project </td>
+  </tr>
+</tbody>
+</table>
+
+
+
 ## Course Prerequisites: 	
 
 There are no prerequisites, and we do not assume any prior background in computer programming or statistics. Students should, however, have installed R and R Studio, and worked through a basic tutorial on R Studio. 
@@ -139,4 +236,7 @@ Disability Accommodations:  Students should be fully aware that the Arizona Stat
 Religious accommodations: Students will not be penalized for missing an assignment due solely to a religious holiday/observance, but as this class operates with a fairly flexible schedule, all efforts should be made to complete work within the required timeframe. If this is not possible, students must notify the instructor as far in advance as possible in order to make an alternative arrangement.
 
 Military Accommodations: A student who is a member of the National Guard, Reserve, or other branch of the armed forces and is unable to complete classes because of military activation may request complete or partial unrestricted administrative withdrawals or incompletes depending on the timing of the activation. For more information see ASU policy USI 201-18.
+
+
+
 
