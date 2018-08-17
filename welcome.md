@@ -107,7 +107,7 @@ You will find this background information helpful as you start using R:
 * [ Helpful Vocabulary ](https://github.com/DS4PS/Data-Science-Class/raw/master/HANDOUTS/Helpful%20Programming%20Vocabulary.pdf)
 * [ Base R Cheat Sheet ](base-r-cheat-sheet.pdf)
 
-See the **Resources** tab for some additional information about R and R Studio.
+See the [Resources](https://ds4ps.github.io/course_website/resources/) tab for some additional information about R and R Studio.
 
 
 
