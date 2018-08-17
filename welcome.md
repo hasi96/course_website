@@ -137,7 +137,7 @@ Create a short bio for the class. Each question requires a different type of tex
 
 The full lab instructions are available [HERE](https://ds4ps.github.io/Data-Science-Class/LABS/lab-01-instructions.html).
 
-[ Download the Rmd Template ](https://cdn.rawgit.com/DS4PS/Data-Science-Class/master/01-TEXTBOOK/Unit-04-Analysis-with-Groups.Rmd)
+[ Download the Rmd Template ](https://cdn.rawgit.com/DS4PS/Data-Science-Class/master/TEXTBOOK/Unit-04-Analysis-with-Groups.Rmd)
 
 
 
