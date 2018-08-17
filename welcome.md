@@ -37,10 +37,10 @@ Learning a new skill like R programming is never painless, but you can follow a 
 #### Assignments
 
 Your grade is comprised of the following:
-
-* 10% - Discussion boards  
+ 
 * 60% - Weekly labs  
-* 30% - Final project   
+* 20% - Final project 
+* 20% - Discussion boards 
 
 Labs will give you practice with the key concepts and functions of the week. They are graded pass-fail and you get to drop one lab (chances are you will have one rough week this semester). To pass you need to get at least half of the questions correct and demonstrate that you understand the material. 
 
