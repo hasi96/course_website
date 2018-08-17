@@ -44,9 +44,12 @@ index:
 header:
 - title: Syllabus
   url: /
-  
-- title: Course Schedule
-  url: schedule/
+
+- title: Week 1
+  url: welcome/
+
+# - title: Course Schedule
+#   url: schedule/
 
 - title: Textbook
   url: https://ds4ps.github.io/Data-Science-Class/TEXTBOOK/docs/index.html 
