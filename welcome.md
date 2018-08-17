@@ -118,15 +118,26 @@ See the [Resources](https://ds4ps.github.io/course_website/resources/) tab for s
 
 **PART I**
 
-Install R Studio on your machine.
+Install R and [R Studio](https://www.rstudio.com/products/rstudio/download/) on your machine. See the [Resources](https://ds4ps.github.io/course_website/resources/) tab for tips.
+
+Install [Pandoc](http://pandoc.org/installing.html) if you would like to create PDF reports.
 
 
 
-**PART II - Create a Markdown Document**
+**PART II - Create a Markdown Bio**
 
-Read about Markdown in the [Resources](https://hasi96.github.io/course_website/resources/) tab.
+Create a short bio for the class. Each question requires a different type of text or graphic. Use [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to format each answer correctly.
 
-[ Download Rmd Template ](https://cdn.rawgit.com/DS4PS/Data-Science-Class/master/01-TEXTBOOK/Unit-04-Analysis-with-Groups.Rmd)
+1. Add your name to a **Header 1** element called, "Bio of YOUR NAME".
+2. Add a **picture** of yourself to the bio.
+3. Write a short **paragraph** about why you joined this class.
+4. Create a **list** of three fun facts about yourself. 
+5. Add a **link** to the website of your degree program of study at ASU.
+6. OPTIONAL: Embed a YouTube **video** of a weird song that is currently in your music playlist. 
+
+The full lab instructions are available [HERE](https://ds4ps.github.io/Data-Science-Class/LABS/lab-01-instructions.html).
+
+[ Download the Rmd Template ](https://cdn.rawgit.com/DS4PS/Data-Science-Class/master/01-TEXTBOOK/Unit-04-Analysis-with-Groups.Rmd)
 
 
 
