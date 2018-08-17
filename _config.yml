@@ -42,11 +42,12 @@ index:
 
 
 header:
+
+- title: Welcome
+  url: welcome/
+  
 - title: Syllabus
   url: /
-
-- title: Week 1
-  url: welcome/
 
 # - title: Course Schedule
 #   url: schedule/
