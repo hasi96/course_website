@@ -133,7 +133,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
           var ps = (sections[i]).getElementsByClassName("dates");
           var ttd = document.createElement("td");
           ttd.setAttribute("class","hide");
-          var tex = document.createTextNode(ps[0].textContent);
+          var tex = document.createTextNode(ps[0].innerHTML);
                    ttd.appendChild(tex);
                     ttr.appendChild(ttd);
                   }
@@ -316,7 +316,7 @@ if((sections[i]).getElementsByClassName("dates").length>0){
          var divsec = document.createElement("div");
          divsec.setAttribute("style","background-color: #f1f1f1;width:100%;");
          divsec.innerHTML = t;
-                     divsec.setAttribute("class","child");
+                     divsec.setAttribute("class","child uk-padding-small ");
                      var sec = sections[i].cloneNode(true);
                       sec.setAttribute("style","width:100%;text-align:left;");
                       var alinks= sec.getElementsByTagName("a");
@@ -364,12 +364,14 @@ function expand(i){
 
               var hr = document.createElement("hr");
              secs[j].appendChild(hr);
-
+              var ps = (secs[j]).getElementsByClassName("dates");
               var h1 = secs[j].getElementsByTagName("h1");
               if(h1.length>0){
               (h1[0]).setAttribute("style","color:#8c1d40;");
-
+              var text = document.createTextNode("      "+ ps[0].innerHTML+"\"");
+              h1[0].appendChild(text);
               h1[0].appendChild(hr);}
+
             }
             divC.setAttribute("display","block");
             var divContents = "<br>"+divC.innerHTML;
