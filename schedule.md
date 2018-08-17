@@ -41,7 +41,6 @@ how to succeed
 # Introduction to Data Science 
 
 [ Unit 1: Aug 16-22 ]{@date}
-
 This unit defines the concept of "data science" and provides an overview of the course schedule for the semester. 
 
 ## Learning Objectives
