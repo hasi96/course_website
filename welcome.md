@@ -10,13 +10,29 @@ layout: default
 
 Welcome to Intro to Data Science for the Social Sector. This is a broad overview course designed to expose you to common and useful open source tools in the field. 
 
-A few notes about the course and the semester:
+<br>
+<iframe width="400" height="315" src="https://www.youtube.com/embed/0tak8PvXO7w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<br>
 
-#### Textbook
+A few notes about the semester:
 
-You are not required to purchase a textbook. I have referenced several useful reference texts in the syllabus, many of which are available free online.
 
-The text available on this website is a set of lecture notes created using Markdown documents so that you can easily copy and paste code from the examples, or borrow document formats that you like. All of the raw files are available on GitHub, and can be easily accessed by clicking on the "edit" link on each page. 
+#### In-Person Review Sessions
+
+The course can be completed entirely online, but I will also offer a weekly face-to-face review sessions if you prefer to ask questions or discuss content in a classroom. We will do our best to find times that can accomodates everyone. 
+
+Make sure to complete the [Doodle Poll](https://doodle.com/poll/2v4yszxnmihcpxqw) to report your availability if you would like to attend. 
+
+
+#### Rules for Success
+
+Learning a new skill like R programming is never painless, but you can follow a few simple rules to succeed at this course:
+
+* Find a study group.
+* Work until you get stuck, then post a question to the [discussion forum](https://ds4ps.github.io/course_website/discussions/).
+* [Schedule office hours](https://calendly.com/lecy/15min) when needed.
+* Attend weekly review sessions
+ 
 
 #### Assignments
 
@@ -35,31 +51,24 @@ Learning a programming language is a lot like learning a natural language in tha
 Discussion boards will be used to reflect upon case studies of data science tools in practice. The final project will require you to practice skills from the semester by building a basic dashboard.
 
 
-#### In-Person Review Sessions
+#### Textbook
 
-The course can be completed by following lectures and labs online, but I will also offer a weekly face-to-face review sessions if you prefer to ask questions or discuss content in a classroom. We will do our best to find times that can accomodates everyone. 
+You are not required to purchase a textbook. I have referenced several useful reference texts in the syllabus, many of which are available free online.
 
-Make sure to complete the [Doodle Poll](https://doodle.com/poll/2v4yszxnmihcpxqw) to report your availability if you would like to attend. 
+The text available on this website is a set of lecture notes created using Markdown documents so that you can easily copy and paste code from the examples, or borrow document formats that you like. All of the raw files are available on GitHub, and can be easily accessed by clicking on the "edit" link on each page.
 
-#### Rules for Success
-
-Learning a new skill like R programming is never painless, but you can follow a few simple rules to succeed at this course:
-
-* Find a study group
-* Work until you get stuck, then post a question to the discussion forum
-* Schedule office hours when needed
-* Attend weekly review sessions
+ 
+-----------
+ 
  
 
 # Introduction to Data Science 
 
-## Data Science Applications in Governments and Nonprofits?
+## Data Science Applications in the Social Sector
 
 It is always helpful to motivate a topic with an example. I like this case study of change that occurred when the Philadelphia police began transitioning from managing a department using instinct of senior officers to using data to identify areas of high need and most effective practices.
 
-https://www.ted.com/talks/anne_milgram_why_smart_statistics_are_the_key_to_fighting_crime
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0tak8PvXO7w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZJNESMhIxQ0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
 ## What is Data Science? 
@@ -77,9 +86,23 @@ FROM: [Data Science: The Numbers of Our Lives, The New York Times](https://www.n
 FROM: [Data Scientist Career Pathways in Government](https://github.com/ukgovdatascience/data_scientist_career_path/blob/master/index.md).
 
 
-## What is R?
+## Why R?
 
-[Data Analysts Captivated by R’s Power](https://www.nytimes.com/2009/01/07/technology/business-computing/07program.html)
+This course is organized around learning the foundations of programming in R. Although there are several good choices for languages that specialize in data analysis, R has advantages:
+
+* It is completely free and open source.
+* It has a large and active user community.
+* R Studio has integrated many tools from the 'data science ecosystem' so that lots of tasks can be done with a single language, making the return on time spent learning R much higher.
+
+For some background information on R, read the New York Times story: [Data Analysts Captivated by R’s Power](https://www.nytimes.com/2009/01/07/technology/business-computing/07program.html). Or Check out this 1-minute explainer video:
+
+<br>
+
+<iframe src="https://player.vimeo.com/video/180644880" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<br>
+
+You will find this background information helpful as you start using R:
 
 * [ Helpful Vocabulary ](https://github.com/DS4PS/Data-Science-Class/raw/master/HANDOUTS/Helpful%20Programming%20Vocabulary.pdf)
 * [ Base R Cheat Sheet ](base-r-cheat-sheet.pdf)
@@ -89,14 +112,9 @@ See the **Resources** tab for some additional information about R and R Studio.
 
 
 
-
-## Lectures
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0tak8PvXO7w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+## Week 1 Assignments:
 
 
-
-## Week 1 Assignment
 
 **PART I**
 
@@ -104,13 +122,15 @@ Install R Studio on your machine.
 
 
 
-**PART II - MY FIRST MARKDOWN DOCUMENT**
+**PART II - Create a Markdown Document**
 
 Read about Markdown in the [Resources](https://hasi96.github.io/course_website/resources/) tab.
 
 [ Download Rmd Template ](https://cdn.rawgit.com/DS4PS/Data-Science-Class/master/01-TEXTBOOK/Unit-04-Analysis-with-Groups.Rmd)
 
-Here is what your Markdown file will look like. You need to replace all -->text<-- with the appropriate responses formatted using Markdown syntax.
+
+
+<br><br><br><br>
 
 
 
