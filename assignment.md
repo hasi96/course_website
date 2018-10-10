@@ -25,5 +25,4 @@ for(var j=0;j<links.length-1;j++){
 	li.appendChild(ae);
 	ul.appendChild(li);
 }
-alert("yaaas");
 </script>
