@@ -1,380 +1,432 @@
+--- 
+layout: default 
+disqus: true 
 ---
-layout: default
-disqus: true
----
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
-  <link rel="icon" sizes="76x76" href="../img/favicon.png">
-  <link rel="icon" type="image/png" href="../img/favicon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-   <script src="../assets/js/my_js.js"></script>
-<style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <link rel="icon" sizes="76x76" href="../img/favicon.png">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <script src="../assets/js/my_js.js"></script>
+    <style>
+    .collapsible {
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 15px;
+        background-color: white;
+    }
 
- .collapsible {
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: center;
-      outline: none;
-      font-size: 15px;
-      background-color: white;
-    } 
     .collapsible:hover {
-      background-color:#F39C12;
+        background-color: #F39C12;
     }
 
-    td {
-      text-align: center;
+    .tr {
+        text-align: center;
+        padding: 10px 0;  
+    border-width: 1px 0; 
+    border-color: #000;
+    border-style: solid;
     }
+
     .child {
-      display:none;
+        display: none;
     }
 
 
-    .table{
-      background-color: white;
-      margin-left: 15px;
-    } 
+    .table {
+        background-color: white;
+        margin-left: 0px;
+        border-collapse: collapse; 
 
-    .link{
-  color:#641E16;
-}
+    }
+
+    .link {
+        color: #641E16;
+    }
+    .table>thead>tr>th, .table>tbody>tr>th , .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+  }
   </style>
 </head>
-<br>
-<br>
-<div >
+<div>
 
-<body class = "page-responsive">
-<!-- <div class="wrapper"> -->
-  <div class="main main-raised uk-section" id = "pp">
-    <div class="table-responsive uk-container">
+    <body class="page-responsive">
+            <div class="table-responsive uk-padding-large" id="pp" style="box-sizing: border-box;">
+                <h1 style="text-align: left; margin-left: 15px ">Course Schedule</h1>
+                <button onclick="print();" class="uk-button uk-button-default" style="margin-left: 15px">
+                    </i>PRINT ALL UNITS</button>
+                <!-- <i class="fas fa-external-link-alt" style="color: rgb(140,29,64);"> -->
+                <br>
+                <br>
+                <br>
 
-<h1 style="text-align: left; margin-left: 15px ">Course Schedule</h1>    
-<button onclick="print();" class="uk-button uk-button-default" style="margin-left: 15px"> </i>PRINT ALL UNITS</button>
-<!-- <i class="fas fa-external-link-alt" style="color: rgb(140,29,64);"> -->
-<br>
-      
- <table class="table table-condensed"  style="width:100%; margin-right:auto; padding-left:5px;">
- <tr>
-  <td> <br> </td>
-  </tr>
-  <tr>
-    <th class = "hide" style="width:20%;text-align:center;">Unit</th>
-    <th style="width:40%;text-align:center;">Topic</th>
-    <th style ="width:8%;text-align:center;">Lecture</th>
-    <th style ="width:8%;text-align:center;">Lab</th>
-    <th style="width:8%;text-align:center;">Handout</th>
-    <th style="width:8%;text-align:center;">Reading</th>
-    <th style="width:8%;text-align:center;">Project/Exam</th>
-  </tr> 
-  <tr>
-    <td><br></td>
-  </tr>
-  </table>
-</div>
-</div>
-</body>
-
-<script>
-
-                    // Table of contents scroll to
-                    UIkit.scroll('#markdown-toc a', {
-                        duration: 400,
-                        offset: 120
-                    });
-</script>
-
-     <script>
-  $(function() {
-    $("td[colspan=3]").find("p").hide();
-    $("table").click(function(event) {
-        event.stopPropagation();
-        var $target = $(event.target);
-        if ( $target.closest("td").attr("colspan") > 1 ) {
-            $target.slideUp();
-        } else {
-            $target.closest("tr").next().find("p").slideToggle();
-        }                    
+                <table class="table table-condensed" style="width:100%; margin-right:auto; padding-left:50px;">
+                    <thead>
+                    <tr>
+                        <th class="hide" style="width:20%;text-align:left;">Unit</th>
+                        <th style="width:40%;text-align:left;">Topic</th>
+                        <th style="width:8%;text-align:left;">Reading</th>
+                        <th style="width:8%;text-align:left;">Lecture</th>
+                        <th style="width:8%;text-align:left;">Handout</th>
+                        <th style="width:8%;text-align:left;">Assignment</th>
+                     <!--   <th style="width:8%;text-align:center;">Project/Exam</th> -->
+                    </tr>
+                   </thead>
+                   <tbody id ="tablebody">
+                   </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+    <script>
+    // Table of contents scroll to
+    UIkit.scroll('#markdown-toc a', {
+        duration: 400,
+        offset: 120
     });
-});
-  </script>
+    </script>
+    <script>
+    $(function() {
+        $("td[colspan=3]").find("p").hide();
+        $("table").click(function(event) {
+            event.stopPropagation();
+            var $target = $(event.target);
+            if ($target.closest("td").attr("colspan") > 1) {
+                $target.slideUp();
+            } else {
+                $target.closest("tr").next().find("p").slideToggle();
+            }
+        });
+    });
+    </script>
+    <section>
+        <div id="divCheckbox" class="{{ site.url }}{{site.github_info.course-repo}}" style="display: none;">{{ content }}</div>
+        <script>
+        function ValidURL(str) {
+            var a = document.createElement("a");
+            a.setAttribute("href", str);
+
+            var pattern = new RegExp('^(http?:\/\/)?'); // fragment locater
+            if (window.location.hostname != a.hostname) { return true; } else { return false; }
+        }
+        window.onload = function myFunction() {
+            var tablee = document.getElementById("tablebody");
+            var ele = document.getElementById("divCheckbox");
+            var sections = ele.getElementsByTagName("section");
+
+            for (var i = 0; i < sections.length - 1; i++) {
+                var ttr = document.createElement("tr");
+
+                var linktemp = sections[i].getElementsByTagName("asset");
 
 
-
-<section>
-<div id="divCheckbox" class = "{{ site.url }}{{site.github_info.course-repo}}" style="display: none;">{{ content }}</div>
-
-
-
-<script>
-               function ValidURL(str) {
-                                    var a = document.createElement("a");
-                                    a.setAttribute("href",str);
-                                    
-  var pattern = new RegExp('^(http?:\/\/)?'); // fragment locater
- if(window.location.hostname != a.hostname){return true;}
- else{return false;}
-}
-window.onload = function myFunction() {
-var tablee = document.getElementsByTagName("table");
-
-var ele = document.getElementById("divCheckbox");
-var sections = ele.getElementsByTagName("section");
-
- for (var i=0;i<sections.length-1;i++) {
-    var ttr = document.createElement("tr");
-
-var linktemp = sections[i].getElementsByTagName("asset");
-
-if((sections[i]).getElementsByClassName("dates").length>0){
-          var ps = (sections[i]).getElementsByClassName("dates");
-          var ttd = document.createElement("td");
-          ttd.setAttribute("class","hide");
-          var tex = document.createTextNode(ps[0].innerHTML);
-                   ttd.appendChild(tex);
-                    ttr.appendChild(ttd);
-                  }
-                  else{
+                if ((sections[i]).getElementsByClassName("dates").length > 0) {
+                    var ps = (sections[i]).getElementsByClassName("dates");
                     var ttd = document.createElement("td");
-          var tex = document.createTextNode("");
-                   ttd.appendChild(tex);
+                    ttd.setAttribute("class", "hide");
+                    var tex = document.createTextNode(ps[0].innerHTML);
+                    ttd.appendChild(tex);
                     ttr.appendChild(ttd);
-                  }
-                         var ttd = document.createElement("td");
-                         var button = document.createElement("button");
-                         button.setAttribute("class","collapsible");
-                         button.setAttribute("onclick","expand("+i+");");
-                          var ttr2 = document.createElement("tr");
-                      var title = sections[i].getElementsByTagName("h1");
-                     if(title.length>0){
-                    var tex = document.createTextNode(title[0].innerHTML);
+                } else {
+                    var ttd = document.createElement("td");
+                    var tex = document.createTextNode("");
+                    ttd.appendChild(tex);
+                    ttr.appendChild(ttd);
                 }
-                else{
+                var ttd = document.createElement("td");
+               /* var button = document.createElement("button");
+                button.setAttribute("class", "collapsible");
+                button.setAttribute("onclick", "expand(" + i + ");");*/
+                var ttr2 = document.createElement("tr");
+                var title = sections[i].getElementsByTagName("h1");
+                if (title.length > 0) {
+                    var tex = document.createTextNode(title[0].innerHTML);
+                } else {
                     var tex = document.createTextNode("");
 
                 }
-                    button.appendChild(tex);
-                   ttd.appendChild(button);
+                //button.appendChild(tex);
+                //ttd.appendChild(button);
+                ttd.appendChild(tex);
+                ttr.appendChild(ttd);
+                var count = [0, 0, 0, 0, 0];
 
-                    ttr.appendChild(ttd);
-
-                   
-                                                           var flag = [-1,-1,-1,-1,-1];
-
-                    for(var j=0;j<linktemp.length;j++){
-                    var type = linktemp[j].getAttribute("type");
-                                       if(type == "lecture"){
-                                        flag[0] = j;
-                                       }
-                                       else if(type == "lab"){
-                                        flag[1] = j;
-                                       }
-                                       else if (type == "handout"){
-                                        flag[2] = j;
-                                       }
-                                       else if(type == "reading")
-                                       {
-                                        flag[3] = j;
-                                       }
-                                       else if(type == "exam")
-                                       {
-                                        flag[4] = j;
-                                       }
-                                       
-                  }
-                       for(var j=0;j<5;j++){
-              var k = flag[j];
-                    
-                   if(j==3 && k!=-1){
-                   var linkk = linktemp[k].getAttribute("href");
+                var flag = [-1, -1, -1, -1, -1];
+                  var readlinks = "",lecturelinks = "", handoutlinks = "", assignlinks = "";
+                for (var j = 0; j < linktemp.length; j++) {
                   
-                var newCell = document.createElement("td");
-           
-                var icon = document.createElement("i");
-                
-                icon.className = "fa fa-check-circle";    
-                                newCell.appendChild(icon);
+                    var type = linktemp[j].getAttribute("type");
+                    var linkk = linktemp[j].getAttribute("href");
+                         
+                    linktemp[j].setAttribute("id", type);
+                    if (type == "reading") {
+                          readlinks = readlinks+linkk+"|";
+                                              count[0]++;
+                        flag[0] = j;
+                    } else if (type == "lecture") {
+                          lecturelinks = lecturelinks + linkk+ "|";
+                        count[1]++;
+                        flag[1] = j;
+                    } else if (type == "handout") {
+                          handoutlinks = handoutlinks + linkk+ "|";
+                        count[2]++;
+                        flag[2] = j;
+                    } else if (type == "assignment") {
+                          assignlinks = assignlinks + linkk+ "|";
+                        count[3]++;
+                        flag[3] = j;
+                    }/* else if (type == "exam") {
+                        count[4]++;
+                        flag[4] = j;
+                    }*/
 
-                             ttr.appendChild(newCell);
-            }
-            if(flag[3] == -1 && j==3){
+                }
+                for (var j = 0; j < 5; j++) { 
+                    var k = flag[j];
 
-                var newCell = document.createElement("td");
-                var iconf = document.createElement("font");
-                var icon = document.createElement("i");
-                icon.className = "fa fa-check-circle";   
-                iconf.setAttribute("color","f1f1f1");
-                iconf.appendChild(icon); 
-                                newCell.appendChild(iconf);
+                    if (j == 0 && k != -1) {
+                        var linkk = linktemp[k].getAttribute("href");
 
-                             ttr.appendChild(newCell);
-            }
-           
-            if(j==0 && k!= -1){
+                        var newCell = document.createElement("td");
+                        var aref = document.createElement("a");
+                        if(count[j]>1){
 
-              var linkk = linktemp[k].getAttribute("href");
-                 var newCell = document.createElement("td");
-                
-                var icon = document.createElement("i");
-                icon.className = "fa fa-check-circle";    
-                newCell.appendChild(icon);
-                             ttr.appendChild(newCell);
+                        var te = "(function(){  localStorage.setItem(\"links\", \""+readlinks+"\");  })();"
+                        aref.setAttribute("onClick", te);
+                        aref.setAttribute("href","../reading/");
+                      }
+                      else{
+                        aref.setAttribute("href", linkk);
+                      }
+                        var icon = document.createElement("i");
 
-            }
-               if(flag[0] == -1 && j==2){
+                        icon.className = "fa fa-book-open";
+                        aref.appendChild(icon);
+                        newCell.appendChild(aref);
 
-                var newCell = document.createElement("td");
-                var iconf = document.createElement("font");
-                var icon = document.createElement("i");
-                icon.className = "fa fa-check-circle";   
-                iconf.setAttribute("color","f1f1f1");
-                iconf.appendChild(icon); 
-                                newCell.appendChild(iconf);
+                        ttr.appendChild(newCell);
+                    }
+                    if (flag[0] == -1 && j == 0) {
 
-                             ttr.appendChild(newCell);
-            }
-               if(j==1 && k!=-1){
-                var linkk = linktemp[k].getAttribute("href");
-                 var newCell = document.createElement("td");
-                
-                var icon = document.createElement("i");
-                icon.className = "fa fa-check-circle";    
-                newCell.appendChild(icon);
-                             ttr.appendChild(newCell);
+                        var newCell = document.createElement("td");
+                        var iconf = document.createElement("font");
+                        var icon = document.createElement("i");
+                        icon.className = "fa fa-book-open";
+                        iconf.setAttribute("color", "f1f1f1");
+                        iconf.appendChild(icon);
+                        newCell.appendChild(iconf);
 
-            }
-             if(flag[1] == -1 && j==1){
+                        ttr.appendChild(newCell);
+                    }
 
-                var newCell = document.createElement("td");
-                var iconf = document.createElement("font");
-                var icon = document.createElement("i");
-                icon.className = "fa fa-check-circle";   
-                iconf.setAttribute("color","f1f1f1");
-                iconf.appendChild(icon); 
-                                newCell.appendChild(iconf);
+                    if (j == 1 && k != -1) {
 
-                             ttr.appendChild(newCell);
-            }
-             if(j==4 && k!=-1){
-              var linkk = linktemp[k].getAttribute("href");
-              var newCell = document.createElement("td");
-                var icon = document.createElement("i");
-                icon.className = "fa fa-check-circle";    
-                newCell.appendChild(icon);
-                             ttr.appendChild(newCell);
+                        var linkk = linktemp[k].getAttribute("href");
+                        var newCell = document.createElement("td");
+                        var aref = document.createElement("a");
+                         if(count[j]>1){
+                          var te = "(function(){ localStorage.setItem(\"links\", \""+lecturelinks+"\");  })();"
+                        aref.setAttribute("onClick", te);
+                        aref.setAttribute("href","../lecture/");
+                      }
+                      else{
+                        aref.setAttribute("href", linkk);
+                      }
+                        var icon = document.createElement("i");
+                        icon.className = "fa fa-play";
+                        aref.appendChild(icon);
+                        newCell.appendChild(aref);
+                        ttr.appendChild(newCell);
 
-            }
-           if(flag[4] == -1 && j==4){
+                    }
+                    if (flag[1] == -1 && j == 1) {
 
-                var newCell = document.createElement("td");
-                var iconf = document.createElement("font");
-                var icon = document.createElement("i");
-                icon.className = "fa fa-check-circle";   
-                iconf.setAttribute("color","f1f1f1");
-                iconf.appendChild(icon); 
-                                newCell.appendChild(iconf);
+                        var newCell = document.createElement("td");
+                        var iconf = document.createElement("font");
+                        var icon = document.createElement("i");
+                        icon.className = "fa fa-play";
+                        iconf.setAttribute("color", "f1f1f1");
+                        iconf.appendChild(icon);
+                        newCell.appendChild(iconf);
 
-                             ttr.appendChild(newCell);
-            }
-            if(j==2 && k!=-1){
-              var linkk = linktemp[k].getAttribute("href");
-              var newCell = document.createElement("td");
-              
-                var icon = document.createElement("i");
-                icon.className = "fa fa-check-circle";    
-                newCell.appendChild(icon);
-                             ttr.appendChild(newCell);
+                        ttr.appendChild(newCell);
+                    }
+                    if (j == 3 && k != -1) {
+                        var linkk = linktemp[k].getAttribute("href");
+                        var newCell = document.createElement("td");
+                        var aref = document.createElement("a");
+                         if(count[j]>1){
+                         var te = "(function(){ localStorage.setItem(\"links\", \""+assignlinks+"\");  })();"
+                        aref.setAttribute("onClick", te);
+                        aref.setAttribute("href","../assignment/");
+                      }
+                      else{
+                        aref.setAttribute("href", linkk);
+                      }
 
-            }
-           if(flag[2] == -1 && j==2){
+                        var icon = document.createElement("i");
+                        icon.className = "fa fa-desktop";
+                        aref.appendChild(icon);
+                        newCell.appendChild(aref);
+                        ttr.appendChild(newCell);
 
-                var newCell = document.createElement("td");
-                var iconf = document.createElement("font");
-                var icon = document.createElement("i");
-                icon.className = "fa fa-check-circle";   
-                iconf.setAttribute("color","f1f1f1");
-                iconf.appendChild(icon); 
-                                newCell.appendChild(iconf);
+                    }
+                    if (flag[3] == -1 && j == 3) {
 
-                             ttr.appendChild(newCell);
-            }
+                        var newCell = document.createElement("td");
+                        var iconf = document.createElement("font");
+                        var icon = document.createElement("i");
+                        icon.className = "fa fa-desktop";
+                        iconf.setAttribute("color", "f1f1f1");
+                        iconf.appendChild(icon);
+                        newCell.appendChild(iconf);
+
+                        ttr.appendChild(newCell);
+                    }
+                    if (j == 4 && k != -1) {
+                        var linkk = linktemp[k].getAttribute("href");
+                        var newCell = document.createElement("td");
+                        var aref = document.createElement("a");
+                         if(count[j]>1){
+                         var te = "(function(){ localStorage.setItem(\"links\", \""+assignlinks+"\");  })();"
+                        aref.setAttribute("onClick", te);
+                        aref.setAttribute("href","../assignment/");
+                      }
+                      else{
+                        aref.setAttribute("href", linkk);
+                      }
+
+                        var icon = document.createElement("i");
+                        icon.className = "fa fa-check-square";
+                        aref.appendChild(icon);
+                        newCell.appendChild(aref);
+                        ttr.appendChild(newCell);
+
+                    }
+                    /*if (flag[4] == -1 && j == 4) {
+
+                        var newCell = document.createElement("td");
+                        var iconf = document.createElement("font");
+                        var icon = document.createElement("i");
+                        icon.className = "fa fa-check-square";
+                        iconf.setAttribute("color", "f1f1f1");
+                        iconf.appendChild(icon);
+                        newCell.appendChild(iconf);
+
+                        ttr.appendChild(newCell);
+                    }*/
+                    if (j == 2 && k != -1) {
+                        var linkk = linktemp[k].getAttribute("href");
+                        var newCell = document.createElement("td");
+                        var aref = document.createElement("a");
+
+                         if(count[j]>1){
+                         var te = "(function(){ localStorage.setItem(\"links\", \""+handoutlinks+"\");  })();"
+                        aref.setAttribute("onClick", te);
+                        aref.setAttribute("href","../handout/");
+                      }
+                      else{
+                        aref.setAttribute("href", linkk);
+                      }
+                        var icon = document.createElement("i");
+                        icon.className = "fa fa-file";
+                        aref.appendChild(icon);
+                        newCell.appendChild(aref);
+                        ttr.appendChild(newCell);
+
+                    }
+                    if (flag[2] == -1 && j == 2) {
+
+                        var newCell = document.createElement("td");
+                        var iconf = document.createElement("font");
+                        var icon = document.createElement("i");
+                        icon.className = "fa fa-file";
+                        iconf.setAttribute("color", "f1f1f1");
+                        iconf.appendChild(icon);
+                        newCell.appendChild(iconf);
+
+                        ttr.appendChild(newCell);
+                    }
 
 
 
-             
-        }
-        tablee[0].appendChild(ttr);
-        var t = "<br>";
 
-             var newCell = document.createElement("td");
-                        newCell.setAttribute("colspan","7");
+                }
+                tablee.appendChild(ttr);
+                var t = "<br>";
 
-       //var titleMatch = new RegExp("(?<=<hr>)(.*\n?)(?=<hr>)");
-         var divsec = document.createElement("div");
-         divsec.setAttribute("style","background-color: #f1f1f1;width:100%;");
-         divsec.innerHTML = t;
-                     divsec.setAttribute("class","child uk-padding-small ");
-                     var sec = sections[i].cloneNode(true);
-                      sec.setAttribute("style","width:100%;text-align:left;");
-                      var alinks= sec.getElementsByTagName("a");
-                  for(var l=0;l<alinks.length;l++)
-                  {
-                    alinks[l].setAttribute("style","color: #ffc425;");
-                  }
-                     divsec.appendChild(sec);
-                              divsec.innerHTML = divsec.innerHTML+ t;
+              /*  var newCell = document.createElement("td");
 
-                     newCell.appendChild(divsec);
+                //var titleMatch = new RegExp("(?<=<hr>)(.*\n?)(?=<hr>)");
+                var divsec = document.createElement("div");
+                divsec.setAttribute("style", "background-color: #f1f1f1;width:100%;");
+                divsec.innerHTML = t;
+                divsec.setAttribute("class", "child uk-padding-small ");
+                var sec = sections[i].cloneNode(true);
+                sec.setAttribute("style", "width:100%;text-align:center;");
+                var alinks = sec.getElementsByTagName("a");
+                for (var l = 0; l < alinks.length; l++) {
+                    alinks[l].setAttribute("style", "color: #ffc425;");
+                }
+                divsec.appendChild(sec);
+                divsec.innerHTML = divsec.innerHTML + t;
 
-                      ttr2.appendChild(newCell);
+                newCell.appendChild(divsec);
+
+                ttr2.appendChild(newCell);
 
                 //    ttr2.appendChild(divsec);
-                tablee[0].appendChild(ttr2);  
-           
+                tablee.appendChild(ttr2);
 
-    }
-}
-  
-</script>
-<script>
+            */
+            }
+        }
+        </script>
+        <script>
+        function expand(i) {
+            var check = document.getElementsByClassName("child");
+            if (check[i].style.display === "block") {
+                check[i].style.display = "none";
+            } else {
+                check[i].style.display = "block";
+            }
+        }
 
-function expand(i){
-    var check = document.getElementsByClassName("child");
-    if (check[i].style.display === "block") {
-      check[i].style.display = "none";
-    } else {
-      check[i].style.display = "block";
-    }
-  }
-
-  function print(){
+        function print() {
             var div = document.getElementById("divCheckbox");
             var t = document.getElementsByTagName('');
             var divC = document.getElementById("divCheckbox").cloneNode(true);
             var alinks = divC.getElementsByTagName("a");
-            for(var m=0;m<alinks.length;m++){
-              alinks[m].setAttribute("style","color:#ffc425;");
+            for (var m = 0; m < alinks.length; m++) {
+                alinks[m].setAttribute("style", "color:#ffc425;");
             }
             var secs = divC.getElementsByTagName("section");
-           
-            for(var j=0;j<secs.length-1;j++){
 
-              var hr = document.createElement("hr");
-             secs[j].appendChild(hr);
-              var ps = (secs[j]).getElementsByClassName("dates");
-              var h1 = secs[j].getElementsByTagName("h1");
-              if(h1.length>0){
-              (h1[0]).setAttribute("style","color:#8c1d40;");
-              var text = document.createTextNode("      "+ ps[0].innerHTML+"\"");
-              h1[0].appendChild(text);
-              h1[0].appendChild(hr);}
+            for (var j = 0; j < secs.length - 1; j++) {
+
+                var hr = document.createElement("hr");
+                secs[j].appendChild(hr);
+                var ps = (secs[j]).getElementsByClassName("dates");
+                var h1 = secs[j].getElementsByTagName("h1");
+                if (h1.length > 0) {
+                    (h1[0]).setAttribute("style", "color:#8c1d40;");
+                    var text = document.createTextNode("      " + ps[0].innerHTML + "\"");
+                    h1[0].appendChild(text);
+                    h1[0].appendChild(hr);
+                }
 
             }
-            divC.setAttribute("display","block");
-            var divContents = "<br>"+divC.innerHTML;
+            divC.setAttribute("display", "block");
+            var divContents = "<br>" + divC.innerHTML;
             var printWindow = window.open('', '', 'height=400,width=800');
 
             printWindow.document.write('<html><head><title>Course Syllabus</title>');
@@ -384,133 +436,128 @@ function expand(i){
             printWindow.document.close();
             printWindow.print();
         }
-</script>
-<script type="text/javascript">
-var b = document.getElementById("divCheckbox");
-var str = b.innerHTML;
-var regex = /\<hr\>/ig ,   body = str,   result = body.replace(regex,"</section><hr> <section> ");
-var res = result.match(/\[(.*)\]\{\@lecture(.*)\}/ig);
-var baseurl = b.getAttribute("class");
-if(res!=null){
-for( var i=0;i<res.length;i++)
-{
+        </script>
+        <script type="text/javascript">
+        var b = document.getElementById("divCheckbox");
+        var str = b.innerHTML;
+        var regex = /\<hr\>/ig,
+            body = str,
+            result = body.replace(regex, "</section><hr> <section> ");
+        var res = result.match(/\[(.*)\]\{\@lecture(.*)\}/ig);
+        var baseurl = b.getAttribute("class");
+        if (res != null) {
+            for (var i = 0; i < res.length; i++) {
 
-  var mySubString = res[i].substring(
-    res[i].indexOf("\[") + 2, 
-    res[i].indexOf("\]") -1
-);
-  var sub  = res[i].substring( res[i].indexOf("\{") + 1, 
-    res[i].indexOf("\}")
-);
-  var link = sub.split(" ")[1];
-   if(!ValidURL(link)){
-                    var sr = baseurl+"/LECTURES/"+link;
-                    link = sr; }
-result = result.replace(res[i],"\<a href= \""+ link+"\"\>" +mySubString + "\</a\>" +"\<asset type =\"lecture\" href = \""+link+"\"\/\>");
-}
-}
-var res = result.match(/\[(.*)\]\{\@lab(.*)\}/ig);
-if(res!=null){
-for( var i=0;i<res.length;i++)
-{
-  var mySubString = res[i].substring(
-    res[i].indexOf("\[") + 2, 
-    res[i].indexOf("\]") -1
-);
-  var sub  = res[i].substring( res[i].indexOf("\{") + 1, 
-    res[i].indexOf("\}")
-);
-  var link = sub.split(" ")[1];
-   if(!ValidURL(link)){
-                    var sr = baseurl + "/LABS/"+link;
-                    link = sr; }
-result = result.replace(res[i],"\<a href= \""+ link+"\"\>" +mySubString + "\</a\>" +"\<asset type =\"lab\" href = \""+link+"\"\/\>");
-}
-}
-
-
-var res = result.match(/\[(.*)\]\{\@exam(.*)\}/ig);
-if(res!=null){
-
-for( var i=0;i<res.length;i++)
-{
-  var mySubString = res[i].substring(
-    res[i].indexOf("\[") + 2, 
-    res[i].indexOf("\]") -1
-);
-  var sub  = res[i].substring( res[i].indexOf("\{") + 1, 
-    res[i].indexOf("\}")
-);
-  var link = sub.split(" ")[1];
-   if(!ValidURL(link)){
-                    var sr = baseurl + "/EXAMS/"+link;
-                    link = sr; }
-result = result.replace(res[i],"\<a href= \""+ link+"\"\>" +mySubString + "\</a\>" +"\<asset type =\"exam\" href = \""+link+"\"\/\>");
-}
-}
-var res = result.match(/\[(.*)\]\{\@handout(.*)\}/ig);
-if(res!=null){
-
-for( var i=0;i<res.length;i++)
-{
-  var mySubString = res[i].substring(
-    res[i].indexOf("\[") + 2, 
-    res[i].indexOf("\]") -1
-);
-  var sub  = res[i].substring( res[i].indexOf("\{") + 1, 
-    res[i].indexOf("\}")
-);
-  var link = sub.split(" ")[1];
-   if(!ValidURL(link)){
-                    var sr =baseurl+ "/HANDOUT/"+link;
-                    link = sr; }
-result = result.replace(res[i],"\<a href= \""+ link+"\"\>" +mySubString + "\</a\>" +"\<asset type =\"handout\" href = \""+link+"\"\/\>");
-}
-}
-var res = result.match(/\[(.*)\]\{\@reading(.*)\}/ig);
-if(res!=null){
-
-for( var i=0;i<res.length;i++)
-{
-  var mySubString = res[i].substring(
-    res[i].indexOf("\[") + 2, 
-    res[i].indexOf("\]") -1
-);
-  var sub  = res[i].substring( res[i].indexOf("\{") + 1, 
-    res[i].indexOf("\}")
-);
-  var link = sub.split(" ")[1];
-   if(!ValidURL(link)){
-                    var sr = baseurl + "/READINGS/"+link;
-                    link = sr; }
-result = result.replace(res[i],"\<a href= \""+ link+"\"\>" +mySubString + "\</a\>" +"\<asset type =\"reading\" href = \""+link+"\"\/\>");
-}
-
-}
-var res = result.match(/\[(.*)\]\{\@date(.*)\}/ig);
-if(res!=null){
-
-for( var i=0;i<res.length;i++)
-{
-  var mySubString = res[i].substring(
-    res[i].indexOf("\ [") + 2, 
-    res[i].indexOf("\]") -1
-);
-
-result = result.replace(res[i],"\<div class=\"dates\" style=\"display: none;\"\>" +mySubString + "\<\/div\>");
-}
-}
-document.getElementById("divCheckbox").innerHTML = result;
-
-</script>
+                var mySubString = res[i].substring(
+                    res[i].indexOf("\[") + 2,
+                    res[i].indexOf("\]") - 1
+                );
+                var sub = res[i].substring(res[i].indexOf("\{") + 1,
+                    res[i].indexOf("\}")
+                );
+                var link = sub.split(" ")[1];
+                if (!ValidURL(link)) {
+                    var sr = baseurl + "/LECTURES/" + link;
+                    link = sr;
+                }
+                result = result.replace(res[i], "\<a href= \"" + link + "\"\>" + mySubString + "\</a\>" + "\<asset type =\"lecture\" href = \"" + link + "\"\/\>");
+            }
+        }
+        var res = result.match(/\[(.*)\]\{\@assignment(.*)\}/ig);
+        if (res != null) {
+            for (var i = 0; i < res.length; i++) {
+                var mySubString = res[i].substring(
+                    res[i].indexOf("\[") + 2,
+                    res[i].indexOf("\]") - 1
+                );
+                var sub = res[i].substring(res[i].indexOf("\{") + 1,
+                    res[i].indexOf("\}")
+                );
+                var link = sub.split(" ")[1];
+                if (!ValidURL(link)) {
+                    var sr = baseurl + "/LABS/" + link;
+                    link = sr;
+                }
+                result = result.replace(res[i], "\<a href= \"" + link + "\"\>" + mySubString + "\</a\>" + "\<asset type =\"assignment\" href = \"" + link + "\"\/\>");
+            }
+        }
 
 
+        var res = result.match(/\[(.*)\]\{\@project\/exam(.*)\}/ig);
+        if (res != null) {
 
+            for (var i = 0; i < res.length; i++) {
+                var mySubString = res[i].substring(
+                    res[i].indexOf("\[") + 2,
+                    res[i].indexOf("\]") - 1
+                );
+                var sub = res[i].substring(res[i].indexOf("\{") + 1,
+                    res[i].indexOf("\}")
+                );
+                var link = sub.split(" ")[1];
+                if (!ValidURL(link)) {
+                    var sr = baseurl + "/EXAMS/" + link;
+                    link = sr;
+                }
+                result = result.replace(res[i], "\<a href= \"" + link + "\"\>" + mySubString + "\</a\>" + "\<asset type =\"exam\" href = \"" + link + "\"\/\>");
+            }
+        }
+        var res = result.match(/\[(.*)\]\{\@handout(.*)\}/ig);
+        if (res != null) {
 
+            for (var i = 0; i < res.length; i++) {
+                var mySubString = res[i].substring(
+                    res[i].indexOf("\[") + 2,
+                    res[i].indexOf("\]") - 1
+                );
+                var sub = res[i].substring(res[i].indexOf("\{") + 1,
+                    res[i].indexOf("\}")
+                );
+                var link = sub.split(" ")[1];
+                if (!ValidURL(link)) {
+                    var sr = baseurl + "/HANDOUT/" + link;
+                    link = sr;
+                }
+                result = result.replace(res[i], "\<a href= \"" + link + "\"\>" + mySubString + "\</a\>" + "\<asset type =\"handout\" href = \"" + link + "\"\/\>");
+            }
+        }
+        var res = result.match(/\[(.*)\]\{\@reading(.*)\}/ig);
+        if (res != null) {
+
+            for (var i = 0; i < res.length; i++) {
+                var mySubString = res[i].substring(
+                    res[i].indexOf("\[") + 2,
+                    res[i].indexOf("\]") - 1
+                );
+                var sub = res[i].substring(res[i].indexOf("\{") + 1,
+                    res[i].indexOf("\}")
+                );
+                var link = sub.split(" ")[1];
+                if (!ValidURL(link)) {
+                    var sr = baseurl + "/READINGS/" + link;
+                    link = sr;
+                }
+                result = result.replace(res[i], "\<a href= \"" + link + "\"\>" + mySubString + "\</a\>" + "\<asset type =\"reading\" href = \"" + link + "\"\/\>");
+            }
+
+        }
+        var res = result.match(/\[(.*)\]\{\@date(.*)\}/ig);
+        if (res != null) {
+
+            for (var i = 0; i < res.length; i++) {
+                var mySubString = res[i].substring(
+                    res[i].indexOf("\ [") + 2,
+                    res[i].indexOf("\]") - 1
+                );
+
+                result = result.replace(res[i], "\<div class=\"dates\" style=\"display: none;\"\>" + mySubString + "\<\/div\>");
+            }
+        }
+        document.getElementById("divCheckbox").innerHTML = result;
+        </script>
 </div>
 </div>
 </section>
 <!-- </div> -->
-
 <br>
 <br>

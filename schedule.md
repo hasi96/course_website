@@ -7,7 +7,7 @@ title: Schedule
 Comments go here...
 Allowable asset classes:
 [link_text]{ @reading file_name }
-[link_text]{ @lab file_name }
+[link_text]{ @assignment file_name }
 [unit_dates]{ @date }
 
 Each unit must start with three stars
@@ -75,6 +75,8 @@ https://www.ted.com/talks/anne_milgram_why_smart_statistics_are_the_key_to_fight
 
 ## Lectures
 
+[   ]{@lecture}
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0tak8PvXO7w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
@@ -85,15 +87,15 @@ https://www.ted.com/talks/anne_milgram_why_smart_statistics_are_the_key_to_fight
 
 Install R Studio and Pandoc on your machine.
 
-* [ Helpful Vocabulary ]{@handouts https://github.com/DS4PS/Data-Science-Class/raw/master/HANDOUTS/Helpful%20Programming%20Vocabulary.pdf}
-* [ Base R Cheat Sheet ]{@handouts base-r-cheat-sheet.pdf}
+* [ Helpful Vocabulary ]{@handout https://github.com/DS4PS/Data-Science-Class/raw/master/HANDOUTS/Helpful%20Programming%20Vocabulary.pdf}
+* [ Base R Cheat Sheet ]{@handout base-r-cheat-sheet.pdf}
 
 
 **PART II - MY FIRST MARKDOWN DOCUMENT**
 
 Read about Markdown in the [Resources](https://hasi96.github.io/course_website/resources/) tab.
 
-[ Download Rmd Template ]{@lab https://cdn.rawgit.com/DS4PS/Data-Science-Class/master/01-TEXTBOOK/Unit-04-Analysis-with-Groups.Rmd}
+[ Download Rmd Template ]{@assignment https://cdn.rawgit.com/DS4PS/Data-Science-Class/master/01-TEXTBOOK/Unit-04-Analysis-with-Groups.Rmd}
 
 Here is what your Markdown file will look like. You need to replace all -->text<-- with the appropriate responses formatted using Markdown syntax.
 
@@ -166,9 +168,11 @@ By the end of this unit, you will be able to:
 ## Readings
 
 Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and graphics. " O'Reilly Media, Inc.". [ CH 5.2-5.5 ]{@reading http://www.bagualu.net/wordpress/wp-content/uploads/2015/10/R_Cookbook.pdf}
+[ CH 5.2-5.5 ]{@reading https://github.com/DS4PS/Data-Science-Class/raw/master/HANDOUTS/Helpful%20Programming%20Vocabulary.pdf}
 
 
 ## Lectures
+[   ]{@lecture}
 
 ## Labs
 
@@ -184,8 +188,8 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 [ Unit 3: Aug 30 - Sept 5 ]{@date}
 
 [   ]{@reading}
-[   ]{@handouts}
-[   ]{@lab}
+[   ]{@handout}
+[   ]{@assignment}
 
 
 
@@ -197,8 +201,8 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 [ Unit 4: Sept 6-12 ]{@date}
 
 [   ]{@reading}
-[   ]{@handouts}
-[   ]{@lab}
+[   ]{@handout}
+[   ]{@assignment}
 
 
 
@@ -211,8 +215,8 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 [ Unit 5: Sept 13-19 ]{@date}
 
 [   ]{@reading}
-[   ]{@handouts}
-[   ]{@lab}
+[   ]{@handout}
+[   ]{@assignment}
 
 
 
@@ -224,8 +228,8 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 [ Unit 6: Sept 20-26 ]{@date}
 
 [   ]{@reading}
-[   ]{@handouts}
-[   ]{@lab}
+[   ]{@handout}
+[   ]{@assignment}
 
 
 
@@ -235,9 +239,11 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 [ Unit 7: Sept 27 - Oct 3 ]{@date}
 
+{@lecture}
+{@lecture}
 [   ]{@reading}
-[   ]{@handouts}
-[   ]{@lab}
+[   ]{@handout}
+[   ]{@assignment}
 
 
 
@@ -250,7 +256,7 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 [   ]{@reading}
 [   ]{@handouts}
-[   ]{@lab}
+[   ]{@assignment}
 
 
 
@@ -263,7 +269,7 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 [   ]{@reading}
 [   ]{@handouts}
-[   ]{@lab}
+[   ]{@assignment}
 
 
 
