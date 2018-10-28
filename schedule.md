@@ -16,14 +16,14 @@ and include an H1 text element.
 
 
 
+** Section-I
 
-
-***
+*** {@unit = "15th Nov", @title = "Course Overview", @reading, @assignment, @foldout}
 
 # Course Overview 
 
 [ Unit 0 ]{@date}
-
+ 
 welcome
 
 organization
@@ -36,7 +36,7 @@ how to succeed
 
 
 
-*** 
+*** {@unit = "17th Nov", @title = "Introduction to Data Science", @reading, @assignment, @lecture}
 
 # Introduction to Data Science 
 
@@ -132,14 +132,8 @@ output: html_document
 
 ```
 
-**Instructions for Submitting**
 
-
-
-
-
-
-*** 
+*** {@unit = "19th Nov", @title = "Functions and Data Types", @reading, @assignment, @foldout}
 
 # Functions and Data Types
 
@@ -178,10 +172,10 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 
 
+** Section -II
 
 
-
-***
+*** {@unit = "10th Dec", @title = "Expressive Business Rules", @assignment, @foldout}
 
 # Expressive Business Rules
 
@@ -194,7 +188,7 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 
 
-***
+*** {@unit = "12th Dec", @title = "Building Datasets", @assignment}
 
 # Building Datasets
 
@@ -208,7 +202,7 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 
 
-***
+*** {@unit = "20th Dec", @title = "Descriptive Analysis", @reading, @assignment}
 
 # Descriptive Analysis
 
@@ -221,7 +215,7 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 
 
-***
+*** {@unit = "10th Jan", @title = "Visualization I", @lecture, @assignment}
 
 # Visualization I
 
@@ -232,23 +226,9 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 [   ]{@assignment}
 
 
+** Section-III
 
-***
-
-# Visualization II
-
-[ Unit 7: Sept 27 - Oct 3 ]{@date}
-
-{@lecture}
-{@lecture}
-[   ]{@reading}
-[   ]{@handout}
-[   ]{@assignment}
-
-
-
-
-***
+*** {@unit = "15th Jan", @title = "Data Ingestion", @reading, @lecture, @assignment}
 
 # Data Ingestion
 
@@ -261,7 +241,7 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 
 
-***
+*** {@unit = "20th Jan", @title = "Advanced Visualization", @lecture, @assignment}
 
 # Advanced Visualization
 

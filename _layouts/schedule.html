@@ -1,6 +1,6 @@
---- 
-layout: default 
-disqus: true 
+---
+layout: default
+disqus: true
 ---
 
 <head>
@@ -9,80 +9,67 @@ disqus: true
     <link rel="icon" sizes="76x76" href="../img/favicon.png">
     <link rel="icon" type="image/png" href="../img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../assets/js/my_js.js"></script>
     <style>
-    .collapsible {
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: center;
-        outline: none;
-        font-size: 15px;
-        background-color: white;
-    }
-
+        .collapsible {
+      cursor: pointer;
+      width: 3%;
+      border: none;
+      outline: none;
+      background-color: white;
+    } 
     .collapsible:hover {
-        background-color: #F39C12;
+      background-color:#F39C12;
     }
 
-    .tr {
-        text-align: center;
-        padding: 10px 0;  
-    border-width: 1px 0; 
-    border-color: #000;
-    border-style: solid;
+    td {
+      text-align: center;
     }
-
     .child {
-        display: none;
+      display:none;
+    }
+    .button{
+        width:3%;
+        height:3%;
+
+        text-align: center;
     }
 
+    .table{
+      background-color: white;
+      margin-left: 15px;
+    } 
 
-    .table {
-        background-color: white;
-        margin-left: 0px;
-        border-collapse: collapse; 
-
-    }
-
-    .link {
-        color: #641E16;
-    }
-    .table>thead>tr>th, .table>tbody>tr>th , .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
-    padding: 8px;
-    line-height: 1.42857143;
-    vertical-align: top;
-    border-top: 1px solid #ddd;
-  }
+    .link{
+  color:#641E16;
+}
   </style>
 </head>
 <div>
 
     <body class="page-responsive">
-            <div class="table-responsive uk-padding-large" id="pp" style="box-sizing: border-box;">
+        <!-- <div class="wrapper"> -->
+        <div class="main main-raised uk-section" id="pp">
+            <div class="table-responsive uk-container">
                 <h1 style="text-align: left; margin-left: 15px ">Course Schedule</h1>
-                <button onclick="print();" class="uk-button uk-button-default" style="margin-left: 15px">
-                    </i>PRINT ALL UNITS</button>
+                <button onclick="print();" class="uk-button uk-button-default" style="margin-left: 15px"> </i>PRINT ALL UNITS</button>
                 <!-- <i class="fas fa-external-link-alt" style="color: rgb(140,29,64);"> -->
                 <br>
-                <br>
-                <br>
-
-                <table class="table table-condensed" style="width:100%; margin-right:auto; padding-left:50px;">
-                    <thead>
-                    <tr>
-                        <th class="hide" style="width:20%;text-align:left;">Unit</th>
-                        <th style="width:40%;text-align:left;">Topic</th>
-                        <th style="width:8%;text-align:left;">Reading</th>
-                        <th style="width:8%;text-align:left;">Lecture</th>
-                        <th style="width:8%;text-align:left;">Handout</th>
-                        <th style="width:8%;text-align:left;">Assignment</th>
-                     <!--   <th style="width:8%;text-align:center;">Project/Exam</th> -->
+                <table class="table table-condensed" style="width:70%; margin-right:auto; padding-left:5px;">
+                    <!--    <tr>
+                        <td> <br> </td>
                     </tr>
-                   </thead>
-                   <tbody id ="tablebody">
-                   </tbody>
+                    <tr>
+                        <th class="hide" style="width:40%;" colspan="2" );>Section</th>
+                        <th style="width:10%;text-align:center;">Reading</th>
+                        <th style="width:10%;text-align:center;">Lecture</th>
+                        <th style="width:10%;text-align:center;">Assignment</th>
+                          <th style="width:8%;text-align:center;">Project/Exam</th> 
+                    </tr>
+                    </thead> -->
+                    <tbody id="tablebody">
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -95,6 +82,9 @@ disqus: true
     });
     </script>
     <script>
+    //var res = "<p>** meif</p>".match(/\<p\>\*\*(.*)\<\/p\>/ig);
+    //alert(res);
+
     $(function() {
         $("td[colspan=3]").find("p").hide();
         $("table").click(function(event) {
@@ -121,279 +111,243 @@ disqus: true
         window.onload = function myFunction() {
             var tablee = document.getElementById("tablebody");
             var ele = document.getElementById("divCheckbox");
-            var sections = ele.getElementsByTagName("section");
 
-            for (var i = 0; i < sections.length - 1; i++) {
+            var secheaders = document.getElementsByClassName("section-header");
+            var op = 0;
+            for (var i1 = 0; i1 < secheaders.length; i1++) {
+
                 var ttr = document.createElement("tr");
-
-                var linktemp = sections[i].getElementsByTagName("asset");
-
-
-                if ((sections[i]).getElementsByClassName("dates").length > 0) {
-                    var ps = (sections[i]).getElementsByClassName("dates");
-                    var ttd = document.createElement("td");
-                    ttd.setAttribute("class", "hide");
-                    var tex = document.createTextNode(ps[0].innerHTML);
-                    ttd.appendChild(tex);
-                    ttr.appendChild(ttd);
-                } else {
-                    var ttd = document.createElement("td");
-                    var tex = document.createTextNode("");
-                    ttd.appendChild(tex);
-                    ttr.appendChild(ttd);
-                }
                 var ttd = document.createElement("td");
-               /* var button = document.createElement("button");
-                button.setAttribute("class", "collapsible");
-                button.setAttribute("onclick", "expand(" + i + ");");*/
-                var ttr2 = document.createElement("tr");
-                var title = sections[i].getElementsByTagName("h1");
-                if (title.length > 0) {
-                    var tex = document.createTextNode(title[0].innerHTML);
-                } else {
-                    var tex = document.createTextNode("");
-
-                }
-                //button.appendChild(tex);
-                //ttd.appendChild(button);
-                ttd.appendChild(tex);
+                var thr = document.createElement("br");
+                ttd.setAttribute("colspan", 5);
+                ttd.appendChild(thr);
                 ttr.appendChild(ttd);
-                var count = [0, 0, 0, 0, 0];
-
-                var flag = [-1, -1, -1, -1, -1];
-                  var readlinks = "",lecturelinks = "", handoutlinks = "", assignlinks = "";
-                for (var j = 0; j < linktemp.length; j++) {
-                  
-                    var type = linktemp[j].getAttribute("type");
-                    var linkk = linktemp[j].getAttribute("href");
-                         
-                    linktemp[j].setAttribute("id", type);
-                    if (type == "reading") {
-                          readlinks = readlinks+linkk+"|";
-                                              count[0]++;
-                        flag[0] = j;
-                    } else if (type == "lecture") {
-                          lecturelinks = lecturelinks + linkk+ "|";
-                        count[1]++;
-                        flag[1] = j;
-                    } else if (type == "handout") {
-                          handoutlinks = handoutlinks + linkk+ "|";
-                        count[2]++;
-                        flag[2] = j;
-                    } else if (type == "assignment") {
-                          assignlinks = assignlinks + linkk+ "|";
-                        count[3]++;
-                        flag[3] = j;
-                    }/* else if (type == "exam") {
-                        count[4]++;
-                        flag[4] = j;
-                    }*/
-
-                }
-                for (var j = 0; j < 5; j++) { 
-                    var k = flag[j];
-
-                    if (j == 0 && k != -1) {
-                        var linkk = linktemp[k].getAttribute("href");
-
-                        var newCell = document.createElement("td");
-                        var aref = document.createElement("a");
-                        if(count[j]>1){
-
-                        var te = "(function(){  localStorage.setItem(\"links\", \""+readlinks+"\");  })();"
-                        aref.setAttribute("onClick", te);
-                        aref.setAttribute("href","../reading/");
-                      }
-                      else{
-                        aref.setAttribute("href", linkk);
-                      }
-                        var icon = document.createElement("i");
-
-                        icon.className = "fa fa-book-open";
-                        aref.appendChild(icon);
-                        newCell.appendChild(aref);
-
-                        ttr.appendChild(newCell);
-                    }
-                    if (flag[0] == -1 && j == 0) {
-
-                        var newCell = document.createElement("td");
-                        var iconf = document.createElement("font");
-                        var icon = document.createElement("i");
-                        icon.className = "fa fa-book-open";
-                        iconf.setAttribute("color", "f1f1f1");
-                        iconf.appendChild(icon);
-                        newCell.appendChild(iconf);
-
-                        ttr.appendChild(newCell);
-                    }
-
-                    if (j == 1 && k != -1) {
-
-                        var linkk = linktemp[k].getAttribute("href");
-                        var newCell = document.createElement("td");
-                        var aref = document.createElement("a");
-                         if(count[j]>1){
-                          var te = "(function(){ localStorage.setItem(\"links\", \""+lecturelinks+"\");  })();"
-                        aref.setAttribute("onClick", te);
-                        aref.setAttribute("href","../lecture/");
-                      }
-                      else{
-                        aref.setAttribute("href", linkk);
-                      }
-                        var icon = document.createElement("i");
-                        icon.className = "fa fa-play";
-                        aref.appendChild(icon);
-                        newCell.appendChild(aref);
-                        ttr.appendChild(newCell);
-
-                    }
-                    if (flag[1] == -1 && j == 1) {
-
-                        var newCell = document.createElement("td");
-                        var iconf = document.createElement("font");
-                        var icon = document.createElement("i");
-                        icon.className = "fa fa-play";
-                        iconf.setAttribute("color", "f1f1f1");
-                        iconf.appendChild(icon);
-                        newCell.appendChild(iconf);
-
-                        ttr.appendChild(newCell);
-                    }
-                    if (j == 3 && k != -1) {
-                        var linkk = linktemp[k].getAttribute("href");
-                        var newCell = document.createElement("td");
-                        var aref = document.createElement("a");
-                         if(count[j]>1){
-                         var te = "(function(){ localStorage.setItem(\"links\", \""+assignlinks+"\");  })();"
-                        aref.setAttribute("onClick", te);
-                        aref.setAttribute("href","../assignment/");
-                      }
-                      else{
-                        aref.setAttribute("href", linkk);
-                      }
-
-                        var icon = document.createElement("i");
-                        icon.className = "fa fa-desktop";
-                        aref.appendChild(icon);
-                        newCell.appendChild(aref);
-                        ttr.appendChild(newCell);
-
-                    }
-                    if (flag[3] == -1 && j == 3) {
-
-                        var newCell = document.createElement("td");
-                        var iconf = document.createElement("font");
-                        var icon = document.createElement("i");
-                        icon.className = "fa fa-desktop";
-                        iconf.setAttribute("color", "f1f1f1");
-                        iconf.appendChild(icon);
-                        newCell.appendChild(iconf);
-
-                        ttr.appendChild(newCell);
-                    }
-                    if (j == 4 && k != -1) {
-                        var linkk = linktemp[k].getAttribute("href");
-                        var newCell = document.createElement("td");
-                        var aref = document.createElement("a");
-                         if(count[j]>1){
-                         var te = "(function(){ localStorage.setItem(\"links\", \""+assignlinks+"\");  })();"
-                        aref.setAttribute("onClick", te);
-                        aref.setAttribute("href","../assignment/");
-                      }
-                      else{
-                        aref.setAttribute("href", linkk);
-                      }
-
-                        var icon = document.createElement("i");
-                        icon.className = "fa fa-check-square";
-                        aref.appendChild(icon);
-                        newCell.appendChild(aref);
-                        ttr.appendChild(newCell);
-
-                    }
-                    /*if (flag[4] == -1 && j == 4) {
-
-                        var newCell = document.createElement("td");
-                        var iconf = document.createElement("font");
-                        var icon = document.createElement("i");
-                        icon.className = "fa fa-check-square";
-                        iconf.setAttribute("color", "f1f1f1");
-                        iconf.appendChild(icon);
-                        newCell.appendChild(iconf);
-
-                        ttr.appendChild(newCell);
-                    }*/
-                    if (j == 2 && k != -1) {
-                        var linkk = linktemp[k].getAttribute("href");
-                        var newCell = document.createElement("td");
-                        var aref = document.createElement("a");
-
-                         if(count[j]>1){
-                         var te = "(function(){ localStorage.setItem(\"links\", \""+handoutlinks+"\");  })();"
-                        aref.setAttribute("onClick", te);
-                        aref.setAttribute("href","../handout/");
-                      }
-                      else{
-                        aref.setAttribute("href", linkk);
-                      }
-                        var icon = document.createElement("i");
-                        icon.className = "fa fa-file";
-                        aref.appendChild(icon);
-                        newCell.appendChild(aref);
-                        ttr.appendChild(newCell);
-
-                    }
-                    if (flag[2] == -1 && j == 2) {
-
-                        var newCell = document.createElement("td");
-                        var iconf = document.createElement("font");
-                        var icon = document.createElement("i");
-                        icon.className = "fa fa-file";
-                        iconf.setAttribute("color", "f1f1f1");
-                        iconf.appendChild(icon);
-                        newCell.appendChild(iconf);
-
-                        ttr.appendChild(newCell);
-                    }
-
-
-
-
-                }
                 tablee.appendChild(ttr);
-                var t = "<br>";
+                //  for(var y=0; y<4; y++) {
+                var ttr = document.createElement("tr");
+                var ttd = document.createElement("td");
+                var txt = document.createTextNode("");
+                ttd.appendChild(txt);
+                ttr.appendChild(ttd);
 
-              /*  var newCell = document.createElement("td");
 
-                //var titleMatch = new RegExp("(?<=<hr>)(.*\n?)(?=<hr>)");
-                var divsec = document.createElement("div");
-                divsec.setAttribute("style", "background-color: #f1f1f1;width:100%;");
-                divsec.innerHTML = t;
-                divsec.setAttribute("class", "child uk-padding-small ");
-                var sec = sections[i].cloneNode(true);
-                sec.setAttribute("style", "width:100%;text-align:center;");
-                var alinks = sec.getElementsByTagName("a");
-                for (var l = 0; l < alinks.length; l++) {
-                    alinks[l].setAttribute("style", "color: #ffc425;");
+                var ttd = document.createElement("td");
+                var txt = document.createTextNode(secheaders[i1].getAttribute("id"));
+                ttd.setAttribute("style", "font-weight:bold;text-align:left;font-size:20px;");
+                ttd.setAttribute("colspan", 2);
+                ttd.appendChild(txt);
+
+
+
+                ttr.appendChild(ttd);
+                // }
+                ttr.appendChild(ttd);
+                var ttd = document.createElement("td");
+                var txt = document.createTextNode("Reading");
+
+                ttd.appendChild(txt);
+
+                // }
+                ttr.appendChild(ttd);
+                var ttd = document.createElement("td");
+                var txt = document.createTextNode("Lecture");
+
+                ttd.appendChild(txt);
+
+
+                // }
+                ttr.appendChild(ttd);
+                var ttd = document.createElement("td");
+                var txt = document.createTextNode("Assignment");
+
+                ttd.appendChild(txt);
+
+                // }
+                ttr.appendChild(ttd);
+                tablee.appendChild(ttr);
+                var ttr = document.createElement("tr");
+                var ttd = document.createElement("td");
+                var txt = document.createTextNode("");
+                ttd.appendChild(txt);
+                ttr.appendChild(ttd);
+                var ttd = document.createElement("td");
+                var thr = document.createElement("hr");
+                ttd.setAttribute("colspan", 5);
+                ttd.appendChild(thr);
+                ttr.appendChild(ttd);
+                tablee.appendChild(ttr);
+                //}
+
+                var sections = secheaders[i1].getElementsByClassName("unit-header");
+
+                console.log("sh" + secheaders.length);
+                for (var i2 = 0; i2 < sections.length; i2++) {
+                    //sections[i2].setAttribute("class", "unit-header child");
+
+                    var ttr = document.createElement("tr");
+
+
+                    var iconstring = sections[i2].getAttribute("id");
+                    var iconlist = iconstring.split(",");
+
+                    var regexlist = ["/@unit(.*)=(.*)“(.*)”,(.*)@/ig", "/@title(.*)=(.*)“(.*)”,\@/ig", "/@reading(.*)=(.*)“(.*)”,\@/ig", "/@lecture(.*)=(.*)“(.*)”,\@/ig", "/@assignment(.*)=(.*)“(.*)”,\@/ig", "/@foldout(.*)=(.*)“(.*)”,\@/ig"]
+                    var regex = [/@unit/ig, /@title/ig, /@reading/ig, /@lecture/ig, /@assignment/ig, /@foldout/ig]
+                    var infodict = {};
+                    var resdict = [];
+                    for (var ch = 0; ch < 6; ch++) {
+                        resdict[ch] = iconstring.match(regex[ch]);
+                        if (resdict[ch] != null) {
+                            var res = "\"" + iconlist[ch] + "\"".match(regexlist[ch]);
+                            if (res != null) {
+                                var mySubString = res.substring(
+                                    res.indexOf("\= ") + 2,
+                                    res.lastIndexOf("\”") + 1
+                                );
+                                if (mySubString.length > 1) {
+                                    infodict[ch] = mySubString.replace("\“", "").replace("\”", "");
+                                } else {
+                                    infodict[ch] = "True";
+                                }
+
+                            }
+                        } else if (resdict[ch] == null) {
+                            infodict[ch] = "False";
+                        }
+                    }
+
+                    console.log(infodict);
+                    for (var y = 0; y < 2; y++) {
+
+                        //  if(infodict[y]!="False") {
+
+
+                        if (y == 1) {
+                            //  console.log(infodict[5]+"hil");
+                            if (infodict[5] == "False") {
+                                var ttd = document.createElement("td");
+                                //var button = document.createElement("button");
+                                var iconf = document.createElement("font");
+
+                                var icon = document.createElement("i");
+                                icon.className = "fas fa-arrows-alt";
+                                iconf.setAttribute("color", "f1f1f1");
+                                iconf.appendChild(icon);
+                                //button.appendChild(iconf);
+                                ttd.setAttribute("style", "width:3%;text-align:center;");
+                                ttd.appendChild(iconf);
+                                ttr.appendChild(ttd);
+                                var ttd = document.createElement("td");
+                                var txt = document.createTextNode(infodict[y]);
+                                ttd.setAttribute("style", "text-align:left;width:37%;");
+                                ttd.appendChild(txt);
+                                ttr.appendChild(ttd);
+                                var txt = document.createTextNode("");
+                                ttd.appendChild(txt);
+                            } else {
+                                console.log("ji");
+                                var ttd = document.createElement("td");
+                                var button = document.createElement("button");
+                                var center = document.createElement("center");
+                                button.setAttribute("class", "collapsible");
+                                var ty = op++;
+                                button.setAttribute("onclick", "expand(" + ty + ");");
+                                var iconf = document.createElement("font");
+
+                                var icon = document.createElement("i");
+                                icon.className = "fas fa-arrows-alt";
+
+                                iconf.appendChild(icon);
+                                center.appendChild(icon);
+                                button.appendChild(center);
+                                ttd.setAttribute("style", "width:3%;text-align:center;");
+                                ttd.appendChild(button);
+                                ttr.appendChild(ttd);
+                                var ttd = document.createElement("td");
+                                var txt = document.createTextNode(infodict[y]);
+                                ttd.setAttribute("style", "text-align:left;width:37%;");
+                                //  button.innerHTML = button.innerHTML + txt.innerHTML;
+
+                                ttd.appendChild(txt);
+                            }
+
+                        }
+                        if (y == 0) {
+                            var ttd = document.createElement("td");
+                            var txt = document.createTextNode(infodict[y]);
+                            ttd.setAttribute("style", "text-align:right;width:20%;");
+                            ttd.appendChild(txt);
+                            var txt = document.createTextNode("");
+                            ttd.appendChild(txt);
+
+                        }
+
+
+                        //  }
+                        ttr.appendChild(ttd);
+                    }
+                    var icons = ["fa fa-book-reader", "fa fa-laptop-code", "fa fa-university"];
+                    for (var y = 2; y < 6; y++) {
+                        var ttd = document.createElement("td");
+
+                        //if(infodict[y]!="False") {
+                        if (infodict[y] == "True") {
+                            var iconf = document.createElement("font");
+                            var icon = document.createElement("i");
+                            icon.className = icons[y - 2];
+                            iconf.appendChild(icon);
+                        } else {
+                            var iconf = document.createElement("font");
+                            var icon = document.createElement("i");
+                            icon.className = icons[y - 2];
+                            iconf.setAttribute("color", "f1f1f1");
+                            iconf.appendChild(icon);
+
+                        }
+                        ttd.setAttribute("style", "width:12%;");
+
+                        ttd.appendChild(iconf);
+                        ttr.appendChild(ttd);
+                        //}
+
+                    }
+                    tablee.appendChild(ttr);
+                    console.log(infodict[5]);
+                    if (infodict[5] == "True") {
+                        var t = "<br>";
+                        console.log("yo" + i2);
+                        var ttr2 = document.createElement("tr");
+                        var newCell2 = document.createElement("td");
+                        newCell2.setAttribute("colspan", "6");
+                        //var titleMatch = new RegExp("(?<=<hr>)(.*\n?)(?=<hr>)");
+                        var divsec = document.createElement("div");
+                        divsec.setAttribute("style", "background-color: #f1f1f1;width:100%;");
+                        divsec.innerHTML = t;
+                        divsec.setAttribute("class", "child");
+
+                        var sec = sections[i2].cloneNode("True");
+
+                        sec.setAttribute("style", "width:100%;text-align:left;margin-left:100px;");
+
+                        divsec.appendChild(sec);
+                        divsec.innerHTML = divsec.innerHTML + t;
+
+                        newCell2.appendChild(divsec);
+                        console.log("jo");
+                        console.log(divsec);
+                        ttr2.appendChild(newCell2);
+                        tablee.appendChild(ttr2);
+                    }
+                    //commecnted code here
+
                 }
-                divsec.appendChild(sec);
-                divsec.innerHTML = divsec.innerHTML + t;
-
-                newCell.appendChild(divsec);
-
-                ttr2.appendChild(newCell);
-
-                //    ttr2.appendChild(divsec);
-                tablee.appendChild(ttr2);
-
-            */
             }
         }
         </script>
         <script>
         function expand(i) {
             var check = document.getElementsByClassName("child");
+            console.log(check[i].innerHTML);
+            console.log(check[i].style.display);
             if (check[i].style.display === "block") {
                 check[i].style.display = "none";
             } else {
@@ -440,9 +394,46 @@ disqus: true
         <script type="text/javascript">
         var b = document.getElementById("divCheckbox");
         var str = b.innerHTML;
-        var regex = /\<hr\>/ig,
-            body = str,
-            result = body.replace(regex, "</section><hr> <section> ");
+        //  alert(str);
+
+        // - /\<p\>\*\*(.*)\<\/p\>/ig  - <p>** section
+        //parser for the section heading
+
+        var res = str.match(/\<p\>\*\* (.*)\<\/p\>/ig);
+
+        if (res != null) {
+            for (var i = 0; i < res.length; i++) {
+                console.log(res[i]);
+                var mySubString = res[i].substring(
+                    res[i].indexOf("\* ") + 2,
+                    res[i].lastIndexOf("\<"));
+
+                str = str.replace(res[i], "\<\/unit\> \<\/section\> \<section class= \"section-header\" id=\"" + mySubString + "\"\>");
+            }
+        }
+        result = str;
+        //console.log(result); 
+
+        res = result.match(/\<p\>\*\*\* (.*)\<\/p\>/ig);
+        console.log("hjo" + res.length);
+
+        if (res != null) {
+            for (var i = 0; i < res.length; i++) {
+                console.log(res[i]);
+                var mySubString = res[i].substring(
+                    res[i].indexOf("\* ") + 2,
+                    res[i].lastIndexOf("\<") - 1
+                );
+
+                str = str.replace(res[i], "\<\/unit\> \<\/\> \<\/article\> \<article class= \"unit-header\" id=\"" + mySubString + "\"\>");
+            }
+        }
+        result = str;
+        console.log(result);
+
+
+
+
         var res = result.match(/\[(.*)\]\{\@lecture(.*)\}/ig);
         var baseurl = b.getAttribute("class");
         if (res != null) {
@@ -463,6 +454,7 @@ disqus: true
                 result = result.replace(res[i], "\<a href= \"" + link + "\"\>" + mySubString + "\</a\>" + "\<asset type =\"lecture\" href = \"" + link + "\"\/\>");
             }
         }
+
         var res = result.match(/\[(.*)\]\{\@assignment(.*)\}/ig);
         if (res != null) {
             for (var i = 0; i < res.length; i++) {
