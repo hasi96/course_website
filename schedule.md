@@ -18,7 +18,7 @@ and include an H1 text element.
 
 ** Section-I
 
-*** {@unit = "15th Nov", @title = "Course Overview", @reading, @assignment, @foldout}
+*** {@unit = "15th Nov", @title = "Course Overview", @reading, @assignment}
 
 # Course Overview 
 
