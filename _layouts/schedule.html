@@ -15,14 +15,11 @@ disqus: true
     <style>
         .collapsible {
       cursor: pointer;
-      width: 3%;
       border: none;
       outline: none;
       background-color: white;
     } 
-    .collapsible:hover {
-      background-color:#F39C12;
-    }
+    
 
     td {
       text-align: center;
@@ -41,6 +38,12 @@ disqus: true
       background-color: white;
       margin-left: 15px;
     } 
+    .fa{
+  position: relative;
+  /* Adjust these values accordingly */
+  top: 5px;
+  left: 5px;
+    }
 
     .link{
         color:#641E16;
@@ -62,7 +65,8 @@ disqus: true
                 <button onclick="print();" class="uk-button uk-button-default" style="margin-left: 15px"> </i>PRINT ALL UNITS</button>
                 <!-- <i class="fas fa-external-link-alt" style="color: rgb(140,29,64);"> -->
                 <br>
-                <table class="table table-condensed" style="width:100%; margin-right:auto; padding-left:5px;">
+
+                <table  style="width:100%; margin-right:auto; padding-left:5px;">
                     <!--    <tr>
                         <td> <br> </td>
                     </tr>
@@ -91,18 +95,7 @@ disqus: true
     //var res = "<p>** meif</p>".match(/\<p\>\*\*(.*)\<\/p\>/ig);
     //alert(res);
 
-    $(function() {
-        $("td[colspan=3]").find("p").hide();
-        $("table").click(function(event) {
-            event.stopPropagation();
-            var $target = $(event.target);
-            if ($target.closest("td").attr("colspan") > 1) {
-                $target.slideUp();
-            } else {
-                $target.closest("tr").next().find("p").slideToggle();
-            }
-        });
-    });
+   
     </script>
     <section>
         <div id="divCheckbox" class="{{ site.url }}{{site.github_info.course-repo}}" style="display: none;">{{ content }}</div>
@@ -332,7 +325,7 @@ disqus: true
 
                         var sec = sections[i2].cloneNode("True");
 
-                        sec.setAttribute("style", "width:100%;text-align:left;margin-left:100px;");
+                        sec.setAttribute("style", "width:auto;text-align:left;margin-left:50px;margin-right:50px;word-wrap:break-word");
 
                         divsec.appendChild(sec);
                         divsec.innerHTML = divsec.innerHTML + t;
@@ -375,15 +368,18 @@ disqus: true
 
                 var hr = document.createElement("hr");
                 secs[j].appendChild(hr);
-                var ps = (secs[j]).getElementsByClassName("dates");
+                var ps = (secs[j]).getElementsByTagName("article");
                 var h1 = secs[j].getElementsByTagName("h1");
                 if (h1.length > 0) {
                     (h1[0]).setAttribute("style", "color:#8c1d40;");
-                    var text = document.createTextNode("      " + ps[0].innerHTML + "\"");
+                    console.log(ps[j].getAttribute("id").split(",")[0].replace("{@unit","").replace("\“","").replace("\”","").replace("=",""));
+                    
+                    var text = document.createTextNode("      " + ps[j].getAttribute("id").split(",")[0].replace("{@unit","").replace("\“","").replace("\”","").replace("=",""));
                     h1[0].appendChild(text);
                     h1[0].appendChild(hr);
                 }
 
+                
             }
             divC.setAttribute("display", "block");
             var divContents = "<br>" + divC.innerHTML;
@@ -539,18 +535,18 @@ disqus: true
             }
 
         }
-        var res = result.match(/\[(.*)\]\{\@date(.*)\}/ig);
-        if (res != null) {
+        // var res = result.match(/\[(.*)\]\{\@date(.*)\}/ig);
+        // if (res != null) {
 
-            for (var i = 0; i < res.length; i++) {
-                var mySubString = res[i].substring(
-                    res[i].indexOf("\ [") + 2,
-                    res[i].indexOf("\]") - 1
-                );
+        //     for (var i = 0; i < res.length; i++) {
+        //         var mySubString = res[i].substring(
+        //             res[i].indexOf("\ [") + 2,
+        //             res[i].indexOf("\]") - 1
+        //         );
 
-                result = result.replace(res[i], "\<div class=\"dates\" style=\"display: none;\"\>" + mySubString + "\<\/div\>");
-            }
-        }
+        //         result = result.replace(res[i], "\<div class=\"dates\" style=\"display: none;\"\>" + mySubString + "\<\/div\>");
+        //     }
+        // }
         document.getElementById("divCheckbox").innerHTML = result;
         </script>
 </div>

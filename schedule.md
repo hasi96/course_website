@@ -2,7 +2,7 @@
 layout: schedule
 title: Schedule
 ---
-
+ 
 <!--- 
 Comments go here...
 Allowable asset classes:
@@ -22,7 +22,6 @@ and include an H1 text element.
 
 # Course Overview 
 
-[ Unit 0 ]{@date}
  
 welcome
 
@@ -40,7 +39,6 @@ how to succeed
 
 # Introduction to Data Science 
 
-[ Unit 1: Aug 16-22 ]{@date}
 This unit defines the concept of "data science" and provides an overview of the course schedule for the semester. 
 
 ## Learning Objectives
@@ -137,7 +135,6 @@ output: html_document
 
 # Functions and Data Types
 
-[ Unit 2: Aug 23-29 ]{@date}
 
 By the end of this unit, you will be able to:
 * Use functions in R.
@@ -179,7 +176,6 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 # Expressive Business Rules
 
-[ Unit 3: Aug 30 - Sept 5 ]{@date}
 
 [   ]{@reading}
 [   ]{@handout}
@@ -192,7 +188,6 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 # Building Datasets
 
-[ Unit 4: Sept 6-12 ]{@date}
 
 [   ]{@reading}
 [   ]{@handout}
@@ -206,7 +201,6 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 # Descriptive Analysis
 
-[ Unit 5: Sept 13-19 ]{@date}
 
 [   ]{@reading}
 [   ]{@handout}
@@ -219,7 +213,6 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 # Visualization I
 
-[ Unit 6: Sept 20-26 ]{@date}
 
 [   ]{@reading}
 [   ]{@handout}
@@ -232,7 +225,6 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 # Data Ingestion
 
-[ Unit 8: Sept 27 - Oct 3 ]{@date}
 
 [   ]{@reading}
 [   ]{@handouts}
@@ -245,7 +237,6 @@ Teetor, P. (2011). R cookbook: Proven recipes for data analysis, statistics, and
 
 # Advanced Visualization
 
-[ Unit 9: Oct 4 - 10 ]{@date}
 
 [   ]{@reading}
 [   ]{@handouts}
